@@ -1,0 +1,104 @@
+/*
+Theme Name:     IBM Cloud Data Services (a Project Next child theme)
+Theme URI:      https://developer.ibm.com/clouddataservices
+Description:    Theme for the Cloudant site, based on the parent Project Next theme
+Template:       projectnext                     
+Version:        0.1.0
+*/
+
+
+/* main menu styles */
+#pnext-top-menu-home {
+  background: #262324 url('cds_hero.jpg') no-repeat;
+  background-position: center; 
+  border: none;
+  height: 370px;
+}
+#pnext-top-menu {
+  background: #262324;
+  border: none;
+  height: 60px;
+}
+  #pnext-top-menu .flag .link-home a,
+  #pnext-top-menu-home .flag .link-home a {
+    color: #fff;
+    text-transform: none;
+    font-size: 16px;
+  }
+  #pnext-top-menu #menu-main li a,
+  #pnext-top-menu-home #menu-main li a {
+    color: #fff;
+  }
+#pnext-top-menu .flag,
+#pnext-top-menu-home .flag {
+  width: 100%;
+  text-align: right;
+  position: relative;
+}
+#pnext-top-menu .flag .cds-logo,
+#pnext-top-menu-home .flag .cds-logo {
+  width: 36px;
+  height: 40px;
+  background: url('cds_logo.png') no-repeat;
+  position: absolute;
+  display: inline-block;
+  left: 40px;
+  margin-top: -4px;
+}
+#pnext-top-menu .flag .link-home,
+#pnext-top-menu-home .flag .link-home {
+  left: 50px;
+  position: absolute;
+}
+#pnext-top-menu .pn-top-menu-container,
+#pnext-top-menu-home .pn-top-menu-container {
+  display: inline-block;
+  width: auto;
+}
+#pnext-top-menu-home .hero-text {
+  margin: 100px 0 0 90px;
+}
+  #pnext-top-menu-home .hero-text h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  } 
+#pnext-top-menu-home .get-started-btn {
+  margin-top: 60px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+  #pnext-top-menu-home .get-started-btn a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+  }
+    #pnext-top-menu-home .get-started-btn a span {
+      padding: 6px 36px;
+      display: inline-block;
+    }
+
+/* home page styles */
+#pnext-home-page-content .pn-leadspace {
+  background: none;
+}
+  .page-template-landing #pnext-main {
+    margin-bottom: 0 !important;
+  }
+  #pnext-main .pn-home-wrap {
+    background: #262324;
+  }
+
+/* What's new section + Connect & contribute section */
+
+#pnext-main .pn-page-title {
+  color: #fff;
+}
+#pnext-main .pn-meta-date {
+  color: #999;
+  font-size: 9px;
+}
+#pnext-main h1.pn-post-title {
+  font-style: normal;
+}
