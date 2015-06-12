@@ -9,7 +9,7 @@ Version:        0.1.0
 
 /* main menu styles */
 #pnext-top-menu-home {
-  background: #262324 url('cds_hero.jpg') no-repeat;
+  background: #262324 url('cds_hero.png') no-repeat;
   background-position: center; 
   border: none;
   height: 370px;
@@ -35,26 +35,34 @@ Version:        0.1.0
   text-align: right;
   position: relative;
 }
-#pnext-top-menu .flag .cds-logo,
-#pnext-top-menu-home .flag .cds-logo {
-  width: 36px;
-  height: 40px;
-  background: url('cds_logo.png') no-repeat;
+#pnext-top-menu .flag .IBM-logo,
+#pnext-top-menu-home .flag .IBM-logo {
+  width: 38px;
   position: absolute;
   display: inline-block;
   left: 40px;
-  margin-top: -4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
 }
 #pnext-top-menu .flag .link-home,
 #pnext-top-menu-home .flag .link-home {
   left: 50px;
   position: absolute;
+  font-weight: 600;
 }
 #pnext-top-menu .pn-top-menu-container,
 #pnext-top-menu-home .pn-top-menu-container {
   display: inline-block;
   width: auto;
 }
+
+#pnext-top-menu.links-top-menu a,
+#pnext-top-menu-home.links-top-menu a {
+  color: #008abf;
+}
+
 #pnext-top-menu-home .hero-text {
   margin: 100px 0 0 90px;
 }
@@ -96,9 +104,25 @@ Version:        0.1.0
   color: #fff;
 }
 #pnext-main .pn-meta-date {
-  color: #999;
+  color: #a7a9ac;
   font-size: 9px;
+  font-weight: 400;
 }
 #pnext-main h1.pn-post-title {
   font-style: normal;
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
+  font-weight: 600;
+}
+#pnext-main .pn-post-content p {
+  color: #fff;
+}
+.pn-widgets .widget_em_widget li {
+  border: none;
+}
+/* Bare page template corrections */
+.page-template-bare-page #pnext-main {
+  margin-bottom: 0 !important;
+}
+.page-template-bare-page #pnext-main .pn-page-header {
+  display: none;
 }

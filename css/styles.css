@@ -2,3 +2,16 @@
 CSS to override default CSS from dW
 http://developer.ibm.com/clouddataservices
 */
+
+#pnext-main .pn-post-content p {
+  color: #fff;
+}
+#pnext-main {
+    margin-bottom: 0 !important;
+}
+.page-template-bare-page-page-php #pnext-main {
+  margin-bottom: 0 !important;
+}
+.page-template-bare-page-page-php #pnext-main .pn-page-header {
+  display: none;
+}
