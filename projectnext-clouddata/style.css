@@ -113,7 +113,7 @@ Version:        0.1.0
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
   font-weight: 600;
 }
-#pnext-main pn-post-content p {
+#pnext-main .pn-post-content p {
   color: #fff;
 }
 .pn-widgets .widget_em_widget li {
