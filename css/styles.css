@@ -46,3 +46,13 @@ http://developer.ibm.com/clouddataservices
 
 /* Connect & Contribute */
 
+/*Blog */
+
+#pnext-main .pn-page-title {
+  color: #333;
+}
+
+#pnext-main .pn-post-content p {
+  color: #333;
+}
+
