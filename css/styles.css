@@ -33,8 +33,15 @@ http://developer.ibm.com/clouddataservices
 
 #pnext-main .pn-meta-date {
   color: #a7a9ac;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
+}
+
+.pn-post-title, .pn-copy h1, .pn-h1 {
+  font-size: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Connect & Contribute */
