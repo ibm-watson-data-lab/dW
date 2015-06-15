@@ -15,3 +15,9 @@ http://developer.ibm.com/clouddataservices
 .page-template-bare-page-page-php #pnext-main .pn-page-header {
   display: none;
 }
+
+.link-home a:link {
+	font-size: 100%;
+	font-weight: 600;
+	font-variant: normal;
+}
