@@ -28,3 +28,14 @@ http://developer.ibm.com/clouddataservices
 	font-weight: 600;
 	font-variant: normal;
 }
+
+/*homepage "whats new" section */
+
+#pnext-main .pn-meta-date {
+  color: #a7a9ac;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Connect & Contribute */
+
