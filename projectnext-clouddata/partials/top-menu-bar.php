@@ -252,7 +252,7 @@ endif; ?>
       <h2>Resources for developers to</h2>
       <h2><a href="">get</a>, <a href="">build</a>, and <a href="">analyze</a> data on the IBM Cloud.</h2>
       
-      <div class="get-started-btn"><a href=""><span>Get Started</span></a></div>
+      <div class="get-started-btn"><a href="./get-started"><span>Get Started</span></a></div>
     </div>
   
   <?php } ?>
