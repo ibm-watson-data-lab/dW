@@ -33,9 +33,12 @@ http://developer.ibm.com/clouddataservices
 
 .pn-home-wrap .pn-post-list .pn-home-list
 #pnext-main .pn-meta-date {
-  color: #fff;
   font-size: 13px;
   font-weight: 400;
+}
+
+.page-id-27 #pnext-main .pn-post-content p {
+  color: #fff 
 }
 
 .pn-post-title, .pn-copy h1, .pn-h1 {
