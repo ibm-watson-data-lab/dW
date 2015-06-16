@@ -217,12 +217,9 @@ body {
   color: #a7a9ac;
 }
 
-.get-started-btn {
+.get-started-btn a span{
   text-align: center;
   padding: 6px 36px;
-}
-
-.get-started-btn {
   font-weight: 500;
 }
 
