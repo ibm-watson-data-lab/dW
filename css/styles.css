@@ -3,6 +3,13 @@ CSS to override default CSS from dW
 http://developer.ibm.com/clouddataservices
 */
 
+/* don't let Bootstrap make the widest container size */
+@media (min-width:1200px){
+	.container{
+		width:970px
+	}
+}
+
 #pnext-main .pn-post-content p {
   color: #fff;
 }

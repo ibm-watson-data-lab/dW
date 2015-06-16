@@ -13,13 +13,6 @@ body {
   color: #666;
 }
 
-/* don't let Bootstrap make the widest container size */
-@media (min-width:1200px){
-	.container{
-		width:970px
-	}
-}
-
 /* main menu styles */
 #pnext-top-menu-home {
   background: #262324 url('cds_hero.png') no-repeat;
