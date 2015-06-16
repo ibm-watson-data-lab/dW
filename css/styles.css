@@ -217,11 +217,15 @@ body {
   color: #a7a9ac;
 }
 
-.get-started-btn a span{
+.get-started-btn .get-started a span{
   text-align: center;
   padding: 6px 36px;
   font-weight: 500;
   border: 1px solid #337AB7;
+}
+
+.get-started-btn .get-started a:hover span{
+  text-decoration: none;
 }
 
 
