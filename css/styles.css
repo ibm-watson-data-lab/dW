@@ -206,10 +206,17 @@ body {
   font-style: normal;
 }
 
-.pn-columns .get-started p {
-  font-weight: 300;
-  font-style: normal;
+.pn-columns .get-started .pn-col-6-6 h2 {
+  font-weight: 500;
+  font-size: 22px;
 }
+
+.pn-columns .get-started .pn-col-6-6 h4 {
+  font-style: normal;
+  font-weight: 300;
+  color: #a7a9ac;
+}
+
 
 /** search engine **/
 #filter-results-row * {
