@@ -196,6 +196,15 @@ body {
   font-weight: 400;
 }
 
+/*Get Started */
+
+.pn-columns .get-started h1{
+  font-weight: 300;
+  font-size: 22px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #337AB7;
+}
+
 /** search engine **/
 #filter-results-row * {
   padding-bottom: 0.5em;
