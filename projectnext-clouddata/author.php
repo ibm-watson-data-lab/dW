@@ -22,25 +22,47 @@ if (have_posts()) : ?>
 	?>
 	<div class="pn-single-post-header pn-header-emphasis">
 		<div class="pn-pcon">
-			<header>
-				<h1 class="pn-page-title">				
-					<div class="flag">
-						<div class="flag-img">
-							<?php echo get_avatar( get_the_author_meta( 'user_email' ), 120 ); ?>
-						</div>
-						<div class="flag-bd">
-              <div class="mlm author-bio">
-                <p><?php printf(get_the_author_meta("description")); ?></p>
-                <p>
-                  <?php printf('<a href="'.get_the_author_meta("url").'">web site</a> | '); ?>
-                </p>
-              </div>
-							<div class="mlm">
-                <?php printf( __( 'All content by %s', 'twentytwelve' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?>	
-							</div>
-						</div>
+			<header>		
+				<div class="flag">
+					<div class="flag-img">
+						<?php echo get_avatar( get_the_author_meta( 'user_email' ), 120 ); ?>
 					</div>
-				</h1>		
+					<div class="flag-bd">
+                        <div class="mlm author-bio">
+                            <h1><?php printf(get_the_author()); ?></h1>
+                            <h2><?php the_author_meta("author_title"); ?></h2>
+                            <p class="author-social">  
+                                <?php if ( get_the_author_meta( 'author_website' ) ) { ?>
+                                    <a href="<?php the_author_meta('author_website'); ?>"><span>website</span></a> | 
+                                <?php }
+                                    
+                                if ( get_the_author_meta( 'author_github' ) ) { ?>
+                                    <a href="https://github.com/<?php the_author_meta('author_github'); ?>"><span>GitHub</span></a> | 
+                                <?php }
+                                    
+                                if ( get_the_author_meta( 'author_twitter' ) ) { ?>
+                                    <a href="http://twitter.com/<?php the_author_meta('author_twitter'); ?>"><span>twitter</span></a> | 
+                                <?php }
+                                
+                                if ( get_the_author_meta( 'author_linkedin' ) ) { ?>
+                                    <a href="<?php the_author_meta('author_linkedin'); ?>"><span>LinkedIn</span></a> | 
+                                <?php }
+                                
+                                if ( get_the_author_meta( 'author_pres_sharing' ) ) { ?>
+                                    <a href="<?php the_author_meta('author_pres_sharing'); ?>"><span>Presentations</span></a> | 
+                                <?php }
+                                
+                                if ( get_the_author_meta( 'author_stackoverflow' ) ) { ?>
+                                    <a href="<?php the_author_meta('author_stackoverflow'); ?>"><span>Stack Overflow</span></a>
+                                <?php } ?>
+                            </p>
+                            <p class="author-bio"><?php the_author_meta("description"); ?></p>
+                        </div>
+					</div>
+				</div>
+				<div class="mlm all-content-by-author">
+                    <?php printf( __( 'All content by %s', 'twentytwelve' ), '<span class="vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( "ID" ) ) ) . '" title="' . esc_attr( get_the_author() ) . '" rel="me">' . get_the_author() . '</a></span>' ); ?>	
+				</div>	
 			</header>
 			
 		</div>
@@ -71,11 +93,11 @@ if (have_posts()) : ?>
 
 					                /* Only list content here if it's not a video, which is not authored
 					                 * in the same sense that other content is (ITO) (133477)
-							 */
+							        */
 					                if ( get_post_type( get_the_ID())  != 'pnext_video') {
 
 							    echo "<!--". get_post_type( get_the_ID()) . "-->";
-   /* 
+                                /* 
 							     * Include the post format-specific template for the content.
 							     */
 							    get_template_part( 'partials/listing', get_post_format() ); 
