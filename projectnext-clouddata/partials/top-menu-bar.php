@@ -172,7 +172,7 @@ endif; ?>
 
 <div id="<?php if(is_front_page()){ ?>pnext-top-menu-home<?php } else { ?>pnext-top-menu<?php } ?>" class="pn-top-menu links-top-menu" role="navigation" aria-label="<?php _e('Main navigation'); ?>">    
   <div class="flag">
-    <span class="IBM-logo">IBM</span>
+    <span class="IBM-logo"><a href="<?php echo home_url(); ?>">IBM</a></span>
     <span class="link-home flag-img">
       <a rel="home" class="pn-nav-home" href="<?php echo home_url(); ?>"><?php 				
         if ( get_theme_option('logo') ) {
