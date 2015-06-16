@@ -191,6 +191,11 @@ body {
   color: #333;
 }
 
+a, a:visited, .links-std a, .pn-meta-author .pn-meta-comments .links-std a:visited {
+  font-size: 10px;
+  font-weight: 400;
+}
+
 /** search engine **/
 #filter-results-row * {
   padding-bottom: 0.5em;
