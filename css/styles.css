@@ -217,6 +217,15 @@ body {
   color: #a7a9ac;
 }
 
+.get-started-btn {
+  text-align: center;
+  padding: 6px 36px;
+}
+
+.get-started-btn {
+  font-weight: 500;
+}
+
 
 /** search engine **/
 #filter-results-row * {
