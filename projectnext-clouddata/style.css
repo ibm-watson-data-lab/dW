@@ -1,3 +1,5 @@
+/* @override http://rawgit.com/ibm-cds-labs/dW/master/css/styles.css */
+
 /*
 Theme Name:     IBM Cloud Data Services (a Project Next child theme)
 Theme URI:      https://developer.ibm.com/clouddataservices
@@ -6,6 +8,10 @@ Template:       projectnext
 Version:        0.1.0
 */
 
+/* global styles */
+body {
+  color: #666;
+}
 
 /* main menu styles */
 #pnext-top-menu-home {
@@ -101,7 +107,7 @@ Version:        0.1.0
 /* What's new section + Connect & contribute section */
 
 #pnext-main .pn-page-title {
-  color: #fff;
+  color: #555;
 }
 #pnext-main .pn-meta-date {
   color: #a7a9ac;
@@ -125,4 +131,22 @@ Version:        0.1.0
 }
 .page-template-bare-page #pnext-main .pn-page-header {
   display: none;
+}
+
+
+/** search engine **/
+#filter-results-row * {
+  padding-bottom: 0.5em;
+}
+#filter-results-row h3 {
+	margin: unset;
+	font-size: 1em;
+}
+#filter-results-row h4 {
+	margin: unset;
+	font-style: unset;
+	font-size: 1em;
+}
+#filter-results-row h4 a:link, #filter-results-row h4 v:link {
+	color: #888;
 }
