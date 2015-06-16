@@ -154,12 +154,7 @@ body {
     cursor: pointer;
     color: #337AB7;
 }
-#results .result-expand-collapse .more-text .glyphicon {
-    margin-left: 30px;
-    vertical-align: middle;
-    margin-bottom: 4px;
-}
-#results .result-expand-collapse .less-text .glyphicon {
+#results .result-expand-collapse .more-text .glyphicon, #results .result-expand-collapse .less-text .glyphicon {
     margin-left: 30px;
     vertical-align: middle;
     margin-bottom: 4px;
@@ -196,5 +191,24 @@ body {
 .facet-row .col-xs-10 {
 	color: #666;
 	padding-left: unset;
+}
+/*icon-images*/
+#results .results-icon .glyphicon {
+  width: 48px;
+  height: 48px;
+  min-height: 48px;
+  margin-left: 30px;
+}
+
+.glyphicon-facetime-video {
+  content:url(assets/video_icon.png);
+}
+
+.glyphicon-book {
+  content:url(assets/book_icon.png);
+}
+
+.glyphicon-list {
+  content:url(assets/list_icon.png);
 }
 
