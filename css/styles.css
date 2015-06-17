@@ -317,10 +317,12 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 
 .gba-image {
+  position: absolute;
   z-index: -100;
 }
 
 .text-center {
+  position: absolute;
   background-color:#337AB7;
   color: #ffffff;
   width: 100%;
