@@ -316,6 +316,15 @@ body.single-post footer, body.single-post .pn-meta-date {
   margin-bottom: 40px;
 }
 
+.gba-image {
+  z-index: -100;
+}
+
+.gba-text {
+  background-color:#1B6DAA;
+  color: #fff;
+}
+
 .tutorial-title {
   color: #2980b9;
   font-weight: 500;
