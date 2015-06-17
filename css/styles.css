@@ -185,11 +185,11 @@ body {
 
 /*Blog */
 #pnext-main .pn-page-title {
-  color: #333;
+  /*color: #333;*/
 }
 
 #pnext-main .pn-post-content p {
-  color: #333;
+  /*color: #333;*/
 }
 
 .pn-meta-author .pn-meta-comments {
@@ -198,6 +198,12 @@ body {
 }
 /* end Blog */
 
+/* How-Tos */
+.pn-meta-author .pn-meta-comments {
+  font-size: 10px;
+  font-weight: 400;
+}
+/* end How-Tos */
 
 /*Get Started */
 
@@ -230,6 +236,7 @@ body {
 .get-started-btn .get-started a:hover span{
   text-decoration: none;
 }
+/* end Get Started */
 
 
 /** search engine **/
@@ -312,6 +319,24 @@ body {
 }
 
 
+/* User profile page */
+.author-bio h1 {
+  font-size: 18pt;
+  color: #555;
+  font-weight: 700;
+}
+.author-bio h2 {
+  font-size: 12pt;
+  color: #888;
+  margin-top: 0.15em;
+}
+
+header .all-content-by-author {
+	font-size: 16pt;
+	font-weight: 500;
+	padding-top: 1em;
+}
+/* end User profile page */
 
 
 .page-id-27 #pnext-main .pn-post-content p {
