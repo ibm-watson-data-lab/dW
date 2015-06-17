@@ -350,21 +350,21 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-weight: 300;
 }
 
-.service-hex {
-  height: 181px;
-}
-
-.hex {
+.box-1 {
   float: left;
   border-right: 30px solid #337AB7;
   border-top: 52px solid transparent;
   border-bottom: 52px solid transparent;
+}
 
+.box-2 {
   float: left;
   width: 60px;
   height: 104px;
   background-color: #337AB7;
+}
 
+.box-3 {
   float: left;
   border-left: 30px solid #337AB7;
   border-top: 52px solid transparent;
