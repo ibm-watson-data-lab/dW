@@ -104,6 +104,13 @@ body {
 /* end main menu styles */
 
 /* Home page, What's new + Connect & contribute section */
+.home #pnext-main .pn-post-content p {
+  color: #fff 
+}
+#pnext-top-menu-home {
+  background-color: #444;
+}
+
 #pnext-home-page-content .pn-leadspace {
   background: none;
 }
@@ -373,6 +380,3 @@ body.author .pn-post-content {
 }
 /* end widgets */
 
-.page-id-27 #pnext-main .pn-post-content p {
-  color: #fff 
-}
