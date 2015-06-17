@@ -323,6 +323,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 .gba-text {
   background-color:#1B6DAA;
   color: #fff;
+  z-index: 100;
 }
 
 .tutorial-title {
