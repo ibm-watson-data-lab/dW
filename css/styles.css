@@ -119,7 +119,7 @@ body {
 }
 #pnext-main .pn-home-wrap {
   color: #fff;
-  background: #444;
+  background: #333;
 }
 
 /*#pnext-main .pn-page-title {
@@ -317,12 +317,10 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 
 .gba-image {
-  position: absolute;
   z-index: -100;
 }
 
 .text-center {
-  position: absolute;
   background-color:#337AB7;
   color: #ffffff;
   width: 80%;
