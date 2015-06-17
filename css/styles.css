@@ -350,6 +350,10 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-weight: 300;
 }
 
+.service-hex {
+  margin-top: 40px;
+}
+
 .service-hex ul{
   list-style: none;
   text-align: center;
