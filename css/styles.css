@@ -209,6 +209,9 @@ body.single-post h1.pn-page-title {
   color: #333;
   font-size: 18pt;
 }
+body.single-post footer, body.single-post .pn-meta-date {
+  font-size: 12pt;
+}
 /* end Blog */
 
 /* How-Tos */
