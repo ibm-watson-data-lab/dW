@@ -24,7 +24,7 @@ body {
 
 /* main menu styles */
 #pnext-top-menu-home {
-  background: #262324 url('cds_hero.png') no-repeat;
+  background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_hero.png') no-repeat;
   background-position: center; 
   border: none;
   height: 370px;
@@ -286,6 +286,14 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* end How-Tos */
 
 /*Get Started */
+
+.get-started-hero {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/circuit.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 363px;
+}
+
 
 .pn-columns .get-started h1{
   font-weight: 300;
