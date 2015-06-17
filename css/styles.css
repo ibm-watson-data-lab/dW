@@ -352,10 +352,13 @@ body.single-post footer, body.single-post .pn-meta-date {
 
 .service-hex ul{
   list-style: none;
+  text-align: center;
 }
 
 .service-hex ul li {
   display: inline;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .tutorial-title {
