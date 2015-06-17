@@ -350,6 +350,14 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-weight: 300;
 }
 
+.service-hex ul{
+  list-style: none;
+}
+
+.service-hex ul li {
+  display: inline;
+}
+
 .tutorial-title {
   color: #2980b9;
   font-weight: 500;
