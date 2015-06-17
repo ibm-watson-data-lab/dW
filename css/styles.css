@@ -314,6 +314,17 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-weight: 500;
   text-decoration: none;
 }
+
+.tutorial-title {
+  color: #2980b9;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.tutorial-slug {
+  color: #a7a9ac;
+}
+
 /* end Get Started */
 
 
