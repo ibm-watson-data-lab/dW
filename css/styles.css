@@ -16,6 +16,11 @@ http://developer.ibm.com/clouddataservices
 body {
   color: #666 !important;
 }
+.pn-page-title {
+  color: #444;
+  font-size: 18pt;
+  font-weight: 500;
+}
 
 /* main menu styles */
 #pnext-top-menu-home {
@@ -135,8 +140,8 @@ body {
   font-weight: 400;
 }
 
-#pnext-main .pn-page-title {
-  color: #ddd !important;
+.pn-home-wrap .pn-page-title {
+  color: #ddd;
 }
 
 #pnext-home-page-content .pn-post-title, .pn-copy h1, .pn-h1 {
@@ -187,10 +192,7 @@ body {
 
 /*Blog */
 .blog .pn-post-title {
-  font-size: 18pt;
-}
-#pnext-main .pn-page-title {
-  /*color: #333;*/
+  font-size: 16pt;
 }
 
 #pnext-main .pn-post-content p {
@@ -201,6 +203,11 @@ body {
 .pn-meta-author .pn-meta-comments {
   font-size: 9pt;
   font-weight: 400;
+}
+
+body.single-post h1.pn-page-title {
+  color: #333;
+  font-size: 18pt;
 }
 /* end Blog */
 
