@@ -4,23 +4,25 @@ Template Name: Connect page
 */
 
 
-get_header();
-?>
+get_header(); ?>
 
-<h1>Connect with us</h1>
-<div class="container">
-    <div class="row">
-        <div class="col-md-9">
+<section class="pn-pcon">
+<header class="pn-page-header">
+	<h1 class="pn-page-title"><?php the_title(); ?></h1>
+</header>
+<div class="pn-columns">
+        <div class="pn-col-6-5">
             <?php dynamic_sidebar('connect_sidebar'); ?>
         </div>
-        <div class="col-md-3 right-column">
+        <div class="pn-col-6-1">
             <?php                
                 if (have_posts()) : while (have_posts()) : the_post();
-
-                the_content();
-
+                  the_content();
                 endwhile; endif;
             ?>
         </div>
-    </div>
 </div>
+
+</section>
+
+<?php get_footer(); ?>
