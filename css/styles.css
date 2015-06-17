@@ -1,3 +1,5 @@
+/* @override https://rawgit.com/ibm-cds-labs/dW/master/css/styles.css */
+
 /* IBM Cloud Data Services 
 CSS to override default CSS from dW
 http://developer.ibm.com/clouddataservices
@@ -23,7 +25,7 @@ body {
   height: 370px;
 }
 #pnext-top-menu {
-  background: #262324;
+  background: #333; /*#262324;*/
   border: none;
   height: 60px;
 }
@@ -137,7 +139,7 @@ body {
   color: #ddd !important;
 }
 
-.pn-post-title, .pn-copy h1, .pn-h1 {
+#pnext-home-page-content .pn-post-title, .pn-copy h1, .pn-h1 {
   font-size: 20px;
   font-size: 13px;
   font-weight: 500;
@@ -184,16 +186,20 @@ body {
 
 
 /*Blog */
+.blog .pn-post-title {
+  font-size: 18pt;
+}
 #pnext-main .pn-page-title {
   /*color: #333;*/
 }
 
 #pnext-main .pn-post-content p {
-  /*color: #333;*/
+  color: #666;
+  font-weight: 200;
 }
 
 .pn-meta-author .pn-meta-comments {
-  font-size: 10px;
+  font-size: 9pt;
   font-weight: 400;
 }
 /* end Blog */
@@ -330,11 +336,22 @@ body {
   color: #888;
   margin-top: 0.15em;
 }
+.author-bio {
+  font-size: 10pt;
+  color: #888;
+  margin-top: 0.15em;
+}
 
 header .all-content-by-author {
 	font-size: 16pt;
 	font-weight: 500;
 	padding-top: 1em;
+}
+body.author .pn-post-title {
+  font-size: 14pt;
+}
+body.author .pn-post-content {
+  font-size: 11pt;
 }
 /* end User profile page */
 
