@@ -3,6 +3,23 @@
 add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
 add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
 
+include_once('functions/connect-scripts-and-styles.php');
+include_once('functions/connect-meet-the-developers.php');
+include_once('functions/connect-featured-developers-widget.php');
+
+
+
+function init_featured_devs_widget() {
+    register_sidebar( array(
+        'name' => 'Connect Sidebar',
+        'id' => 'connect_sidebar',
+        'before_widget' => '<div class="connect-sidebar">',
+        'after_widget' => '</div>',
+	) );
+}
+add_action( 'widgets_init', 'init_featured_devs_widget' );
+
+
 function my_show_extra_profile_fields( $user ) { ?>
 
 <h3>"Connect page" extra user info</h3>
