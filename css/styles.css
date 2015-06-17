@@ -13,6 +13,11 @@ http://developer.ibm.com/clouddataservices
 }
 
 /* global styles */
+
+a:hover {
+  text-decoration: none;
+}
+
 body {
   color: #666 !important;
 }
