@@ -325,6 +325,10 @@ body.single-post footer, body.single-post .pn-meta-date {
   color: #a7a9ac;
 }
 
+.aligncenter .size-full .wp-image-275 {
+  margin: 50px auto;
+}
+
 /* end Get Started */
 
 
