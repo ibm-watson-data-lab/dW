@@ -354,6 +354,15 @@ body.author .pn-post-content {
 /* end User profile page */
 
 
+/* widgets */
+.pn-widgets, .pn-widgets li {
+  font-size: 8pt;
+}
+.pn-widgets .pn-widgettitle {
+  font-size: 9pt;
+}
+/* end widgets */
+
 .page-id-27 #pnext-main .pn-post-content p {
   color: #fff 
 }
