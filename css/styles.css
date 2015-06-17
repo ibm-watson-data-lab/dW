@@ -320,10 +320,12 @@ body.single-post footer, body.single-post .pn-meta-date {
   z-index: -100;
 }
 
-.gba-text {
-  background-color:#1B6DAA;
-  color: #fff;
-  z-index: 100;
+.text-center {
+  background-color:#337AB7;
+  color: #ffffff;
+  width: 100%;
+  height: 250px;
+  padding: 30px;
 }
 
 .tutorial-title {
