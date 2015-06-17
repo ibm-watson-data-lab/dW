@@ -306,14 +306,12 @@ body.single-post footer, body.single-post .pn-meta-date {
   color: #a7a9ac;
 }
 
-.get-started-btn .get-started a span{
-  text-align: center;
-  padding: 6px 36px;
-  font-weight: 500;
+.get-started-btn {
   border: 1px solid #337AB7;
-}
-
-.get-started-btn .get-started a:hover span{
+  display: inline-block;
+  padding: 6px 36px;
+  text-align: center;
+  font-weight: 500;
   text-decoration: none;
 }
 /* end Get Started */
