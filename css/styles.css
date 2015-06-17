@@ -328,6 +328,7 @@ body.single-post footer, body.single-post .pn-meta-date {
   width: 80%;
   height: 250px;
   padding: 30px;
+  z-index: 100;
 }
 
 .text-center p {
