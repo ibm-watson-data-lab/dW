@@ -415,10 +415,16 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* end Get Started */
 
 /* Services */
+#post-128 .pn-page-header {
+  margin-left: 40px;
+}
 .services-container .services-left-section .services-header-links h2 {
   font-weight: bold;
   font-size: 22px;
   color: #337ab7;
+}
+.services-container .services-left-section .services-header-links .services-header-links-content {
+  text-align: right;
 }
 .services-container .services-left-section .services-header-links ul {
   list-style-type: none;
@@ -440,9 +446,27 @@ body.single-post footer, body.single-post .pn-meta-date {
     padding-right: 0;
   }
 
-.services-container .services-right-section {
-  padding-left: 40px;
+.services-container .services-left-section .services-table {
+  border: 1px solid #A7A9AC;
 }
+  .services-container .services-cloudant .services-left-section .services-table .services-howto,
+  .services-container .services-dataworks .services-left-section .services-table .services-pricing {
+    border-left: 1px solid #A7A9AC;
+  }
+  .services-container .services-dashdb .services-left-section .services-table .services-pricing {
+    border-right: 1px solid #A7A9AC;
+  }
+  .services-container .services-left-section .services-table h4 {
+    font-style: normal;
+    color: #000;
+  }
+
+.services-container .services-right-section {
+  padding-left: 70px;
+}
+  .services-container .services-right-section h3 {
+    font-size: 18px;
+  }
 /* end Services */
 
 
