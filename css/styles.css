@@ -1,4 +1,7 @@
-/* @override https://rawgit.com/ibm-cds-labs/dW/master/css/styles.css */
+/* @override 
+	https://rawgit.com/ibm-cds-labs/dW/master/css/styles.css
+	http://rawgit.com/ibm-cds-labs/dW/master/css/styles.css
+*/
 
 /* IBM Cloud Data Services 
 CSS to override default CSS from dW
@@ -531,6 +534,14 @@ body.author .pn-post-content {
 }
 #connect-sidebar p {
   font-size: 10pt;
+}
+ul.advocate-social li {
+  list-style-type: none;
+  display: inline;
+}
+.advocate-social img {
+  width: 24px;
+  height: 24px;
 }
 /* end Connect page */
 
