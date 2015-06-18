@@ -338,7 +338,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* end How-Tos */
 
 /*Get Started */
-article .page-id-183 .pn-page-title {
+body.page-id-183 .pn-page-title {
   display: none;
 }
 
