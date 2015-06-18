@@ -22,7 +22,7 @@ body {
   color: #666 !important;
 }
 .pn-page-title {
-  color: #444;
+  color: #333;
   font-size: 18pt;
   font-weight: 500;
 }
@@ -41,13 +41,13 @@ body {
 }
   #pnext-top-menu .flag .link-home a,
   #pnext-top-menu-home .flag .link-home a {
-    color: #fff;
+    color: #FFF;
     text-transform: none;
     font-size: 16px;
   }
   #pnext-top-menu #menu-main li a,
   #pnext-top-menu-home #menu-main li a {
-    color: #fff;
+    color: #FFF;
   }
 #pnext-top-menu .flag,
 #pnext-top-menu-home .flag {
@@ -123,7 +123,7 @@ body {
   margin-bottom: 0 !important;
 }
 #pnext-main .pn-home-wrap {
-  color: #fff;
+  color: #FFF;
   background: #000;
 }
 
@@ -137,9 +137,6 @@ body {
   font-size: 13pt;
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
   margin-top: 0.25em;
-}
-.home #pnext-main .pn-post-content p {
-  color: #FFF;
 }
 .pn-home-wrap .pn-post-list .pn-home-list
 #pnext-main .pn-meta-date {
@@ -180,8 +177,11 @@ body {
   display: none;
 }
 
+#pnext-main .pn-post-title {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
+}
 #pnext-main .pn-post-content p {
-  color: #fff;
+  color: #A7A9AC;
 }
 #pnext-main {
     margin-bottom: 0 !important;
@@ -213,16 +213,19 @@ body {
 /*Blog */
 .blog h1.pn-post-title {
   font-size: 16pt;
+  font-style: normal;
 }
 
-.blog .pn-post-content {
-  color: #666;
+.blog #pnext-main .pn-post-content {
+  /*color: #213E4F;*/
+  font-size: 16px;
   font-weight: 400;
 }
 
 .blog .pn-meta-author, .blog .pn-meta-date, .blog .pn-meta-comments {
-  font-size: 9px;
-  font-weight: 70000;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
 }
 
 body.single-post h1.pn-page-title {
