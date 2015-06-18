@@ -374,7 +374,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 
 .service-hex {
-  display: inline;
+  display: inline-block;
   margin-top: 40px;
   margin-bottom: 40px;
 }
