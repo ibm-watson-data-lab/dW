@@ -525,6 +525,15 @@ body.author .pn-post-content {
 }
 /* end User profile page */
 
+/* Connect page */
+#connect-sidebar h3 {
+  font-size: 12pt;
+}
+#connect-sidebar p {
+  font-size: 10pt;
+}
+/* end Connect page */
+
 
 /* widgets */
 .pn-widgets, .pn-widgets li {
