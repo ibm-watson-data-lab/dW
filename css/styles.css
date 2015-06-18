@@ -453,8 +453,8 @@ body.single-post footer, body.single-post .pn-meta-date {
 .services-container .services-left-section .services-table {
   border: 1px solid #A7A9AC;
 }
-  .services-container .services-cloudant .services-table .services-howto,
-  .services-container .services-dataworks .services-table .services-pricing {
+  .services-container .services-cloudant .services-table .services-pricing,
+  .services-container .services-dataworks .services-table .services-howto {
     border-left: 1px solid #A7A9AC;
   }
   .services-container .services-dashdb .services-table .services-pricing {
