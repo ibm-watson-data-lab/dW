@@ -338,6 +338,9 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* end How-Tos */
 
 /*Get Started */
+article .page-id-183 .pn-page-title {
+  display: none;
+}
 
 .get-started-hero {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/circuit-32.png');
