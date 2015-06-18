@@ -25,8 +25,8 @@ body {
   color: #666 !important;
 }
 .pn-page-title {
-  color: #333;
-  font-size: 18pt;
+  color: #A7A9Ac;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 #pnext-main .pn-home-wrap {
   color: #FFF;
-  background: #000;
+  background: #333;
 }
 
 .home #pnext-main .pn-meta-date {
@@ -184,7 +184,7 @@ body {
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
 }
 #pnext-main .pn-post-content p {
-  color: #A7A9AC;
+  color: #333;
 }
 #pnext-main {
     margin-bottom: 0 !important;
@@ -341,9 +341,6 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* end How-Tos */
 
 /*Get Started */
-body.page-id-183 .pn-page-title {
-  display: none;
-}
 
 .get-started-hero {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/circuit-32.png');
