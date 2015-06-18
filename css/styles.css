@@ -231,6 +231,7 @@ body {
 body.single-post h1.pn-page-title {
   color: #333;
   font-size: 18pt;
+  font-weight: 200;
 }
 body.single-post footer, body.single-post .pn-meta-date {
   font-size: 10pt;
