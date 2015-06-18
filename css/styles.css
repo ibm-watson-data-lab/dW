@@ -446,14 +446,18 @@ body.single-post footer, body.single-post .pn-meta-date {
     padding-right: 0;
   }
 
+.services-container .services-left-section .services-row {
+  margin-bottom: 40px;
+}
+
 .services-container .services-left-section .services-table {
   border: 1px solid #A7A9AC;
 }
-  .services-container .services-cloudant .services-left-section .services-table .services-howto,
-  .services-container .services-dataworks .services-left-section .services-table .services-pricing {
+  .services-container .services-cloudant .services-table .services-howto,
+  .services-container .services-dataworks .services-table .services-pricing {
     border-left: 1px solid #A7A9AC;
   }
-  .services-container .services-dashdb .services-left-section .services-table .services-pricing {
+  .services-container .services-dashdb .services-table .services-pricing {
     border-right: 1px solid #A7A9AC;
   }
   .services-container .services-left-section .services-table h4 {
