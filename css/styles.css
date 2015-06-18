@@ -320,6 +320,10 @@ body.single-post footer, body.single-post .pn-meta-date {
   color: #a7a9ac;
 }
 
+.pn-columns .get-started .pn-col-6-4 {
+  padding-left: 10px;
+}
+
 .get-started-btn {
   border: 1px solid #337AB7;
   display: inline-block;
@@ -351,7 +355,9 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 
 .service-hex {
+  display: inline;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .service-hex ul{
