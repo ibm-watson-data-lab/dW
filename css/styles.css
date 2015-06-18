@@ -110,10 +110,10 @@ body {
 
 /* Home page, What's new + Connect & contribute section */
 .home #pnext-main .pn-post-content p {
-  color: #fff 
+  color: #FFF; 
 }
 #pnext-top-menu-home {
-  background-color: #444;
+  background-color: #000;
 }
 
 #pnext-home-page-content .pn-leadspace {
@@ -124,25 +124,22 @@ body {
 }
 #pnext-main .pn-home-wrap {
   color: #fff;
-  background: #333;
+  background: #000;
 }
 
-/*#pnext-main .pn-page-title {
-  color: #555;
-}*/
-#pnext-main .pn-meta-date {
+.home #pnext-main .pn-meta-date {
   color: #a7a9ac;
-  font-size: 9px;
+  font-size: 7.5pt;
   font-weight: 400;
 }
-#pnext-main h1.pn-post-title {
+.home #pnext-main h1.pn-post-title {
   font-style: normal;
-  font-size: 15px;
+  font-size: 13pt;
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
-  /*font-weight: 600;*/
+  margin-top: 0.25em;
 }
-#pnext-main .pn-post-content p {
-  color: #fff;
+.home #pnext-main .pn-post-content p {
+  color: #FFF;
 }
 .pn-widgets .widget_em_widget li {
   border: none;
@@ -154,7 +151,7 @@ body {
 }
 
 .pn-home-wrap .pn-page-title {
-  color: #ddd;
+  color: #DDD;
 }
 
 #pnext-home-page-content .pn-post-title, .pn-copy h1, .pn-h1 {
@@ -162,6 +159,16 @@ body {
   font-size: 13px;
   font-weight: 500;
   line-height: 1.2;
+}
+/* right sidebar event info */
+.home ul.pn-widgets-home {
+  margin-left: 3em;
+}
+.home div.pn-page-header h2.pn-page-title {
+  margin-left: 1.3em;
+}
+.home li.widget_em_widget ul li, .home .connect-slug {
+  font-size: 10pt;
 }
 /* end Home page, what's new and connect */
 
@@ -204,18 +211,18 @@ body {
 
 
 /*Blog */
-.blog .pn-post-title {
+.blog h1.pn-post-title {
   font-size: 16pt;
 }
 
-#pnext-main .pn-post-content p {
+.blog .pn-post-content {
   color: #666;
-  font-weight: 200;
+  font-weight: 400;
 }
 
-.pn-meta-author .pn-meta-comments {
-  font-size: 9pt;
-  font-weight: 400;
+.blog .pn-meta-author, .blog .pn-meta-date, .blog .pn-meta-comments {
+  font-size: 9px;
+  font-weight: 70000;
 }
 
 body.single-post h1.pn-page-title {
