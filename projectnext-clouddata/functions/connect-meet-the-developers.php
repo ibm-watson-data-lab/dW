@@ -102,8 +102,10 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
   }
   
     if ( 'strip' === $layout ) { ?>          
-            
-        <h3 class="our-developer-advocates"><?php _e($strip_header); ?></h3>
+      <div class="our-developer-advocates">
+        <h3><?php _e($strip_header); ?></h3>
+        <p class="our-developer-advocates-blurb">Here to inspire and enable ambitious developers, our team is dedicated to helping you achieve success.</p>
+      </div>
     
         <?php
         foreach ($devs as $dev):
@@ -120,7 +122,7 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
 		    
 		    <div class="col-md-9">
     		    <div class="advocate-name">
-                    <h3><a href="<?php echo $posts_url; ?>"><?php echo $display_name; ?></a></h3>
+                    <h3><!-- <a href="<?php echo $posts_url; ?>"> --><?php echo $display_name; ?><!-- </a> --></h3>
                 </div>
                 <div class="advocate-position">
                     <h4><?php echo $title; ?></h4>

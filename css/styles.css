@@ -271,7 +271,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 #filter-results-row h4 a, #filter-results-row h4 a:visited {
 	color: #A7A9AC;
 }
-#filter-results-row .clearall {
+#filter-results-row .clear-button {
   border: 1px solid #337AB7;
   padding: 2px 24px;
   display: inline;
