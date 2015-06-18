@@ -535,9 +535,21 @@ body.author .pn-post-content {
 #connect-sidebar p {
   font-size: 10pt;
 }
+.advocate-row h3 {
+  color: #A7A9AC;
+  font-size: 16pt;
+}
+.advocate-row h4 {
+  color: #A7A9AC;
+  font-size: 12pt;
+}
+.advocate-bio {
+  font-size: 10pt;
+}
 ul.advocate-social li {
   list-style-type: none;
   display: inline;
+  padding-right: 8px;
 }
 .advocate-social img {
   width: 24px;
