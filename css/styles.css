@@ -230,6 +230,9 @@ body {
 body.single-post article {
   padding-right: 12em;
 }
+body.single-post .pn-pcon .fl, body.single-post .pn-pcon .fr {
+  font-size: 7pt;
+}
 body.single-post .pn-copy {
   font-size: 12pt;
 }
