@@ -223,14 +223,11 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
-.single-post .pn-copy h2 {
-  font-size: 14pt;
-}
 
 .blog .pn-meta-author, .blog .pn-meta-date, .blog .pn-meta-comments {
   font-size: 11px;
   font-weight: 700;
-  color: #333;
+  color: #666;
 }
 
 body.single-post article {
@@ -262,25 +259,36 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 #filter-results-row h3 {
 	margin: unset;
-	font-size: 14pt;
+	font-size: 18pt;
+  color: #333;
+  margin-bottom: 0.5em;
 }
 #filter-results-row h4 {
 	margin: unset;
 	font-style: unset;
 	font-size: 1em;
 }
-#filter-results-row h4 :link, #filter-results-row h4 v:link {
-	color: #888;
+#filter-results-row h4 a, #filter-results-row h4 a:visited {
+	color: #A7A9AC;
+}
+#filter-results-row .clearall {
+  border: 1px solid #337AB7;
+  padding: 2px 24px;
+  display: inline;
 }
 /* turning off all display of More and Less until we make it better */
 .result-expand-collapse {
   display: none;
 }
+#results-row .row {
+  margin-bottom: 1.5em;
+}
 /* turning off all display of title icons until we make it better */
-#results-row .label-info {
+#results-row h3 .label {
   display: none;
 }
 #results-row .description {
+  color: #333;
   font-size: 12pt;
 }
 #results-row h3 {
@@ -289,7 +297,7 @@ body.single-post footer, body.single-post .pn-meta-date {
   margin-bottom: 0.125em;
 }
 #results-row h4 {
-  font-size: 10pt;
+  font-size: 11pt;
   color: #A7A9AC;
   line-height: 1.5;
   margin-top: 0;
@@ -317,11 +325,17 @@ body.single-post footer, body.single-post .pn-meta-date {
     margin-bottom: 10px;
     font-weight: 300;
 }
-#facets .facet-row {
+#facets .facet-row label {
   min-width: 180px;
+  font-weight: 400;
   line-height: 1.5em;
 }
-
+#facets h4 {
+  font-size: 14pt;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 #results .facets {
   font-size: 12px;
   font-style: italic;
