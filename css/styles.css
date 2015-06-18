@@ -21,6 +21,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:active {
+  text-decoration: none;
+}
+
 body {
   color: #666 !important;
 }
