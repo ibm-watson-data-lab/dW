@@ -254,8 +254,31 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-size: 10px;
   font-weight: 400;
 }
-#filter-results-row * {
-  padding-bottom: 0.5em;
+/* turning off all display of More and Less until we make it better */
+.result-expand-collapse {
+  display: none;
+}
+/* turning off all display of title icons until we make it better */
+#results-row .label-info {
+  display: none;
+}
+#results-row .description {
+  font-size: 12pt;
+}
+#results-row h3 {
+  color: #333;
+  font-size: 14pt;
+  margin-bottom: 0.125em;
+}
+#results-row h4 {
+  font-size: 10pt;
+  color: #A7A9AC;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+#filter-results-row .muted {
+  color: #DDD;
 }
 #filter-results-row h3 {
 	margin: unset;
