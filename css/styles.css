@@ -254,6 +254,21 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-size: 10px;
   font-weight: 400;
 }
+#filter-results-row .muted {
+  color: #DDD;
+}
+#filter-results-row h3 {
+	margin: unset;
+	font-size: 14pt;
+}
+#filter-results-row h4 {
+	margin: unset;
+	font-style: unset;
+	font-size: 1em;
+}
+#filter-results-row h4 :link, #filter-results-row h4 v:link {
+	color: #888;
+}
 /* turning off all display of More and Less until we make it better */
 .result-expand-collapse {
   display: none;
@@ -277,21 +292,7 @@ body.single-post footer, body.single-post .pn-meta-date {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
-#filter-results-row .muted {
-  color: #DDD;
-}
-#filter-results-row h3 {
-	margin: unset;
-	font-size: 1em;
-}
-#filter-results-row h4 {
-	margin: unset;
-	font-style: unset;
-	font-size: 1em;
-}
-#filter-results-row h4 :link, #filter-results-row h4 v:link {
-	color: #888;
-}
+
 #results .result-expand-collapse div {
     cursor: pointer;
     color: #337AB7;
