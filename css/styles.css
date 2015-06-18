@@ -535,13 +535,19 @@ body.author .pn-post-content {
 #connect-sidebar p {
   font-size: 10pt;
 }
+.advocate-row {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
 .advocate-row h3 {
   color: #A7A9AC;
   font-size: 16pt;
+  margin-bottom: .0125em;
 }
 .advocate-row h4 {
   color: #A7A9AC;
   font-size: 12pt;
+  margin-top: .0125em;
 }
 .advocate-bio {
   font-size: 10pt;
