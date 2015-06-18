@@ -570,6 +570,13 @@ body.author .pn-post-content {
 /* end User profile page */
 
 /* Connect page */
+.our-developer-advocates {
+  margin-bottom: 2em;
+}
+.our-developer-advocates-blurb {
+  font-size: 12pt;
+  font-style: italic;
+}
 #connect-sidebar h3 {
   font-size: 12pt;
 }
