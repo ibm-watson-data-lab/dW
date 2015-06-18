@@ -141,9 +141,6 @@ body {
 .home #pnext-main .pn-post-content p {
   color: #FFF;
 }
-.pn-widgets .widget_em_widget li {
-  border: none;
-}
 .pn-home-wrap .pn-post-list .pn-home-list
 #pnext-main .pn-meta-date {
   font-size: 13px;
@@ -160,15 +157,18 @@ body {
   font-weight: 500;
   line-height: 1.2;
 }
-/* right sidebar event info */
+  /* right sidebar on home page */
 .home ul.pn-widgets-home {
   margin-left: 3em;
 }
 .home div.pn-page-header h2.pn-page-title {
   margin-left: 1.3em;
 }
-.home li.widget_em_widget ul li, .home .connect-slug {
-  font-size: 10pt;
+.home h3.pn-widgettitle, .home li.widget_em_widget ul li, .home .connect-slug {
+  font-size: 11pt;
+}
+.pn-widgets .widget_em_widget li {
+  border: none;
 }
 /* end Home page, what's new and connect */
 
