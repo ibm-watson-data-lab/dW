@@ -69,7 +69,7 @@ body {
   width: 267px;
   height: 17px;
 }
-#pnext-top-menu .flag .link-home a
+#pnext-top-menu .flag .link-home a,
 #pnext-top-menu-home .flag .link-home a {
   width: 100%;
   height: 100%;
