@@ -62,22 +62,23 @@ body {
   text-align: right;
   position: relative;
 }
-#pnext-top-menu .flag .IBM-logo,
-#pnext-top-menu-home .flag .IBM-logo {
-  width: 38px;
-  position: absolute;
-  display: inline-block;
-  left: 40px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 32px;
-  color: #fff;
-}
 #pnext-top-menu .flag .link-home,
 #pnext-top-menu-home .flag .link-home {
-  left: 50px;
+  left: 20px;
   position: absolute;
-  font-weight: 600;
+  width: 267px;
+  height: 17px;
+}
+#pnext-top-menu .flag .link-home a
+#pnext-top-menu-home .flag .link-home a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/CDS_websitelogo_blue.png') no-repeat;  
+}
+#pnext-top-menu .flag .link-home a span,
+#pnext-top-menu-home .flag .link-home a span {
+  display: none;
 }
 #pnext-top-menu .pn-top-menu-container,
 #pnext-top-menu-home .pn-top-menu-container {
