@@ -340,6 +340,9 @@ body.single-post footer, body.single-post .pn-meta-date {
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
+#loading {
+  font-size: 75%;
+}
 #results .facets {
   font-size: 12px;
   font-style: italic;
