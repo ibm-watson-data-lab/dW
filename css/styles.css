@@ -446,24 +446,25 @@ body.single-post footer, body.single-post .pn-meta-date {
 .tutorial-title {
   color: #2980b9;
   font-weight: 500;
-  font-size: 16px;
-  padding-left: 10px;
+  font-size: 16pt;
 }
 
 .tutorial-slug {
   color: #a7a9ac;
-  padding-left: 10px;
 }
 .tutorial-content {
-  padding-left: 10px;
+  font-size: 12pt;
 }
-
 .aligncenter .size-full .wp-image-275 {
   margin: 50px auto;
 }
 
 .read-tutorial {
   margin-bottom: 30px;
+}
+
+.featured-tutorial {
+  margin-bottom: 2em;
 }
 
 /* end Get Started */
