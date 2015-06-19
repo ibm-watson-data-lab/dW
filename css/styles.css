@@ -65,6 +65,7 @@ body {
 #pnext-top-menu .flag .link-home,
 #pnext-top-menu-home .flag .link-home {
   left: 20px;
+  top: 4px;
   position: absolute;
   width: 267px;
   height: 17px;
