@@ -523,6 +523,11 @@ body.single-post footer, body.single-post .pn-meta-date {
   .services-container .services-right-section h3 {
     font-size: 18px;
   }
+  /* bootstrap button stuff */
+  .services-header-links-content a, .services-header-links-content a:visited {
+    color: #FFF;
+  }
+  
 /* end Services */
 
 
