@@ -474,8 +474,11 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 .services-container .services-left-section .services-header-links h2 {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 28pt;
+  margin-bottom: 0;
   color: #337ab7;
+  display: inline;
+  vertical-align: bottom;
 }
 .services-container .services-left-section .services-header-links .services-header-links-content {
   text-align: right;
@@ -501,11 +504,11 @@ body.single-post footer, body.single-post .pn-meta-date {
   }
 
 .services-container .services-left-section .services-row {
-  margin-bottom: 40px;
+  margin-bottom: 3em;
 }
 
 .services-container .services-left-section .services-table {
-  border: 1px solid #A7A9AC;
+  border: 0px solid #A7A9AC;
 }
   .services-container .services-cloudant .services-table .services-howtos,
   .services-container .services-dataworks .services-table .services-howtos {
@@ -526,10 +529,13 @@ body.single-post footer, body.single-post .pn-meta-date {
     font-size: 18px;
   }
   /* bootstrap button stuff */
+  .services-header-links-content {
+    display: inline;
+    vertical-align: bottom;
+  }
   .services-header-links-content a, .services-header-links-content a:visited {
     color: #FFF;
   }
-  
 /* end Services */
 
 
