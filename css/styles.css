@@ -470,6 +470,10 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* end Get Started */
 
 /* Services */
+.services-row {
+  border-top: 12px solid #f16a55;
+  padding-top: 12px;
+}
 #post-128 .pn-page-header {
   margin-left: 40px;
 }
