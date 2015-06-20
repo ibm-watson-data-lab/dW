@@ -135,6 +135,10 @@ media="screen"
   margin-bottom: 20px;
 }
 
+.cds-services {
+  display: inline-block;
+}
+
 /*end Topics and Services */
 
 /* Home page, What's new + Connect & contribute section */
