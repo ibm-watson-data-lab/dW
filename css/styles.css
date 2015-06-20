@@ -666,6 +666,11 @@ body.author .pn-post-content {
   margin-top: 24px;
   font-size: 10pt;
 }
+
+.advocate-bio ul {
+  margin-top: 24px;
+}
+
 ul.advocate-social li {
   list-style-type: none;
   display: inline;
