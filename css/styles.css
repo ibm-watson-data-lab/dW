@@ -652,15 +652,18 @@ body.author .pn-post-content {
 }
 .advocate-row h3 {
   color: #333;
+  font-weight: 400;
   font-size: 16pt;
   margin-bottom: .0125em;
 }
 .advocate-row h4 {
   color: #A7A9AC;
+  font-weight: 300;
   font-size: 12pt;
   margin-top: .0125em;
 }
 .advocate-bio {
+  margin-top: 24px;
   font-size: 10pt;
 }
 ul.advocate-social li {
