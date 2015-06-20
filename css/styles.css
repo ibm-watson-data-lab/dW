@@ -136,6 +136,10 @@ media="screen"
 }
 
 .cds-services {
+
+}
+
+.cds-services li{
   display: inline-block;
 }
 
