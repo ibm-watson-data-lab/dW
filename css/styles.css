@@ -126,8 +126,13 @@ media="screen"
   padding: 0;
 }
 
+.topics-services {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .cds-title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /*end Topics and Services */
