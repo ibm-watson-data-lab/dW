@@ -117,6 +117,21 @@ body {
 }
 /* end main menu styles */
 
+/* Topics and Services */
+
+media="screen"
+@media only screen and (min-width: 768px)
+.pn-columns>div {
+  padding: 0 10px;
+  padding: 0;
+}
+
+.cds-title {
+  margin-bottom: 20px;
+}
+
+/*end Topics and Services */
+
 /* Home page, What's new + Connect & contribute section */
 .home #pnext-main .pn-post-content p {
   color: #FFF; 
