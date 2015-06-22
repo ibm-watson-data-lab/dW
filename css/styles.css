@@ -516,19 +516,27 @@ body.single-post footer, body.single-post .pn-meta-date {
   border-top: none;
 }
 #post-128 .pn-page-header {
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.services-container .services-left-section .services-icon-header h2 {
+  display: inline-block;
+  color: #2980B9;
+  font-size: 16px;
 }
 .services-container .services-left-section .services-header-links-content {
   list-style-type: none;
   margin-left: 0;
   vertical-align: middle;
   margin-top: 24px;
+  display: block;
 }
   .services-container .services-left-section .services-header-links-content li {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
     border-left: 1px solid #A7A9AC;
+    margin-bottom: 0;
   }
   .services-container .services-left-section .services-header-links-content li:first-of-type {
     padding-left: 0;
@@ -537,19 +545,20 @@ body.single-post footer, body.single-post .pn-meta-date {
   .services-container .services-left-section .services-header-links-content li:last-of-type {
     padding-right: 0;
   }
+  .services-header-links-content a, .services-header-links-content a:visited {
+    color: #F16A55;
+  }
+.services-container .services-left-section .services-pricing-howtos h4 {
+  font-style: normal;
+}
+.services-container .services-left-section .services-pricing-howtos h4:last-of-type {
+  margin-top: 40px;
+}
 .services-container .services-right-section {
   padding-left: 70px;
 }
   .services-container .services-right-section h3 {
     font-size: 18px;
-  }
-  /* bootstrap button stuff */
-  .services-header-links-content {
-    display: inline;
-    vertical-align: bottom;
-  }
-  .services-header-links-content a, .services-header-links-content a:visited {
-    color: #FFF;
   }
 /* end Services */
 
