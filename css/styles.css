@@ -148,6 +148,10 @@ media="screen"
 
 }
 
+.cds-blurb {
+  font-size: 16px;
+}
+
 .cds-services li{
   display: inline-block;
   margin:0 80px 80px 0;
