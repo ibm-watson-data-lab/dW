@@ -242,8 +242,9 @@ media="screen"
     }
     .topics-services .topics-services-right-content .services-description {
       padding-bottom: 60px;
-      font-size: 14px;
+      font-size: 16px;
       color: #fff;
+      font-weight: 300;
     }
     .topics-services .topics-services-right-content .cds-services .cds-title {
       padding-top: 20px;
