@@ -8,6 +8,9 @@ CSS to override default CSS from dW
 http://developer.ibm.com/clouddataservices
 */
 
+.pn-copy.container {
+  padding-left: 0px;
+}
 /* don't let Bootstrap make the widest container size */
 @media (min-width:1200px){
 	.container{
