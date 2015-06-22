@@ -138,9 +138,12 @@ media="screen"
   font-size: 16px;
 }
 
-.cds-services li{
+.cds-services li {
   display: inline-block;
-  margin:0 80px 80px 0;
+  margin: 0 130px 60px 0;
+}
+.cds-services li:last-of-type {
+  margin-right: 0;
 }
 
 /*end Topics and Services */
@@ -254,6 +257,18 @@ media="screen"
       color: #fff;
       font-size: 14px;
     }
+    .topics-services .topics-services-right-content .cds-services-read-more {
+      text-align: right;
+    }
+      .topics-services .topics-services-right-content .cds-services-read-more a {
+        display: inline-block;
+      }
+      .topics-services .topics-services-right-content .cds-services-read-more span {
+        display: inline-block;
+        font-size: 12px;
+        color: #fff;
+        margin-left: 20px;
+      }
     
   /* right sidebar on home page */
 .home ul.pn-widgets-home {
