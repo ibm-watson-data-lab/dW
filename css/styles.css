@@ -524,12 +524,14 @@ body.single-post footer, body.single-post .pn-meta-date {
   display: inline-block;
   color: #2980B9;
   font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .services-container .services-left-section .services-header-links-content {
   list-style-type: none;
   margin-left: 0;
   vertical-align: middle;
-  margin-top: px;
+  margin-top: 60px;
   display: block;
 }
   .services-container .services-left-section .services-header-links-content li {
