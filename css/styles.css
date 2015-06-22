@@ -133,6 +133,11 @@ media="screen"
 
 .topics-services h3 {
   margin-bottom: 20px;
+  color: #fff;
+}
+
+.topics-services p {
+  color: #fff;
 }
 
 .cds-title {
