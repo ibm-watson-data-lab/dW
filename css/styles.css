@@ -312,6 +312,11 @@ media="screen"
 
 
 /*Blog */
+/* this is a hack to get the blog listing a little wider without changing the template */
+.blog .pn-col-6-4 {
+  width: 80%;
+}
+
 .blog h1.pn-post-title {
   font-size: 16pt;
   font-style: normal;
