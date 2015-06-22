@@ -249,6 +249,11 @@ media="screen"
     .topics-services .topics-services-right-content .cds-services .cds-title a:visited {
       color: #fff;
     }
+    .topics-services .topics-services-right-content a,
+    .topics-services .topics-services-right-content:visited {
+      color: #fff;
+      font-size: 14px;
+    }
     
   /* right sidebar on home page */
 .home ul.pn-widgets-home {
