@@ -211,6 +211,8 @@ media="screen"
     background: #F16A55;
     margin: 0;
     padding: 0;
+    font-size: 1px;
+    position: relative;
   }
   .topics-services-container .topics-services-left {
     width: 40%;
@@ -220,6 +222,11 @@ media="screen"
   .topics-services-container .topics-services-right {
     width: 59%;
     display: inline-block;
+  }
+  .page-id-27 #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
   /* right sidebar on home page */
 .home ul.pn-widgets-home {
