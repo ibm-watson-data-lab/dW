@@ -1,6 +1,15 @@
 /* LESS file for IBM Cloud Data Services */
 
-// global styles
+//
+// GLOBAL STYLES
+//
+
+/* don't let Bootstrap make the widest container size */
+@media (min-width:1200px){
+  .container{
+    width:970px
+  }
+}
 .pn-copy.container {
   padding-left: 0; // this undoes what container does, so that our left alignment is consistent
 }
