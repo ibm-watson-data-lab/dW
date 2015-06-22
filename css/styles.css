@@ -36,7 +36,6 @@ body {
 
 /* main menu styles */
 #pnext-top-menu-home {
-  background-size: 100%;
   background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_hero.png') no-repeat;
   background-position: center; 
   border: none;
@@ -154,6 +153,7 @@ media="screen"
   color: #FFF; 
 }
 #pnext-top-menu-home {
+  background-size: 100%;
   background-color: #000;
 }
 
