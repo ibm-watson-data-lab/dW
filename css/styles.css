@@ -473,7 +473,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 /*Get Started */
 
 .get-started-hero {
-  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/circuit-32.png');
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/orangecircuit.png');
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 363px;
@@ -717,13 +717,14 @@ body.author .pn-post-content {
   padding-left: 1em;
 }
 .advocate-row {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   margin-right: 1em;
 }
 .advocate-row h3 {
   color: #333;
   font-weight: 400;
   font-size: 16pt;
+  margin-top 0px;
   margin-bottom: .0125em;
 }
 .advocate-row h4 {
