@@ -212,18 +212,18 @@ media="screen"
   margin: 0;
   padding: 0;
 }
-  .page-id-27 #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services {
+  .page-id-27 #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container {
     background: #F16A55;
     margin: 0;
     padding: 0;
   }
-  .topics-services .topics-services-left {
+  .topics-services-container .topics-services-left {
     width: 40%;
     background: #fff;
     display: inline-block;
   }
-  .topics-services .topics-services-right {
-    width: 60%;
+  .topics-services-container .topics-services-right {
+    width: 59%;
     display: inline-block;
   }
   /* right sidebar on home page */
