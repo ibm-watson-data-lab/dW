@@ -235,10 +235,12 @@ media="screen"
   }
     .topics-services .topics-services-right-content h3 {
       margin: 60px 0;
+      color: #fff;
     }
     .topics-services .topics-services-right-content .services-description {
-      padding: 60px 0;
-      font-size: 14px; 
+      padding-bottom: 60px;
+      font-size: 14px;
+      color: #fff;
     }
     .topics-services .topics-services-right-content .cds-services .cds-title {
       padding-top: 20px;
