@@ -220,9 +220,11 @@ media="screen"
   .topics-services .topics-services-left {
     width: 40%;
     background: #fff;
+    display: inline-block;
   }
   .topics-services .topics-services-right {
     width: 60%;
+    display: inline-block;
   }
   /* right sidebar on home page */
 .home ul.pn-widgets-home {
