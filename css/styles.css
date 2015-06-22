@@ -40,11 +40,13 @@ body {
   background-position: center; 
   border: none;
   height: 370px;
+  background-size: 100%;
 }
 #pnext-top-menu {
   background: #333; /*#262324;*/
   border: none;
   height: 60px;
+  padding-top: 14px;
 }
   #pnext-top-menu .flag .link-home a,
   #pnext-top-menu-home .flag .link-home a {
@@ -152,11 +154,6 @@ media="screen"
 .home #pnext-main .pn-post-content p {
   color: #FFF; 
 }
-#pnext-top-menu-home {
-  background-size: 100%;
-  background-color: #000;
-}
-
 #pnext-home-page-content .pn-leadspace {
   background: none;
 }
@@ -594,10 +591,6 @@ body.single-post footer, body.single-post .pn-meta-date {
 }
 .services-row:first-of-type {
   border-top: none;
-}
-#post-128 .pn-page-header {
-  margin-left: 20px;
-  margin-bottom: 50px;
 }
 .services-container .services-left-section .services-icon-header h2 {
   display: inline-block;
