@@ -210,7 +210,20 @@ media="screen"
 .page-id-27 #pnext-home-page-content .pn-leadspace .pn-pcon {
   max-width: inherit;
   margin: 0;
+  padding: 0;
 }
+  .page-id-27 #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services {
+    background: #F16A55;
+    margin: 0;
+    padding: 0;
+  }
+  .topics-services .topics-services-left {
+    width: 40%;
+    background: #fff;
+  }
+  .topics-services .topics-services-right {
+    width: 60%;
+  }
   /* right sidebar on home page */
 .home ul.pn-widgets-home {
   margin-left: 3em;
