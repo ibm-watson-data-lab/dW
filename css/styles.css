@@ -517,7 +517,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* Services */
 .services-row {
   border-top: 1px solid #A7A9AC;
-  padding-top: 20px;
+  padding-top: 38px;
   padding-bottom: 18px;
 }
 .services-row:first-of-type {
@@ -535,6 +535,11 @@ body.single-post footer, body.single-post .pn-meta-date {
   margin-left: 10px;
   margin-top: 0;
 }
+
+b, strong {
+  font-weight: 500;
+}
+
 .services-container .services-left-section .services-header-links-content {
   list-style-type: none;
   margin-left: 0;
