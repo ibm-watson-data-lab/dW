@@ -510,7 +510,7 @@ body.single-post footer, body.single-post .pn-meta-date {
 /* Services */
 .services-row {
   border-top: 1px solid #A7A9AC;
-  padding-top: 32px;
+  padding-top: 20px;
   padding-bottom: 18px;
 }
 .services-row:first-of-type {
@@ -526,6 +526,7 @@ body.single-post footer, body.single-post .pn-meta-date {
   font-size: 16px;
   font-weight: bold;
   margin-left: 10px;
+  margin-top: 0;
 }
 .services-container .services-left-section .services-header-links-content {
   list-style-type: none;
@@ -552,6 +553,7 @@ body.single-post footer, body.single-post .pn-meta-date {
   }
 .services-container .services-left-section .services-pricing-howtos h4 {
   font-style: normal;
+  margin-top: 0;
 }
 .services-container .services-left-section .services-pricing-howtos h4:last-of-type {
   margin-top: 40px;
