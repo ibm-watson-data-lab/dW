@@ -205,6 +205,12 @@ media="screen"
   font-weight: 500;
   line-height: 1.2;
 }
+
+/* Bust out of project next box for some full width colored boxes */
+body.page-id-27 .pn-home-page-content .pn-leadspace .pn-pcon {
+  max-width: inherit;
+  margin: 0;
+}
   /* right sidebar on home page */
 .home ul.pn-widgets-home {
   margin-left: 3em;
