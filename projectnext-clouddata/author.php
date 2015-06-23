@@ -28,36 +28,66 @@ if (have_posts()) : ?>
 						<?php echo get_avatar( get_the_author_meta( 'user_email' ), 120 ); ?>
 					</div>
 					<div class="flag-bd">
-                        <div class="mlm author-bio">
-                            <h1><?php printf(get_the_author()); ?></h1>
-                            <h2><?php the_author_meta("author_title"); ?></h2>
-                            <p class="author-social">  
-                                <?php if ( get_the_author_meta( 'author_website' ) ) { ?>
-                                    <a href="<?php the_author_meta('author_website'); ?>"><span>website</span></a> | 
-                                <?php }
-                                    
-                                if ( get_the_author_meta( 'author_github' ) ) { ?>
-                                    <a href="https://github.com/<?php the_author_meta('author_github'); ?>"><span>GitHub</span></a> | 
-                                <?php }
-                                    
-                                if ( get_the_author_meta( 'author_twitter' ) ) { ?>
-                                    <a href="http://twitter.com/<?php the_author_meta('author_twitter'); ?>"><span>twitter</span></a> | 
-                                <?php }
-                                
-                                if ( get_the_author_meta( 'author_linkedin' ) ) { ?>
-                                    <a href="<?php the_author_meta('author_linkedin'); ?>"><span>LinkedIn</span></a> | 
-                                <?php }
-                                
-                                if ( get_the_author_meta( 'author_pres_sharing' ) ) { ?>
-                                    <a href="<?php the_author_meta('author_pres_sharing'); ?>"><span>Presentations</span></a> | 
-                                <?php }
-                                
-                                if ( get_the_author_meta( 'author_stackoverflow' ) ) { ?>
-                                    <a href="<?php the_author_meta('author_stackoverflow'); ?>"><span>Stack Overflow</span></a>
-                                <?php } ?>
-                            </p>
-                            <p class="author-bio"><?php the_author_meta("description"); ?></p>
-                        </div>
+            <div class="mlm author-bio">
+              <h1><?php printf(get_the_author()); ?></h1>
+              <h2><?php the_author_meta("author_title"); ?></h2>
+                            
+              <!-- social links -->
+              <ul class="advocate-social">  
+                <?php if ( get_the_author_meta( 'author_website' ) ) { ?>
+                  <li class="advocate-social-website">
+                    <a href="<?php echo the_author_meta('author_website'); ?>" target="_blank">
+                    <span class="icon-website">
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/rss-icon-24px.png"/>
+                    </span>
+                  </a></li>
+                <?php }
+
+                if ( get_the_author_meta( 'author_github' ) ) { ?>
+                  <li class="advocate-social-github">
+                    <a href="//www.github.com/<?php echo the_author_meta('author_github'); ?>" target="_blank">
+                    <span class="icon-github">
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/GitHub-Mark-24px.png"/>
+                    </span>
+                  </a></li>
+                <?php }
+                
+                if ( get_the_author_meta( 'author_twitter' ) ) { ?>
+                        <li class="advocate-social-twitter">
+                          <a href="http://twitter.com/<?php echo the_author_meta('author_twitter'); ?>" target="_blank">
+                          <span class="icon-twitter">
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/twitter-24px.png"/>
+                          </span>
+                        </a></li>
+                <?php }
+                
+                if ( get_the_author_meta( 'author_linkedin' ) ) { ?>
+                         <li class="advocate-social-linkedin">
+                           <a href="<?php echo the_author_meta('author_linkedin'); ?>" target="_blank">
+                           <span class="icon-linkedin">
+                             <img src="//rawgit.com/ibm-cds-labs/dW/master/images/linkedin-24px.png"/>
+                           </span></a></li>
+                <?php }
+                
+                if ( get_the_author_meta( 'author_pres_sharing' ) ) { ?>
+                  <li class="advocate-social-pres-sharing">
+                    <a href="<?php echo the_author_meta('author_pres_sharing'); ?>" target="_blank">
+                    <span class="icon-pres-sharing">
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/speakerdeck-24px.png"/>
+                    </span></a></li>
+                <?php }
+                
+                if ( get_the_author_meta( 'author_stackoverflow' ) ) { ?>
+                  <li class="advocate-social-stackoverflow">
+                    <a href="<?php echo the_author_meta('author_stackoverflow'); ?>" target="_blank">
+                    <span class="icon-stackoverflow">
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/stack-exchange-24px.png"/>
+                    </span></a></li>
+                <?php } ?>
+              </ul>
+              
+              <p class="author-bio"><?php the_author_meta("description"); ?></p>
+            </div>
 					</div>
 				</div>
 				<div class="mlm all-content-by-author">

@@ -31,6 +31,7 @@ get_template_part('partials/header-after-wp-head');
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <!-- <link rel="stylesheet" href="//rawgit.com/ibm-cds-labs/dW/master/css/styles.css"> -->
 <link rel="stylesheet/less" type="text/css" href="//rawgit.com/ibm-cds-labs/dW/master/css/styles.less">
+<!-- <link rel="stylesheet/less" type="text/css" href="//localhost/wordpress/wp-content/themes/projectnext-clouddata/styles.less"> -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
