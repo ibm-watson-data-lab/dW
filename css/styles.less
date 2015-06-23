@@ -27,7 +27,11 @@ for IBM CDS
 .services {
   padding-top: 2rem;
   .service {
-    padding: 0 0 2rem 0;
+    border-bottom: 1px solid #eee;
+    padding: 2rem 0 2rem 0;
+    &.cloudant { // cloudant is first in the list but won't style b/c WordPress add p tags as first children
+      padding-top: 0;
+    }
     ul {
       margin: 0 0 0 1.5em;
     }
