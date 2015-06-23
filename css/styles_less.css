@@ -1,0 +1,33 @@
+/* temporary LESS file hosted on Cloudant
+for IBM CDS
+*/
+/* don't let Bootstrap make the widest container size */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+.pn-copy.container {
+  padding-left: 0;
+}
+.pn-copy.container h2 {
+  font-size: 2.5rem;
+}
+.pn-copy.container h3 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+.services {
+  padding-top: 2rem;
+}
+.services .service {
+  border-bottom: 1px solid #eee;
+  padding: 2rem 0 2rem 0;
+}
+.services .service.cloudant {
+  padding-top: 0;
+}
+.services .service ul {
+  margin: 0 0 0 1.5em;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFlQSxRQU55QjtFQUN2QjtJQUNFLFlBQUE7OztBQUlKLFFBQVE7RUFDTixlQUFBOztBQURGLFFBQVEsVUFFTjtFQUNFLGlCQUFBOztBQUhKLFFBQVEsVUFLTjtFQUNFLGtCQUFBO0VBQ0EsbUJBQUE7O0FBSUo7RUFDRSxpQkFBQTs7QUFERixTQUVFO0VBQ0UsNkJBQUE7RUFDQSxzQkFBQTs7QUFDQSxTQUhGLFNBR0c7RUFDQyxjQUFBOztBQU5OLFNBRUUsU0FNRTtFQUNFLG1CQUFBIiwiZmlsZSI6InN0eWxlc19sZXNzLmNzcyJ9 */
