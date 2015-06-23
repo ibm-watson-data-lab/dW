@@ -1,4 +1,6 @@
-/* LESS file for IBM Cloud Data Services */
+/* temporary LESS file hosted on Cloudant
+for IBM CDS
+*/
 
 //
 // GLOBAL STYLES
@@ -10,8 +12,25 @@
     width:970px
   }
 }
-.pn-copy.container {
-  padding-left: 0; // this undoes what container does, so that our left alignment is consistent
+
+.pn-copy.container { // this is everything we can edit in the main content via wordpress
+  padding-left: 0;
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+    font-weight: normal;
+  }
 }
 
-// page specific styles
+.services {
+  padding-top: 2rem;
+  .service {
+    padding: 0 0 2rem 0;
+    ul {
+      margin: 0 0 0 1.5em;
+    }
+  }
+}
+
