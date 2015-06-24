@@ -217,8 +217,8 @@ nav.navbar #menu-main li.current-menu-item {
 }
 #facets .facet-row label {
   margin-left: 6px;
-  font-weight: 400;
-  font-size: 9pt;
+  font-weight: 400 !important;
+  font-size: 9pt !important;
 }
 .blog .post .pn-post-title {
   font-style: normal;
