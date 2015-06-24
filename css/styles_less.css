@@ -60,7 +60,7 @@ nav.navbar .navbar-brand {
   width: 264px;
   height: 17px;
   padding: 0;
-  margin: 23 0 0 20px;
+  margin: 23px 0 0 20px;
 }
 nav.navbar .navbar-brand a {
   display: inline-block;
@@ -107,6 +107,41 @@ nav.navbar #menu-main li.current-menu-item {
     color: #F16A55 !important;
   }
 }
+#hero-text {
+  background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_clouds_hero.png') no-repeat;
+  background-position: center;
+  border: none;
+  height: 370px;
+  margin-top: -60px;
+}
+#hero-text .hero-text-container {
+  margin: 100px 0 0 90px;
+}
+#hero-text h2,
+#hero-text h3 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  font-weight: 300;
+}
+#hero-text h3 span {
+  color: #2980B9;
+}
+#hero-text .get-started-btn {
+  margin-top: 60px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+#hero-text .get-started-btn a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+}
+#hero-text .get-started-btn a span {
+  padding: 6px 36px;
+  display: inline-block;
+}
 /* End navbar / menu */
 .services {
   padding-top: 2rem;
@@ -120,6 +155,10 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .services .service ul {
   margin: 0 0 0 1.5em;
+}
+.services .service .get-started {
+  background-color: #DDD;
+  border-radius: 8px;
 }
 #events-calendar .table,
 #events-calendar .fc-day-number,
@@ -178,5 +217,17 @@ nav.navbar #menu-main li.current-menu-item {
 }
 #facets .facet-row label {
   margin-left: 6px;
+  font-weight: 400;
+  font-size: 9pt;
+}
+.blog .post .pn-post-title {
+  font-style: normal;
+  font-size: 18pt;
+  font-weight: 500;
+  font-family: inherit;
+}
+.blog .post footer {
+  font-size: 10pt;
+  color: #a7a9ac;
 }
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQWdCQTtBQUFNO0FBQU07QUFBSTtBQUFJO0VBQ2xCLGNBQUE7O0FBRUY7QUFBSTtBQUFJO0FBQUk7QUFBSTtFQUNkLGlDQUFBOztBQUdGO0FBQUk7RUFDRixjQUFBO0VBQ0EsNkJBQUE7RUFDQSwwQkFBQTtFQUNBLDJCQUFBOztBQUVGLENBQUM7QUFBUSxDQUFDO0VBQ1IsY0FBQTtFQUNBLGdDQUFBOztBQUVGO0FBQUcsQ0FBQztFQUNGLGNBQUE7OztBQVNGLFFBTnlCO0VBQ3ZCO0lBQ0UsWUFBQTs7O0FBSUosUUFBUTtFQUNOLGVBQUE7O0FBREYsUUFBUSxVQUVOO0VBQ0UsaUJBQUE7O0FBSEosUUFBUSxVQUtOO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTs7O0FBTUosR0FBRztFQUNELG1CQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0EsWUFBQTs7QUFKRixHQUFHLE9BTUQ7RUFDRSxnQkFBQTs7QUFQSixHQUFHLE9BTUQsV0FFSSxHQUNFO0VBQ0Usc0JBQUE7RUFDQSxpQkFBQTtFQUNBLG9CQUFBOztBQVpWLEdBQUcsT0FNRCxXQUVJLEdBTUUsRUFBQztBQWRULEdBQUcsT0FNRCxXQUVJLEdBT0UsRUFBQztFQUNDLHNCQUFBOztBQUVGLEdBbEJMLE9BTUQsV0FFSSxHQVVHO0VBQ0MsNkJBQUE7O0FBS1Y7RUFDRSxnQkFBQTtFQUNBLGdCQUFBOztBQVVGLFFBUjBCO0VBQ3hCO0lBQ0UsbUJBQUE7Ozs7QUFNSjtFQUNFLGlCQUFBOztBQURGLFNBRUU7RUFDRSw2QkFBQTtFQUNBLHNCQUFBOztBQUNBLFNBSEYsU0FHRztFQUNDLGNBQUE7O0FBTk4sU0FFRSxTQU1FO0VBQ0UsbUJBQUE7O0FBS04sZ0JBQ0U7QUFERixnQkFDVTtBQURWLGdCQUMwQjtFQUN0QixhQUFhLHVCQUFzQix3QkFBdUIsOENBQTFEO0VBQ0EsY0FBQTs7QUFISixnQkFLRTtFQUNFLHlCQUFBOztBQU5KLGdCQVFFO0VBQ0UsZ0JBQUE7RUFDQSxxQkFBQTs7QUFWSixnQkFZRSxjQUFjO0VBQ1oscUJBQUE7O0FBR0o7RUFDRSxhQUFhLHVCQUFzQix3QkFBdUIsOENBQTFEOztBQUlGO0VBQ0UsbUJBQUE7O0FBREYsYUFHRSxHQUFFO0VBQ0EsV0FBQTs7QUFKSixhQUdFLEdBQUUsZ0JBR0E7RUFDRSxxQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTs7QUFPTjtFQUNFLGVBQUE7O0FBREYsaUJBR0U7RUFDRSxnQkFBQTtFQUNBLGNBQUE7O0FBTEosaUJBR0Usc0JBR0U7RUFDRSxjQUFBOztBQVBOLGlCQVdFO0VBQXVCLGFBQUE7O0FBWHpCLGlCQVlFO0VBQTBCLGFBQUE7O0FBWjVCLGlCQWFFO0VBQVMsYUFBQTs7QUFHWCxPQUNFO0VBQ0UsY0FBQTs7QUFGSixPQUtFO0VBQ0UsZ0JBQUE7O0FBTkosT0FLRSxXQUVFO0VBQ0UsZ0JBQUEiLCJmaWxlIjoic3R5bGVzX2xlc3MuY3NzIn0= */
