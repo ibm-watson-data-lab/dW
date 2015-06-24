@@ -37,6 +37,26 @@ a:visited {
   font-size: 1.75rem;
   font-weight: normal;
 }
+/* Navbar / menu */
+nav.navbar {
+  background: #262324;
+  border: none;
+  border-radius: 0;
+  height: 60px;
+}
+nav.navbar #menu-main li a {
+  color: #fff;
+}
+#pnext-top-menu-home {
+  margin-bottom: 0;
+  background: none;
+}
+@media (max-width: 767px) {
+  #pnext-top-menu-home {
+    background: #262324;
+  }
+}
+/* End navbar / menu */
 .services {
   padding-top: 2rem;
 }
