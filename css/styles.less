@@ -14,6 +14,19 @@
 //
 // GLOBAL STYLES
 //
+html, body, h1, h2, h3 {
+  color: @text-color !important;
+}
+h4, .subtitle {
+  color: @text-color-light !important;
+}
+a:hover, a:active {
+  color: @highlight-color !important;
+  text-decoration: none !important;
+}
+a, a:visited {
+  color: @link-color !important;
+}
 /* don't let Bootstrap make the widest container size */
 @media (min-width:1200px){
   .container{
@@ -85,8 +98,22 @@
 // How-Tos Page
 .results-document {
   
+  // these elements are hidden to simplify until we improve presentation
   .expanded-result-row { display: none; }
   .result-expand-collapse { display: none; }
+  .label { display: none; }
 }
 
+#facets {
+  .muted {
+    color: @text-color-light;
+  }
+  // over-rides
+  .facet-row {
+    margin-left: 0px; //override bootstrap to get alignment with headers
+    label {
+      margin-left: 6px;
+    }
+  }
+}
 // end How-Tos Page
