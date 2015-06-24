@@ -103,7 +103,7 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
   
     if ( 'strip' === $layout ) { ?>          
       <div class="row our-developer-advocates">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <div class="our-developer-advocates-blurb"><?php _e($strip_header); ?></div>
         </div>
       </div>
@@ -115,13 +115,13 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
         ?>
         
 	    <div class="row advocate-row advocate-<?php echo $total_users; ?>">
-		    <div class="col-md-3">
+		    <div class="col-sm-3">
     		    <div class="advocate-photo">
         		    <?php echo $avatar_large; ?>
                 </div>
 		    </div>
 		    
-		    <div class="col-md-9">
+		    <div class="col-sm-9">
     		    <div class="advocate-name">
                     <h3><!-- <a href="<?php echo $posts_url; ?>"> --><?php echo $display_name; ?><!-- </a> --></h3>
                 </div>
