@@ -104,8 +104,7 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
     if ( 'strip' === $layout ) { ?>          
       <div class="row our-developer-advocates">
         <div class="col-md-12">
-          <h3><?php _e($strip_header); ?></h3>
-          <p class="our-developer-advocates-blurb">Here to inspire and enable ambitious developers, our team is dedicated to helping you achieve success.</p>
+          <p class="our-developer-advocates-blurb"><?php _e($strip_header); ?></p>
         </div>
       </div>
     
