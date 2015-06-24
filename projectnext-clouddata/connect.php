@@ -12,10 +12,10 @@ get_header(); ?>
 </header>
 <div class="pn-copy container">
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-sm-9">
       <?php dynamic_sidebar('connect_sidebar'); ?>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <?php                
       if (have_posts()) : 
         while (have_posts()) : the_post();
