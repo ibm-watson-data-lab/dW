@@ -17,8 +17,15 @@
 html, body, h1, h2, h3 {
   color: @text-color !important;
 }
+h1, h2, h3 {
+  margin: .5em 0 0.125em !important;
+  // font-weight: 700 !important;
+}
 h4, .subtitle {
   color: @text-color-light !important;
+  font-style: normal !important;
+  font-size: 12pt !important;
+  font-weight: 200 !important;
 }
 a:hover, a:active {
   color: @highlight-color !important;
@@ -125,7 +132,15 @@ nav.navbar {
 
 // How-Tos Page
 .results-document {
+  margin-top: 2em;
   
+  .results-document-url {
+    font-weight: 200;
+    font-size: 75%;
+    a {
+      color: @text-color-light;
+    }
+  }
   // these elements are hidden to simplify until we improve presentation
   .expanded-result-row { display: none; }
   .result-expand-collapse { display: none; }
