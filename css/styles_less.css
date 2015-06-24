@@ -1,5 +1,5 @@
-/* temporary LESS file hosted on Cloudant
-for IBM CDS
+/* 
+ * Styles for IBM CDS developerWorks developer center
 */
 /* don't let Bootstrap make the widest container size */
 @media (min-width: 1200px) {
@@ -30,4 +30,31 @@ for IBM CDS
 .services .service ul {
   margin: 0 0 0 1.5em;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFlQSxRQU55QjtFQUN2QjtJQUNFLFlBQUE7OztBQUlKLFFBQVE7RUFDTixlQUFBOztBQURGLFFBQVEsVUFFTjtFQUNFLGlCQUFBOztBQUhKLFFBQVEsVUFLTjtFQUNFLGtCQUFBO0VBQ0EsbUJBQUE7O0FBSUo7RUFDRSxpQkFBQTs7QUFERixTQUVFO0VBQ0UsNkJBQUE7RUFDQSxzQkFBQTs7QUFDQSxTQUhGLFNBR0c7RUFDQyxjQUFBOztBQU5OLFNBRUUsU0FNRTtFQUNFLG1CQUFBIiwiZmlsZSI6InN0eWxlc19sZXNzLmNzcyJ9 */
+#events-calendar .table,
+#events-calendar .fc-day-number,
+#events-calendar .fc-button {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333 !important;
+}
+#events-calendar .ui-widget-header {
+  background-color: #213e4f !important;
+}
+#events-calendar .ui-widget-content {
+  background: none;
+  border-color: #213e4f !important;
+}
+#events-calendar .events-table tr {
+  border-color: #213e4f;
+}
+.events-table {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+ul.advocate-social {
+  margin: 0px;
+}
+ul.advocate-social li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 8px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUF1QkEsUUFOeUI7RUFDdkI7SUFDRSxZQUFBOzs7QUFJSixRQUFRO0VBQ04sZUFBQTs7QUFERixRQUFRLFVBRU47RUFDRSxpQkFBQTs7QUFISixRQUFRLFVBS047RUFDRSxrQkFBQTtFQUNBLG1CQUFBOztBQUlKO0VBQ0UsaUJBQUE7O0FBREYsU0FFRTtFQUNFLDZCQUFBO0VBQ0Esc0JBQUE7O0FBQ0EsU0FIRixTQUdHO0VBQ0MsY0FBQTs7QUFOTixTQUVFLFNBTUU7RUFDRSxtQkFBQTs7QUFLTixnQkFDRTtBQURGLGdCQUNVO0FBRFYsZ0JBQzBCO0VBQ3RCLGFBQWEsdUJBQXNCLHdCQUF1Qiw4Q0FBMUQ7RUFDQSxjQUFBOztBQUhKLGdCQUtFO0VBQ0UseUJBQUE7O0FBTkosZ0JBUUU7RUFDRSxnQkFBQTtFQUNBLHFCQUFBOztBQVZKLGdCQVlFLGNBQWM7RUFDWixxQkFBQTs7QUFHSjtFQUNFLGFBQWEsdUJBQXNCLHdCQUF1Qiw4Q0FBMUQ7O0FBSUYsRUFBRTtFQUNBLFdBQUE7O0FBREYsRUFBRSxnQkFFQTtFQUNFLHFCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBIiwiZmlsZSI6InN0eWxlc19sZXNzLmNzcyJ9 */
