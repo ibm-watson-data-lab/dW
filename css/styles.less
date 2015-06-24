@@ -66,7 +66,7 @@ nav.navbar {
     width: 264px;
     height: 17px;
     padding: 0;
-    margin: 23px 0 0 20px;
+    margin: 23px 0 0 20px !important;
     
     a {
       display: inline-block;
@@ -124,21 +124,21 @@ nav.navbar {
   background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_clouds_hero.png') no-repeat;
   background-position: center; 
   border: none;
-  height: 370px;
-  margin-top: -60px;
+  height: 380px;
+  margin-top: -70px;
   
   .hero-text-container {
     margin: 100px 0 0 90px;
   }
-  h2,
-  h3 {
+  p {
     color: #fff;
     font-size: 24px;
     margin: 0 0 10px 0;
     font-weight: 300;
-  }
-  h3 span {
-    color: #2980B9;
+    
+    span {
+      color: #2980B9;
+    }
   }
   .get-started-btn {
     margin-top: 60px;
@@ -147,8 +147,13 @@ nav.navbar {
     a {
       width: 100%;
       height: 100%;
-      color: #fff;
+      color: #fff !important;
       font-weight: bold;
+      
+      &:hover,
+      &:visited {
+        color: #fff !important;
+      }
       
       span {
         padding: 6px 36px;
