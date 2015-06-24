@@ -50,10 +50,22 @@ nav.navbar {
   background: #262324;
   border: none;
   border-radius: 0;
-  height: 60px;
+  height: 70px;
+}
+nav.navbar #menu-main {
+  margin-top: 12px;
 }
 nav.navbar #menu-main li a {
-  color: #fff;
+  color: #fff !important;
+  line-height: 14px;
+  padding-bottom: 0;
+}
+nav.navbar #menu-main li a:hover,
+nav.navbar #menu-main li a:visited {
+  color: #fff !important;
+}
+nav.navbar #menu-main li.current-menu-item {
+  border-bottom: 2px solid #fff;
 }
 #pnext-top-menu-home {
   margin-bottom: 0;
