@@ -1,11 +1,19 @@
-/* temporary LESS file hosted on Cloudant
-for IBM CDS
+/* 
+ * Styles for IBM CDS developerWorks developer center
 */
+//
+// GLOBAL VARIABLES
+//
+@text-color: #333;
+@text-color-light: #A7A9AC;
+@background-color: #FFF;
+@link-color: #337AB7;
+@ui-color: #213E4F;
+@highlight-color: #F16A55;
 
 //
 // GLOBAL STYLES
 //
-
 /* don't let Bootstrap make the widest container size */
 @media (min-width:1200px){
   .container{
@@ -37,4 +45,40 @@ for IBM CDS
     }
   }
 }
+
+#events-calendar {
+  .table, .fc-day-number, .fc-button {
+    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    color: @text-color !important;
+  }
+  .ui-widget-header {
+    background-color: @ui-color !important;
+  }
+  .ui-widget-content {
+    background: none;
+    border-color: @ui-color !important;
+  }
+  .events-table tr {
+    border-color: @ui-color;
+  }
+}
+.events-table {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+// Connect Page
+.advocate-row {
+  margin: 3em 0 3em 0;
+
+  ul.advocate-social {
+    margin: 0px;
+  
+    li {
+      list-style-type: none;
+      display: inline;
+      padding-right: 8px;
+    }
+  }
+}
+// end Connect Page
 
