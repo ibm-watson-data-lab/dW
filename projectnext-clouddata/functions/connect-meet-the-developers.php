@@ -137,7 +137,7 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
                     <?php if ( $website ) { ?>
                         <li class="advocate-social-website"><a href="<?php echo $website; ?>" target="_blank">
                           <span class="icon-website">
-                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/rss-icon-24px.png"/>
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/website.png"/>
                           </span>
                         </a></li>
                     <?php }
@@ -145,7 +145,7 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
                     if ( $github ) { ?>
                         <li class="advocate-social-github"><a href="//www.github.com/<?php echo $github; ?>" target="_blank">
                           <span class="icon-github">
-                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/GitHub-Mark-24px.png"/>
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/github.png"/>
                           </span>
                         </a></li>
                     <?php }
@@ -153,7 +153,7 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
                     if ( $twitter ) { ?>
                         <li class="advocate-social-twitter"><a href="http://twitter.com/<?php echo $twitter; ?>" target="_blank">
                           <span class="icon-twitter">
-                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/twitter-24px.png"/>
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/twitter.png"/>
                           </span>
                         </a></li>
                     <?php }
@@ -161,21 +161,21 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
                     if ( $linkedin ) { ?>
                          <li class="advocate-social-linkedin"><a href="<?php echo $linkedin; ?>" target="_blank">
                            <span class="icon-linkedin">
-                             <img src="//rawgit.com/ibm-cds-labs/dW/master/images/linkedin-24px.png"/>
+                             <img src="//rawgit.com/ibm-cds-labs/dW/master/images/linkedin.png"/>
                            </span></a></li>
                     <?php }
                     
                     if ( $pres_sharing ) { ?>
                         <li class="advocate-social-pres-sharing"><a href="<?php echo $pres_sharing; ?>" target="_blank">
                           <span class="icon-pres-sharing">
-                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/speakerdeck-24px.png"/>
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/pres-sharing.png"/>
                           </span></a></li>
                     <?php }
                     
                     if ( $stackoverflow ) { ?>
                         <li class="advocate-social-stackoverflow"><a href="<?php echo $stackoverflow; ?>" target="_blank">
                           <span class="icon-stackoverflow">
-                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/stack-exchange-24px.png"/>
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/stackoverflow.png"/>
                           </span></a></li>
                     <?php } ?>
     		    </ul>
