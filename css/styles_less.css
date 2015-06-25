@@ -1,12 +1,6 @@
 /*
  * Styles for IBM CDS developerWorks developer center
 */
-/* don't let Bootstrap make the widest container size */
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
 html,
 body,
 h2,
