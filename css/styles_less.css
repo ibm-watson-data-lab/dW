@@ -305,6 +305,7 @@ nav.navbar #menu-main li.current-menu-item {
   padding-left: 10px;
   text-transform: none;
   font-weight: 500 !important;
+  letter-spacing: inherit;
 }
 .page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget ul li {
   border: none;
