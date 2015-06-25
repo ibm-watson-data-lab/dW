@@ -102,9 +102,9 @@ function connect_developers( $users = '', $layout = 'strip', $strip_header = 'Br
   }
   
     if ( 'strip' === $layout ) { ?>          
+      <p class="intro our-developer-advocates-blurb"><?php _e($strip_header); ?></p>
       <div class="row our-developer-advocates">
         <div class="col-sm-12">
-          <div class="our-developer-advocates-blurb"><?php _e($strip_header); ?></div>
         </div>
       </div>
     
