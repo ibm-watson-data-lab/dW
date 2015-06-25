@@ -290,6 +290,9 @@ nav.navbar #menu-main li.current-menu-item {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 500 !important;
 }
+.page-id-27 #pnext-main .pn-home-wrap h2.pn-page-title {
+  padding-left: 10px;
+}
 .page-id-27 #pnext-main .pn-home-wrap .pn-widgets .connect-slug {
   padding-left: 10px;
 }
@@ -297,9 +300,11 @@ nav.navbar #menu-main li.current-menu-item {
   font-weight: bold;
 }
 .page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget h3 {
-  font-size: 14px;
+  font-size: 25px;
   color: #333 !important;
   padding-left: 10px;
+  text-transform: none;
+  font-weight: 500 !important;
 }
 .page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget ul li {
   border: none;
