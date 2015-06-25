@@ -443,41 +443,47 @@ nav.navbar {
 // end Connect Page
 
 // How-Tos Page
-.results-document {
-  h3 {
-    margin-bottom: 0;
+.how-to {
+  .results-document {
+    h3 {
+      margin-bottom: 0;
+    }
+    .text-search {
+      margin: 9rem 0 2rem 0;
+    }
+    .results-document-url {
+      font-weight: 200;
+      a, a:link, a:visited {
+        color: @text-color-light !important;
+      }
+    }
+    .description {
+      .editlink {
+        opacity: .1;
+      }
+    }
+    // these elements are hidden to simplify until we improve presentation
+    .expanded-result-row { display: none; }
+    .result-expand-collapse { display: none; }
+    .label { display: none; }
   }
-  .results-document-url {
-    font-weight: 200;
-    a, a:link, a:visited {
-      color: @text-color-light !important;
+
+  #facets {
+    .muted {
+      color: @text-color-light;
+    }
+    // over-rides
+    .facet-row {
+      margin-left: 0px; //override bootstrap to get alignment with headers
+      label {
+        margin-left: 6px;
+        font-weight: 400 !important;
+        font-size: 9pt !important;
+      }
     }
   }
-  .description {
-    .editlink {
-      opacity: .1;
-    }
-  }
-  // these elements are hidden to simplify until we improve presentation
-  .expanded-result-row { display: none; }
-  .result-expand-collapse { display: none; }
-  .label { display: none; }
 }
 
-#facets {
-  .muted {
-    color: @text-color-light;
-  }
-  // over-rides
-  .facet-row {
-    margin-left: 0px; //override bootstrap to get alignment with headers
-    label {
-      margin-left: 6px;
-      font-weight: 400 !important;
-      font-size: 9pt !important;
-    }
-  }
-}
 // end How-Tos Page
 
 // Blog
