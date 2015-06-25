@@ -16,12 +16,6 @@
 //
 // GLOBAL STYLES
 //
-/* don't let Bootstrap make the widest container size */
-@media (min-width:1200px){
-  .container{
-    width:970px
-  }
-}
 html, body, h2, h3 {
   color: @text-color !important;
 }
@@ -280,7 +274,7 @@ nav.navbar {
 // end How-Tos Page
 
 // Blog
-.blog {
+.blog, .single-post {
   .post {
     .pn-post-title {
       font-style: normal;
@@ -292,6 +286,10 @@ nav.navbar {
       font-size: 10pt;
       color: @text-color-light;
     }
+  }
+  // make widget text bigger by over-riding PNext styles
+  .pn-widgettitle, .widget_archive > ul, .widget_categories > ul {
+    font-size: inherit;
   }
 }
 // end Blog page
