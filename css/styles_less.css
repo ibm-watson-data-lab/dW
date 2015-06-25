@@ -288,10 +288,19 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples {
   background: #333;
 }
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .row {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .row:first-of-type {
+  padding-top: 0;
+  border-bottom: 1px solid #a7a9ac;
+}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h1 {
   color: #f16a55 !important;
   font-weight: 500 !important;
   font-size: 24px !important;
+  margin: 20px 0 50px 0 !important;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h2 {
   color: #fff !important;
