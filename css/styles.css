@@ -352,7 +352,7 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .services .service .get-started {
   background-color: #fafafa;
-  border-left: 1px solid #f16a55;
+  border-left: 3px solid #f16a55;
 }
 #events-calendar .table,
 #events-calendar .fc-day-number,
