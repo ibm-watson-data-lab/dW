@@ -16,7 +16,7 @@ body {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/salmon_bg.gif');
   background-repeat: repeat-x;
   background-size: 100% 280px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 body.page-id-187 {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue.gif');
@@ -162,7 +162,7 @@ nav.navbar #menu-main li.current-menu-item {
 }
 #hero-text .get-started-btn {
   margin-top: 60px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   display: inline-block;
 }
 #hero-text .get-started-btn a {
@@ -268,7 +268,7 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn {
   display: inline-block;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a {
   color: #fff !important;
@@ -306,11 +306,15 @@ nav.navbar #menu-main li.current-menu-item {
   color: #fff !important;
   font-size: 24px !important;
   font-weight: normal !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  text-align: left;
+  margin-bottom: 4px;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
   color: #a7a9ac !important;
   font-weight: normal !important;
   font-size: 14px !important;
+  margin: 4px 0 30px 0;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples p {
   color: #fff;
@@ -318,6 +322,7 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn {
   border: 2px solid #fff;
   display: inline-block;
+  margin-top: 20px;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a {
   width: 100%;
@@ -355,7 +360,7 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main .pn-home-wrap .pn-page-title {
   color: #333 !important;
   font-size: 25px !important;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500 !important;
 }
 .page-id-27 #pnext-main .pn-home-wrap h2.pn-page-title {
