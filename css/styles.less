@@ -470,7 +470,15 @@ nav.navbar {
 // end How-Tos Page
 
 // Blog
+.single-post {
+  footer {
+    margin-top: 60px; // get out of the way of the big banner
+  }
+}
 .blog, .single-post {
+  .pn-post-list {
+    margin-top: 100px; // get out of the way of the big banner
+  }
   .post {
     .pn-post-title {
       font-style: normal;
@@ -489,3 +497,23 @@ nav.navbar {
   }
 }
 // end Blog page
+
+// Events
+#events-calendar {
+  padding-top: 8em !important;
+}
+#pn-upcoming-events {
+  padding-top: 6em;
+  .event {
+    padding-bottom: 1em;
+    a {
+      font-size: 125%;
+    }
+  }
+}
+.single-event {
+  .pn-copy {
+    padding-top: 10rem;
+  }
+}
+// end Events
