@@ -278,15 +278,15 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn:hover {
   background: #fff;
 }
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn:hover a {
+  color: #F16A55 !important;
+}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a {
   color: #fff !important;
   font-size: 14px;
   width: 100%;
   height: 100%;
   font-weight: bold;
-}
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:hover {
-  color: #333 !important;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:visited {
   color: #fff !important;
