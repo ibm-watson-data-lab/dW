@@ -228,21 +228,6 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-title {
   padding-top: 20px;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-services-read-more {
-  text-align: right;
-}
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-services-read-more .read-more-btn {
-  display: inline-block;
-  border: 1px solid #fff;
-}
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-services-read-more .read-more-btn a {
-  color: #fff !important;
-  font-size: 14px;
-}
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-services-read-more .read-more-btn a:hover,
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-services-read-more .read-more-btn a:visited {
-  color: #fff !important;
-}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li {
   display: inline-block;
   margin: 0 130px 60px 0;
@@ -261,14 +246,17 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more {
   text-align: right;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more a {
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn {
   display: inline-block;
+  border: 1px solid #fff;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more span {
-  display: inline-block;
-  font-size: 12px;
-  color: #fff;
-  margin-left: 20px;
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a {
+  color: #fff !important;
+  font-size: 14px;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:hover,
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:visited {
+  color: #fff !important;
 }
 .page-id-27 #pnext-main .pn-home-wrap {
   color: #000;
@@ -276,19 +264,30 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main .pn-home-wrap .pn-meta-date {
   color: #a7a9ac;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
 }
-.page-id-27 #pnext-main .pn-home-wrap h1.pn-post-title {
+.page-id-27 #pnext-main .pn-home-wrap h1.pn-post-title a {
   font-style: normal;
-  font-size: 13pt;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 0.25em;
   font-weight: 500;
+  font-size: 14px;
 }
 .page-id-27 #pnext-main .pn-home-wrap .pn-page-title {
-  color: #DDD !important;
+  color: #000 !important;
   font-size: 25px !important;
+}
+.page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget h3 {
+  font-size: 13px;
+}
+.page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget ul li {
+  border: none;
+}
+.page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget ul li a {
+  font-weight: bold;
+}
+.page-id-27 #pnext-main .pn-home-wrap .pn-widgets .widget_em_widget ul li ul li:first-of-type {
+  color: #A7A9AC;
 }
 /* End home page */
 .services {
