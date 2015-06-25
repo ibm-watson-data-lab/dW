@@ -310,7 +310,7 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .row:first-of-type {
   padding-top: 0;
-  border-bottom: 2px solid #636363;
+  border-bottom: 1px solid #a7a9ac;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h2 {
   color: #f16a55 !important;
@@ -452,7 +452,7 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .services .service .get-started {
   background-color: #fafafa;
-  border-left: 1px solid #f16a55;
+  border-left: 2px solid #f16a55;
 }
 #events-calendar .table,
 #events-calendar .fc-day-number,
