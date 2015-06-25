@@ -165,6 +165,9 @@ nav.navbar #menu-main li.current-menu-item {
   border: 2px solid #fff;
   display: inline-block;
 }
+#hero-text .get-started-btn:hover {
+  background: #fff;
+}
 #hero-text .get-started-btn a {
   width: 100%;
   height: 100%;
@@ -173,7 +176,6 @@ nav.navbar #menu-main li.current-menu-item {
 }
 #hero-text .get-started-btn a:hover {
   color: #333 !important;
-  background: #fff;
 }
 #hero-text .get-started-btn a:visited {
   color: #fff !important;
@@ -273,6 +275,9 @@ nav.navbar #menu-main li.current-menu-item {
   display: inline-block;
   border: 2px solid #fff;
 }
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn:hover {
+  background: #fff;
+}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a {
   color: #fff !important;
   font-size: 14px;
@@ -282,7 +287,6 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:hover {
   color: #333 !important;
-  background: #fff;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:visited {
   color: #fff !important;
@@ -351,6 +355,9 @@ nav.navbar #menu-main li.current-menu-item {
   display: inline-block;
   margin-top: 20px;
 }
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn:hover {
+  background: #fff;
+}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a {
   width: 100%;
   height: 100%;
@@ -359,7 +366,6 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:hover {
   color: #333 !important;
-  background: #fff;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:visited {
   color: #fff !important;
