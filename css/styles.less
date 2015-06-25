@@ -18,6 +18,8 @@
 @link-color: #337AB7;
 @accent-color-primary: #213E4F;
 @accent-color-secondary: #F16A55; // #F16A55 is Hot Salmon
+@primary-font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
+@secondary-font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial, sans-serif;
 
 //
 // GLOBAL STYLES
@@ -29,6 +31,7 @@ body {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/salmon_bg.gif');
   background-repeat: repeat-x;
   background-size: 100% 280px;
+  font-family: @primary-font-family !important;
 }
 body.page-id-187 { // how-tos
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue.gif');
@@ -351,14 +354,14 @@ nav.navbar {
           font-style: normal;
           font-weight: bold;
           font-size: 14px;
-          font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
+          font-family: @secondary-font-family;
           font-color: #333 !important;
         }
       }
       .pn-page-title {
         color: #333 !important;
         font-size: 25px !important;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+        font-family: @primary-font-family;
         font-weight: 500 !important;
       }
       h2.pn-page-title {
@@ -427,7 +430,7 @@ nav.navbar {
 
 #events-calendar {
   .table, .fc-day-number, .fc-button {
-    font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-family: @secondary-font-family !important;
     color: @text-color !important;
   }
   .ui-widget-header {
@@ -442,7 +445,7 @@ nav.navbar {
   }
 }
 .events-table {
-  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-family: @secondary-font-family !important;
 }
 
 // Connect Page
