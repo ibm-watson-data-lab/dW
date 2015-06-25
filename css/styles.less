@@ -62,7 +62,7 @@ a, a:visited {
   p.intro {
     color: white;
     font-size: 1.75rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem 0 6rem 0 !important;
   }
   .sidebar {
     padding-top: 13rem;
@@ -438,12 +438,18 @@ nav.navbar {
 
 // How-Tos Page
 .results-document {
-  margin-top: 2em;
-
+  h3 {
+    margin-bottom: 0;
+  }
   .results-document-url {
     font-weight: 200;
     a, a:link, a:visited {
       color: @text-color-light !important;
+    }
+  }
+  .description {
+    .editlink {
+      opacity: .1;
     }
   }
   // these elements are hidden to simplify until we improve presentation
