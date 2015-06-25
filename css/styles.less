@@ -236,11 +236,20 @@ nav.navbar {
               top: 0;
               width: 100%;
               margin: 0 auto;
+              
+              .container {
+                padding: 0;
+              }
             
               .topics-services-left-content {
                 h3 {
-                  color: #F16A55;
+                  color: #F16A55 !important;
                   margin: 60px 0;
+                }
+                .cds-blurb {
+                  a {
+                    font-size: 16px;
+                  }
                 }
               }
               .topics-services-right-content {
@@ -249,7 +258,7 @@ nav.navbar {
                 
                 h3 {
                   margin: 60px 0;
-                  color: #fff;
+                  color: #fff !important;
                 }
                 .services-description {
                   padding-bottom: 60px;
@@ -260,6 +269,29 @@ nav.navbar {
                 .cds-services {
                   .cds-title {
                     padding-top: 20px;
+                  }
+                  .cds-services-read-more {
+                    text-align: right;
+                    .read-more-btn {
+                      display: inline-block;
+                      border: 1px solid #fff;
+                      
+                      a {
+                        color: #fff !important;
+                        font-size: 14px;
+                        &:hover,
+                        &:visited {
+                          color: #fff !important;
+                        }
+                      }
+                    }
+                  }
+                  li {
+                    display: inline-block;
+                    margin: 0 130px 60px 0;
+                    &:last-of-type {
+                      margin-right: 0;
+                    }
                   }
                   .cds-title a {
                     color: #fff !important;
@@ -291,16 +323,28 @@ nav.navbar {
       }
     }
     
-    
-    
-    
     .pn-home-wrap {
       color: #000;
       background: #f1f2f2;
+      
+      .pn-meta-date {
+        color: #a7a9ac;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      h1.pn-post-title {
+        font-style: normal;
+        font-size: 13pt;
+        font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
+        margin-top: 0.25em;
+        font-weight: 500;
+      }
+      .pn-page-title {
+        color: #DDD !important;
+        font-size: 25px !important;
+      }      
     }
   }
-  
-  
 }
 
 /* End home page */
