@@ -296,14 +296,14 @@ nav.navbar #menu-main li.current-menu-item {
   padding-top: 0;
   border-bottom: 1px solid #a7a9ac;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h1 {
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h2 {
   color: #f16a55 !important;
   font-weight: 500 !important;
   font-size: 24px !important;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   margin: 20px 0 50px 0 !important;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h2 {
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
   color: #fff !important;
   font-size: 22px !important;
   font-weight: normal !important;
@@ -312,7 +312,7 @@ nav.navbar #menu-main li.current-menu-item {
   text-align: left;
   margin-bottom: 6px;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h4 {
   color: #a7a9ac !important;
   font-weight: normal !important;
   font-size: 14px !important;
@@ -326,7 +326,7 @@ nav.navbar #menu-main li.current-menu-item {
   height: 180px;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.location-tracker-icon {
-  text--align: right;
+  text-align: right;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.location-tracker-icon span {
   width: 256px;
