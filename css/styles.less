@@ -1,25 +1,40 @@
-/* 
+/*
  * Styles for IBM CDS developerWorks developer center
 */
+
 //
-// GLOBAL VARIABLES
+// GLOBAL STYLES
 //
+
 @text-color: #333;
 @text-color-light: #A7A9AC;
 @background-color: #FFF;
 @link-color: #337AB7;
 @accent-color-primary: #213E4F;
-@accent-color-secondary: #F16A55;
+@accent-color-secondary: #F16A55; // #F16A55 is Hot Salmon
 
 //
 // GLOBAL STYLES
 //
-html, body, h1, h2, h3 {
+/* don't let Bootstrap make the widest container size */
+@media (min-width:1200px){
+  .container{
+    width:970px
+  }
+}
+html, body, h2, h3 {
   color: @text-color !important;
 }
-h1, h2, h3, h4, .subtitle {
-  margin: 0.25em 0 0.25em 0 !important;
-  // font-weight: 700 !important;
+body {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/salmon_bg.gif');
+  background-repeat: repeat-x;
+  background-size: 100% 240px;
+}
+h1 {
+  color: white !important;
+  font-size: 2.5rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 0.75rem !important;
 }
 h4, .subtitle {
   color: @text-color-light !important;
@@ -41,7 +56,7 @@ a, a:visited {
   }
 }
 
-.pn-copy.container { // this is everything we can edit in the main content via wordpress
+.pn-copy.container { // contains the wordpress page textarea
   padding-left: 0;
   h2 {
     font-size: 2.5rem;
@@ -49,6 +64,17 @@ a, a:visited {
   h3 {
     font-size: 1.75rem;
     font-weight: normal;
+  }
+  p.intro {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 6rem;
+  }
+  .sidebar {
+    padding-top: 13rem;
+    h3 {
+      margin-top: 0;
+    }
   }
 }
 
@@ -59,7 +85,7 @@ nav.navbar {
   border: none;
   border-radius: 0;
   min-height: 70px;
-  
+
   .navbar-brand {
     background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/IBM_CDS_Logo.png') no-repeat;
     display: inline-block;
@@ -67,12 +93,12 @@ nav.navbar {
     height: 17px;
     padding: 0;
     margin: 23px 0 0 20px !important;
-    
+
     a {
       display: inline-block;
       width: 100%;
       height: 100%;
-      
+
       span {
         display: none;
       }
@@ -90,11 +116,11 @@ nav.navbar {
           padding-bottom: 10px;
           &:hover,
           &:visited {
-            color: #fff !important;  
+            color: #fff !important;
           }
         }
         &.current-menu-item {
-          border-bottom: 2px solid #fff; 
+          border-bottom: 2px solid #fff;
         }
       }
   }
@@ -109,24 +135,24 @@ nav.navbar {
   }
   nav.navbar #menu-main li.current-menu-item {
     border-bottom: none;
-    
+
     a {
       color: #F16A55 !important;
       &:hover,
       &:visited {
         color: #F16A55 !important;
       }
-    } 
+    }
   }
 }
 
 #hero-text {
   background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_clouds_hero.png') no-repeat;
-  background-position: center; 
+  background-position: center;
   border: none;
   height: 380px;
   margin-top: -70px;
-  
+
   .hero-text-container {
     margin: 100px 0 0 90px;
   }
@@ -135,7 +161,7 @@ nav.navbar {
     font-size: 24px;
     margin: 0 0 10px 0;
     font-weight: 300;
-    
+
     span {
       color: #2980B9;
     }
@@ -149,12 +175,12 @@ nav.navbar {
       height: 100%;
       color: #fff !important;
       font-weight: bold;
-      
+
       &:hover,
       &:visited {
         color: #fff !important;
       }
-      
+
       span {
         padding: 6px 36px;
         display: inline-block;
@@ -178,8 +204,8 @@ nav.navbar {
       margin: 0 0 0 1.5em;
     }
     .get-started {
-      background-color: #DDD;
-      border-radius: 8px;
+      background-color: #fafafa;
+      border-left: 1px solid @accent-color-secondary;
     }
   }
 }
@@ -210,7 +236,7 @@ nav.navbar {
 
   ul.advocate-social {
     margin: 0px;
-  
+
     li {
       list-style-type: none;
       display: inline;
@@ -223,7 +249,7 @@ nav.navbar {
 // How-Tos Page
 .results-document {
   margin-top: 2em;
-  
+
   .results-document-url {
     font-weight: 200;
     font-size: 75%;
