@@ -279,6 +279,45 @@ nav.navbar #menu-main li.current-menu-item {
   padding: 6px 36px;
   display: inline-block;
 }
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples {
+  background: #333;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h1 {
+  color: #f16a55 !important;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h2 {
+  color: #fff !important;
+  font-size: 24px !important;
+  font-weight: normal !important;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
+  color: #a7a9ac !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples p {
+  color: #fff;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn {
+  border: 2px solid #fff;
+  display: inline-block;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a {
+  width: 100%;
+  height: 100%;
+  color: #fff !important;
+  font-weight: bold;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:hover,
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:visited {
+  color: #fff !important;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a span {
+  padding: 6px 36px;
+  display: inline-block;
+}
 .page-id-27 #pnext-main .pn-home-wrap {
   color: #000;
   background: #f1f2f2;
@@ -378,11 +417,11 @@ nav.navbar #menu-main li.current-menu-item {
   display: inline;
   padding-right: 8px;
 }
+.how-to .text-search {
+  margin: 9rem 0 2rem 0;
+}
 .how-to .results-document h3 {
   margin-bottom: 0;
-}
-.how-to .results-document .text-search {
-  margin: 9rem 0 2rem 0;
 }
 .how-to .results-document .results-document-url {
   font-weight: 200;
