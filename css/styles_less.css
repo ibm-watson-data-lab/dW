@@ -301,8 +301,9 @@ nav.navbar #menu-main li.current-menu-item {
   font-weight: 500 !important;
   font-size: 24px !important;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  margin: 20px 0 50px 0 !important;
+  margin: 50px 0 !important;
   text-align: center;
+  font-style: normal;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
   color: #fff !important;
@@ -331,10 +332,12 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.location-tracker-icon span {
   width: 256px;
+  margin-top: 20px;
   background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/map.png');
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.search-engine-icon span {
   width: 225px;
+  margin-top: 30px;
   background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/computer.png');
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn {
