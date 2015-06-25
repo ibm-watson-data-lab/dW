@@ -1,13 +1,256 @@
-/* @override 
-	https://rawgit.com/ibm-cds-labs/dW/master/css/styles.css
-	http://rawgit.com/ibm-cds-labs/dW/master/css/styles.css
+/*
+ * Styles for IBM CDS developerWorks developer center
 */
-
-/* IBM Cloud Data Services 
-CSS to override default CSS from dW
-http://developer.ibm.com/clouddataservices
-*/
-
-.pn-copy.container {
-  padding-left: 0px;
+/* don't let Bootstrap make the widest container size */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
+html,
+body,
+h2,
+h3 {
+  color: #333333 !important;
+}
+body {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/salmon_bg.gif');
+  background-repeat: repeat-x;
+  background-size: 100% 240px;
+}
+h1 {
+  color: white !important;
+  font-size: 2.5rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 0.75rem !important;
+}
+h4,
+.subtitle {
+  color: #a7a9ac !important;
+  font-style: normal !important;
+  font-size: 12pt !important;
+  font-weight: 200 !important;
+}
+a:hover,
+a:active {
+  color: #f16a55 !important;
+  text-decoration: none !important;
+}
+a,
+a:visited {
+  color: #337ab7 !important;
+}
+/* don't let Bootstrap make the widest container size */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+.pn-copy.container {
+  padding-left: 0;
+}
+.pn-copy.container h2 {
+  font-size: 2.5rem;
+}
+.pn-copy.container h3 {
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+.pn-copy.container p.intro {
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 6rem;
+}
+.pn-copy.container .sidebar {
+  padding-top: 13rem;
+}
+.pn-copy.container .sidebar h3 {
+  margin-top: 0;
+}
+/* Navbar / menu */
+nav.navbar {
+  background: #262324;
+  border: none;
+  border-radius: 0;
+  min-height: 70px;
+}
+nav.navbar .navbar-brand {
+  background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/IBM_CDS_Logo.png') no-repeat;
+  display: inline-block;
+  width: 264px;
+  height: 17px;
+  padding: 0;
+  margin: 23px 0 0 20px !important;
+}
+nav.navbar .navbar-brand a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+nav.navbar .navbar-brand a span {
+  display: none;
+}
+nav.navbar .navbar-toggle {
+  margin-top: 18px;
+}
+nav.navbar #menu-main {
+  margin-top: 12px;
+}
+nav.navbar #menu-main li a {
+  color: #fff !important;
+  line-height: 14px;
+  padding-bottom: 10px;
+}
+nav.navbar #menu-main li a:hover,
+nav.navbar #menu-main li a:visited {
+  color: #fff !important;
+}
+nav.navbar #menu-main li.current-menu-item {
+  border-bottom: 2px solid #fff;
+}
+#pnext-top-menu-home {
+  margin-bottom: 0;
+  background: none;
+}
+@media (max-width: 767px) {
+  #pnext-top-menu-home {
+    background: #262324;
+  }
+  nav.navbar #menu-main li.current-menu-item {
+    border-bottom: none;
+  }
+  nav.navbar #menu-main li.current-menu-item a {
+    color: #F16A55 !important;
+  }
+  nav.navbar #menu-main li.current-menu-item a:hover,
+  nav.navbar #menu-main li.current-menu-item a:visited {
+    color: #F16A55 !important;
+  }
+}
+#hero-text {
+  background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_clouds_hero.png') no-repeat;
+  background-position: center;
+  border: none;
+  height: 380px;
+  margin-top: -70px;
+}
+#hero-text .hero-text-container {
+  margin: 100px 0 0 90px;
+}
+#hero-text p {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  font-weight: 300;
+}
+#hero-text p span {
+  color: #2980B9;
+}
+#hero-text .get-started-btn {
+  margin-top: 60px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+#hero-text .get-started-btn a {
+  width: 100%;
+  height: 100%;
+  color: #fff !important;
+  font-weight: bold;
+}
+#hero-text .get-started-btn a:hover,
+#hero-text .get-started-btn a:visited {
+  color: #fff !important;
+}
+#hero-text .get-started-btn a span {
+  padding: 6px 36px;
+  display: inline-block;
+}
+/* End navbar / menu */
+.services {
+  padding-top: 2rem;
+}
+.services .service {
+  border-bottom: 1px solid #eee;
+  padding: 2rem 0 2rem 0;
+}
+.services .service.cloudant {
+  padding-top: 0;
+}
+.services .service ul {
+  margin: 0 0 0 1.5em;
+}
+.services .service .get-started {
+  background-color: #fafafa;
+  border-left: 1px solid #f16a55;
+}
+#events-calendar .table,
+#events-calendar .fc-day-number,
+#events-calendar .fc-button {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333 !important;
+}
+#events-calendar .ui-widget-header {
+  background-color: #213e4f !important;
+}
+#events-calendar .ui-widget-content {
+  background: none;
+  border-color: #213e4f !important;
+}
+#events-calendar .events-table tr {
+  border-color: #213e4f;
+}
+.events-table {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.advocate-row {
+  margin: 3em 0 3em 0;
+}
+.advocate-row ul.advocate-social {
+  margin: 0px;
+}
+.advocate-row ul.advocate-social li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 8px;
+}
+.results-document {
+  margin-top: 2em;
+}
+.results-document .results-document-url {
+  font-weight: 200;
+  font-size: 75%;
+}
+.results-document .results-document-url a {
+  color: #a7a9ac;
+}
+.results-document .expanded-result-row {
+  display: none;
+}
+.results-document .result-expand-collapse {
+  display: none;
+}
+.results-document .label {
+  display: none;
+}
+#facets .muted {
+  color: #a7a9ac;
+}
+#facets .facet-row {
+  margin-left: 0px;
+}
+#facets .facet-row label {
+  margin-left: 6px;
+  font-weight: 400 !important;
+  font-size: 9pt !important;
+}
+.blog .post .pn-post-title {
+  font-style: normal;
+  font-size: 18pt;
+  font-weight: 500;
+  font-family: inherit;
+}
+.blog .post footer {
+  font-size: 10pt;
+  color: #a7a9ac;
+}
+/*# sourceMappingURL=data:application/json;base64,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 */
