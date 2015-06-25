@@ -300,15 +300,17 @@ nav.navbar #menu-main li.current-menu-item {
   color: #f16a55 !important;
   font-weight: 500 !important;
   font-size: 24px !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   margin: 20px 0 50px 0 !important;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h2 {
   color: #fff !important;
-  font-size: 24px !important;
+  font-size: 22px !important;
   font-weight: normal !important;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-style: normal;
   text-align: left;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
   color: #a7a9ac !important;
@@ -318,6 +320,21 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples p {
   color: #fff;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon span {
+  display: inline-block;
+  height: 180px;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.location-tracker-icon {
+  text--align: right;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.location-tracker-icon span {
+  width: 256px;
+  background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/map.png');
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-icon.search-engine-icon span {
+  width: 225px;
+  background: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/computer.png');
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn {
   border: 2px solid #fff;
