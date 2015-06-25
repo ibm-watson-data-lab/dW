@@ -254,7 +254,6 @@ nav.navbar {
                   margin: 60px 0;
                 }
                 .cds-blurb {
-                  text-align: center;
                   a {
                     font-size: 16px;
                   }
@@ -275,25 +274,30 @@ nav.navbar {
                   font-weight: 300;
                 }
                 .cds-services {
-                  .cds-title {
-                    padding-top: 20px;
-                  }
                   li {
                     display: inline-block;
                     margin: 0 130px 60px 0;
                     &:last-of-type {
                       margin-right: 0;
                     }
-                  }
-                  .cds-title a {
-                    color: #fff !important;
-                    font-size: 14px;
-
-                    &:hover,
-                    &:visited {
-                      color: #fff !important;
+                    .cds-blurb {
+                      text-align: center;
+                      
+                      .cds-title {
+                        padding-top: 20px;
+                        
+                        a {
+                          color: #fff !important;
+                          font-size: 14px;
+        
+                          &:hover,
+                          &:visited {
+                            color: #fff !important;
+                          }
+                        }
+                      }
                     }
-                  }
+                  }  
                 }
                 .cds-services-read-more {
                   text-align: right;

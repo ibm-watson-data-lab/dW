@@ -17,6 +17,15 @@ body {
   background-repeat: repeat-x;
   background-size: 100% 280px;
 }
+body.page-id-187 {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue.gif');
+}
+body.page-id-165 {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/teal.gif');
+}
+body.page-id-21 {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue2.gif');
+}
 h1 {
   color: white !important;
   font-size: 2.5rem !important;
@@ -48,22 +57,22 @@ a:visited {
 .pn-copy.container {
   padding-left: 0;
 }
-.pn-copy.container h2 {
+.pn-copy h2 {
   font-size: 2.5rem;
 }
-.pn-copy.container h3 {
+.pn-copy h3 {
   font-size: 1.75rem;
   font-weight: normal;
 }
-.pn-copy.container p.intro {
+.pn-copy p.intro {
   color: white;
   font-size: 1.75rem;
   margin-bottom: 2rem 0 6rem 0 !important;
 }
-.pn-copy.container .sidebar {
+.pn-copy .sidebar {
   padding-top: 13rem;
 }
-.pn-copy.container .sidebar h3 {
+.pn-copy .sidebar h3 {
   margin-top: 0;
 }
 /* Navbar / menu */
@@ -210,9 +219,6 @@ nav.navbar #menu-main li.current-menu-item {
   color: #F16A55 !important;
   margin: 60px 0;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-left-content .cds-blurb {
-  text-align: center;
-}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-left-content .cds-blurb a {
   font-size: 16px;
 }
@@ -230,9 +236,6 @@ nav.navbar #menu-main li.current-menu-item {
   color: #fff;
   font-weight: 300;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-title {
-  padding-top: 20px;
-}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li {
   display: inline-block;
   margin: 0 130px 60px 0;
@@ -240,12 +243,18 @@ nav.navbar #menu-main li.current-menu-item {
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li:last-of-type {
   margin-right: 0;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-title a {
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li .cds-blurb {
+  text-align: center;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li .cds-blurb .cds-title {
+  padding-top: 20px;
+}
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li .cds-blurb .cds-title a {
   color: #fff !important;
   font-size: 14px;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-title a:hover,
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services .cds-title a:visited {
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li .cds-blurb .cds-title a:hover,
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services li .cds-blurb .cds-title a:visited {
   color: #fff !important;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more {
@@ -369,36 +378,39 @@ nav.navbar #menu-main li.current-menu-item {
   display: inline;
   padding-right: 8px;
 }
-.results-document h3 {
+.how-to .results-document h3 {
   margin-bottom: 0;
 }
-.results-document .results-document-url {
+.how-to .results-document .text-search {
+  margin: 9rem 0 2rem 0;
+}
+.how-to .results-document .results-document-url {
   font-weight: 200;
 }
-.results-document .results-document-url a,
-.results-document .results-document-url a:link,
-.results-document .results-document-url a:visited {
+.how-to .results-document .results-document-url a,
+.how-to .results-document .results-document-url a:link,
+.how-to .results-document .results-document-url a:visited {
   color: #a7a9ac !important;
 }
-.results-document .description .editlink {
+.how-to .results-document .description .editlink {
   opacity: .1;
 }
-.results-document .expanded-result-row {
+.how-to .results-document .expanded-result-row {
   display: none;
 }
-.results-document .result-expand-collapse {
+.how-to .results-document .result-expand-collapse {
   display: none;
 }
-.results-document .label {
+.how-to .results-document .label {
   display: none;
 }
-#facets .muted {
+.how-to #facets .muted {
   color: #a7a9ac;
 }
-#facets .facet-row {
+.how-to #facets .facet-row {
   margin-left: 0px;
 }
-#facets .facet-row label {
+.how-to #facets .facet-row label {
   margin-left: 6px;
   font-weight: 400 !important;
   font-size: 9pt !important;
