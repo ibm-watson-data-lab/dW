@@ -16,6 +16,7 @@ body {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/salmon_bg.gif');
   background-repeat: repeat-x;
   background-size: 100% 280px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 body.page-id-187 {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue.gif');
@@ -25,6 +26,11 @@ body.page-id-165 {
 }
 body.page-id-21 {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue2.gif');
+}
+body.blog,
+body.single-post {
+  background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue2.gif');
+  background-size: 100% 240px;
 }
 h1 {
   color: white !important;
@@ -334,13 +340,13 @@ nav.navbar #menu-main li.current-menu-item {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-color: #333 !important;
 }
 .page-id-27 #pnext-main .pn-home-wrap .pn-page-title {
   color: #333 !important;
   font-size: 25px !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500 !important;
 }
 .page-id-27 #pnext-main .pn-home-wrap h2.pn-page-title {
@@ -390,7 +396,7 @@ nav.navbar #menu-main li.current-menu-item {
 #events-calendar .table,
 #events-calendar .fc-day-number,
 #events-calendar .fc-button {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   color: #333333 !important;
 }
 #events-calendar .ui-widget-header {
@@ -404,7 +410,7 @@ nav.navbar #menu-main li.current-menu-item {
   border-color: #213e4f;
 }
 .events-table {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .advocate-row {
   margin: 3em 0 3em 0;
