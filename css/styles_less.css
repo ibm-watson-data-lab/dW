@@ -302,6 +302,7 @@ nav.navbar #menu-main li.current-menu-item {
   font-size: 24px !important;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   margin: 20px 0 50px 0 !important;
+  text-align: center;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples h3 {
   color: #fff !important;
