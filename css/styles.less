@@ -8,8 +8,8 @@
 @text-color-light: #A7A9AC;
 @background-color: #FFF;
 @link-color: #337AB7;
-@ui-color: #213E4F;
-@highlight-color: #F16A55;
+@accent-color-primary: #213E4F;
+@accent-color-secondary: #F16A55;
 
 //
 // GLOBAL STYLES
@@ -28,7 +28,7 @@ h4, .subtitle {
   font-weight: 200 !important;
 }
 a:hover, a:active {
-  color: @highlight-color !important;
+  color: @accent-color-secondary !important;
   text-decoration: none !important;
 }
 a, a:visited {
@@ -190,14 +190,14 @@ nav.navbar {
     color: @text-color !important;
   }
   .ui-widget-header {
-    background-color: @ui-color !important;
+    background-color: @accent-color-primary !important;
   }
   .ui-widget-content {
     background: none;
-    border-color: @ui-color !important;
+    border-color: @accent-color-primary !important;
   }
   .events-table tr {
-    border-color: @ui-color;
+    border-color: @accent-color-primary;
   }
 }
 .events-table {
