@@ -171,7 +171,10 @@ nav.navbar #menu-main li.current-menu-item {
   color: #fff !important;
   font-weight: bold;
 }
-#hero-text .get-started-btn a:hover,
+#hero-text .get-started-btn a:hover {
+  color: #333 !important;
+  background: #fff;
+}
 #hero-text .get-started-btn a:visited {
   color: #fff !important;
 }
@@ -277,7 +280,10 @@ nav.navbar #menu-main li.current-menu-item {
   height: 100%;
   font-weight: bold;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:hover,
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:hover {
+  color: #333 !important;
+  background: #fff;
+}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services-container .topics-services .topics-services-right-content .cds-services-read-more .read-more-btn a:visited {
   color: #fff !important;
 }
@@ -301,7 +307,7 @@ nav.navbar #menu-main li.current-menu-item {
   font-weight: 500 !important;
   font-size: 24px !important;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  margin: 50px 0 !important;
+  margin: 60px 0 !important;
   text-align: center;
   font-style: normal;
 }
@@ -351,7 +357,10 @@ nav.navbar #menu-main li.current-menu-item {
   color: #fff !important;
   font-weight: bold;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:hover,
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:hover {
+  color: #333 !important;
+  background: #fff;
+}
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .featured-samples .featured-samples-btn a:visited {
   color: #fff !important;
 }
@@ -383,6 +392,8 @@ nav.navbar #menu-main li.current-menu-item {
   font-size: 25px !important;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500 !important;
+  padding-top: 0;
+  margin-top: 60px;
 }
 .page-id-27 #pnext-main .pn-home-wrap h2.pn-page-title {
   padding-left: 10px;
