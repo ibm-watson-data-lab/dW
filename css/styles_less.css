@@ -454,6 +454,9 @@ nav.navbar #menu-main li.current-menu-item {
   background-color: #fafafa;
   border-left: 2px solid #f16a55;
 }
+#post-128 .sidebar {
+  margin-top: 16px;
+}
 #events-calendar .table,
 #events-calendar .fc-day-number,
 #events-calendar .fc-button {
@@ -483,6 +486,9 @@ nav.navbar #menu-main li.current-menu-item {
   list-style-type: none;
   display: inline;
   padding-right: 8px;
+}
+#connect-sidebar {
+  margin-top: 40px;
 }
 .how-to .text-search {
   margin: 9rem 0 2rem 0;
