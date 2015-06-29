@@ -140,8 +140,8 @@ nav.navbar #menu-main li.current-menu-item {
   nav.navbar #menu-main li.current-menu-item a:visited {
     color: #F16A55 !important;
   }
-  #topics-services-left-content {
-    padding: 0 30px;
+  .topics-services-left-content {
+    padding: 0 30px !important;
   }
 }
 #hero-text {
