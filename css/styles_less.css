@@ -155,6 +155,18 @@ nav.navbar #menu-main li.current-menu-item {
   .topics-services-right-content .cds-services-read-more {
     text-align: center !important;
   }
+  .pn-home-wrap h1.pn-page-title {
+    padding-left: 10px !important;
+  }
+  .pn-home-wrap .pn-meta-date {
+    padding-left: 10px !important;
+  }
+  .pn-home-wrap h1.pn-post-title {
+    padding-left: 10px !important;
+  }
+  .pn-home-wrap pn-post-content p {
+    padding-left: 10px !important;
+  }
 }
 #hero-text {
   background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_clouds_hero.png') no-repeat;
