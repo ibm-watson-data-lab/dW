@@ -169,7 +169,14 @@ nav.navbar {
     padding-left: 20px !important;
     
     .cds-services {
-     padding-left: 20px !important;
+      padding-left: 20px !important;
+     
+        li {
+          margin: 0 30px 60 30px !important;
+        }
+    }
+    .cds-services-read-more {
+      text-align: center !important;
     }
   }
 }
@@ -296,9 +303,9 @@ nav.navbar {
                       
                       li {
                         display: inline-block;
-                        margin: 0 0 60px 130px;
-                        &:first-of-type {
-                          margin-left: 0;
+                        margin: 0 130px 60px 0;
+                        &:last-of-type {
+                          margin-right: 0;
                         }
                         .cds-blurb {
                           text-align: center;

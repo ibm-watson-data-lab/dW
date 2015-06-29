@@ -149,6 +149,12 @@ nav.navbar #menu-main li.current-menu-item {
   .topics-services-right-content .cds-services {
     padding-left: 20px !important;
   }
+  .topics-services-right-content .cds-services li {
+    margin: 0 30px 60 30px !important;
+  }
+  .topics-services-right-content .cds-services-read-more {
+    text-align: center !important;
+  }
 }
 #hero-text {
   background: #262324 url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/cds_clouds_hero.png') no-repeat;
@@ -254,10 +260,10 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-right .topics-services-right-content .cds-services li {
   display: inline-block;
-  margin: 0 0 60px 130px;
+  margin: 0 130px 60px 0;
 }
-.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-right .topics-services-right-content .cds-services li:first-of-type {
-  margin-left: 0;
+.page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-right .topics-services-right-content .cds-services li:last-of-type {
+  margin-right: 0;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-right .topics-services-right-content .cds-services li .cds-blurb {
   text-align: center;
