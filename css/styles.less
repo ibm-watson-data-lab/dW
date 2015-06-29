@@ -242,11 +242,15 @@ nav.navbar {
             .topics-services {
               background: #F16A55;
               
+              .row {
+                margin: 0;
+              }
+              
               .topics-services-container {
                 padding: 0;
               }
 
-              .topics-services-left-content {
+              .topics-services-left {
                 background: #fff;
                 
                 h3 {
@@ -259,83 +263,89 @@ nav.navbar {
                   }
                 }
               }
-              .topics-services-right-content {
+              .topics-services-right {
                 background: #F16A55;
+                
+                .topics-services-right-content {
+                  padding-left: 40px;
 
-                h3 {
-                  margin: 60px 0;
-                  color: #fff !important;
-                }
-                .services-description {
-                  padding-bottom: 60px;
-                  font-size: 16px;
-                  color: #fff;
-                  font-weight: 300;
-                }
-                .cds-services {
-                  padding-left: 70px;
-                  
-                  li {
-                    display: inline-block;
-                    margin: 0 130px 60px 0;
-                    &:last-of-type {
-                      margin-right: 0;
+                    h3 {
+                      padding: 60px 0;
+                      margin: 0;
+                      color: #fff !important;
                     }
-                    .cds-blurb {
-                      text-align: center;
-
-                      .cds-title {
-                        padding-top: 20px;
-
-                        a {
-                          color: #fff !important;
-                          font-size: 14px;
-
-                          &:hover,
-                          &:visited {
-                            color: #fff !important;
+                    .services-description {
+                      padding-bottom: 60px;
+                      font-size: 16px;
+                      color: #fff;
+                      font-weight: 300;
+                    }
+                    .cds-services {
+                      padding-left: 70px;
+                      
+                      li {
+                        display: inline-block;
+                        margin: 0 130px 60px 0;
+                        &:last-of-type {
+                          margin-right: 0;
+                        }
+                        .cds-blurb {
+                          text-align: center;
+    
+                          .cds-title {
+                            padding-top: 20px;
+    
+                            a {
+                              color: #fff !important;
+                              font-size: 14px;
+    
+                              &:hover,
+                              &:visited {
+                                color: #fff !important;
+                              }
+                            }
                           }
                         }
                       }
                     }
-                  }
-                }
-                .cds-services-read-more {
-                  text-align: right;
-                  margin-bottom: 20px;
-
-                  .read-more-btn {
-                    display: inline-block;
-                    border: 2px solid #fff;
-                    
-                    &:hover {
-                      background: #fff;
-                      
-                      a {
-                        color: #F16A55 !important;
-                        &:visited {
-                          color: #F16A55 !important;
+                    .cds-services-read-more {
+                      text-align: right;
+                      margin-bottom: 20px;
+    
+                      .read-more-btn {
+                        display: inline-block;
+                        border: 2px solid #fff;
+                        
+                        &:hover {
+                          background: #fff;
+                          
+                          a {
+                            color: #F16A55 !important;
+                            &:visited {
+                              color: #F16A55 !important;
+                            }
+                          }
+                        }
+    
+                        a {
+                          color: #fff !important;
+                          font-size: 14px;
+                          width: 100%;
+                          height: 100%;
+                          font-weight: bold;
+                          &:visited {
+                            color: #fff !important;
+                          }
+                          span {
+                            padding: 6px 36px;
+                            display: inline-block;
+                          }
                         }
                       }
                     }
-
-                    a {
-                      color: #fff !important;
-                      font-size: 14px;
-                      width: 100%;
-                      height: 100%;
-                      font-weight: bold;
-                      &:visited {
-                        color: #fff !important;
-                      }
-                      span {
-                        padding: 6px 36px;
-                        display: inline-block;
-                      }
-                    }
-                  }
+                  } 
+              
                 }
-              }
             }
           
           .featured-samples {
