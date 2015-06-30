@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html <?php language_attributes();?> class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html <?php language_attributes();?> class="pn-sticky-footer no-js"> <!--<![endif]-->
 <head>
-
+<meta name="google-site-verification" content="ZOQeHRygaaWj2MxEwU36AgbPigyRTIM9RmNd6jwoNUk" />
 <meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
 
 <meta name="IBM.WTMSite" content="DWNEXT"/>
