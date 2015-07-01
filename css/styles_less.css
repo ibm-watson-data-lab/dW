@@ -174,9 +174,10 @@ nav.navbar #menu-main li.current-menu-item {
   border: none;
   height: 380px;
   margin-top: -70px;
+  /* Set margin to 100px if button is added below */
 }
 #hero-text .hero-text-container {
-  margin: 100px 0 0 90px;
+  margin: 170px 0 0 90px;
 }
 #hero-text p {
   color: #fff;
@@ -240,7 +241,7 @@ nav.navbar #menu-main li.current-menu-item {
   background: #fff;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-left .topics-services-left-content {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-left .topics-services-left-content h3 {
   color: #F16A55 !important;
@@ -293,7 +294,7 @@ nav.navbar #menu-main li.current-menu-item {
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-right .topics-services-right-content .cds-services-read-more {
   text-align: right;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .page-id-27 #pnext-main #pnext-home-page-content .pn-leadspace .pn-pcon .topics-services .topics-services-right .topics-services-right-content .cds-services-read-more .read-more-btn {
   display: inline-block;
@@ -478,25 +479,6 @@ nav.navbar #menu-main li.current-menu-item {
 #post-128 .sidebar {
   margin-top: 16px;
 }
-#events-calendar .table,
-#events-calendar .fc-day-number,
-#events-calendar .fc-button {
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  color: #333333 !important;
-}
-#events-calendar .ui-widget-header {
-  background-color: #213e4f !important;
-}
-#events-calendar .ui-widget-content {
-  background: none;
-  border-color: #213e4f !important;
-}
-#events-calendar .events-table tr {
-  border-color: #213e4f;
-}
-.events-table {
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
 .advocate-row {
   margin: 3em 0 3em 0;
 }
@@ -577,6 +559,25 @@ nav.navbar #menu-main li.current-menu-item {
 }
 #events-calendar {
   padding-top: 8em !important;
+}
+#events-calendar .table,
+#events-calendar .fc-day-number,
+#events-calendar .fc-button {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #333333 !important;
+}
+#events-calendar .ui-widget-header {
+  background-color: #213e4f !important;
+}
+#events-calendar .ui-widget-content {
+  background: none;
+  border-color: #213e4f !important;
+}
+#events-calendar .events-table tr {
+  border-color: #213e4f;
+}
+.events-table {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 #pn-upcoming-events {
   padding-top: 6em;
