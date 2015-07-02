@@ -6,26 +6,7 @@ get_header(); ?>
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div class="pn-pcon">
-
-		<nav class="mtm pn-nav-links cf">
-		
-			<?php 
-			// Show category list only if not the default "uncategorized"; resolves #91667
-			if ( ! in_category('uncategorized') ): ?>
-				<div class="fl">
-					<?php the_category(' / ') ?>
-				</div>
-			<?php endif; ?>
-			
-			<div class="fr">
-				<?php previous_post_link('%link', __('&lt; Previous') ); ?>
-				&emsp; / &emsp;
-				<?php next_post_link('%link', __('Next &gt;') ); ?>
-			</div>
-			
-		</nav>
-		
+	<div class="pn-pcon">		
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 			<div class="pn-single-post-header">
@@ -38,6 +19,10 @@ get_header(); ?>
 			</div>
 			
 			<div class="pn-columns">
+              
+                <p class="intro">
+                    Tutorials, tips, and perspectives from our advocates.
+                </p>
 
 				<?php if ( is_active_sidebar('pnext_blog_post') ) { ?>
 					<div class="pn-col-6-4">

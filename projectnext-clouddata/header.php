@@ -66,25 +66,6 @@ get_template_part('partials/header-after-wp-head');
 
 	</script>
 <?php endif; ?>
-	<script type="text/javascript">
-		var qparams='';
-	    if (document.URL.indexOf("?") > -1) {
-		    var qparams = document.URL.split('?')[1];
-	    }
-		$(document).ready(function(){
-			$('a').each(function() {
-				var href = this.href;
-				if (qparams != '') {
-					if (href.indexOf("?") > -1) {
-						href = href + '&' + qparams;
-					} else {
-						href = href + '?' + qparams;
-					}
-					$(this).attr('href', href);
-				}
-			});
-		});
-	</script>
 </head>
 
 <body <?php body_class(); ?> >

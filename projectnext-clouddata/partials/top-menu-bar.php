@@ -92,7 +92,7 @@ Includes:
         <p>Resources for developers to</p>
         <p><span>get</span>, <span>build</span>, and <span>analyze</span> data on the IBM Cloud.</p>
       
-        <div class="get-started-btn"><a href="./get-started"><span>Get Started</span></a></div>
+        <div class="get-started-btn"><a href="https://developer.ibm.com/clouddataservices/how-tos/#!searchText=get%20started"><span>Get Started</span></a></div>
     </div>
 </div>
 
