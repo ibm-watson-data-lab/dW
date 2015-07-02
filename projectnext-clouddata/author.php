@@ -38,7 +38,7 @@ if (have_posts()) : ?>
                   <li class="advocate-social-website">
                     <a href="<?php echo the_author_meta('author_website'); ?>" target="_blank">
                     <span class="icon-website">
-                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/rss-icon-24px.png"/>
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/website.png"/>
                     </span>
                   </a></li>
                 <?php }
@@ -47,7 +47,7 @@ if (have_posts()) : ?>
                   <li class="advocate-social-github">
                     <a href="//www.github.com/<?php echo the_author_meta('author_github'); ?>" target="_blank">
                     <span class="icon-github">
-                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/GitHub-Mark-24px.png"/>
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/github.png"/>
                     </span>
                   </a></li>
                 <?php }
@@ -56,7 +56,7 @@ if (have_posts()) : ?>
                         <li class="advocate-social-twitter">
                           <a href="http://twitter.com/<?php echo the_author_meta('author_twitter'); ?>" target="_blank">
                           <span class="icon-twitter">
-                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/twitter-24px.png"/>
+                            <img src="//rawgit.com/ibm-cds-labs/dW/master/images/twitter.png"/>
                           </span>
                         </a></li>
                 <?php }
@@ -65,7 +65,7 @@ if (have_posts()) : ?>
                          <li class="advocate-social-linkedin">
                            <a href="<?php echo the_author_meta('author_linkedin'); ?>" target="_blank">
                            <span class="icon-linkedin">
-                             <img src="//rawgit.com/ibm-cds-labs/dW/master/images/linkedin-24px.png"/>
+                             <img src="//rawgit.com/ibm-cds-labs/dW/master/images/linkedin.png"/>
                            </span></a></li>
                 <?php }
                 
@@ -73,7 +73,7 @@ if (have_posts()) : ?>
                   <li class="advocate-social-pres-sharing">
                     <a href="<?php echo the_author_meta('author_pres_sharing'); ?>" target="_blank">
                     <span class="icon-pres-sharing">
-                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/speakerdeck-24px.png"/>
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/pres-sharing.png"/>
                     </span></a></li>
                 <?php }
                 
@@ -81,7 +81,7 @@ if (have_posts()) : ?>
                   <li class="advocate-social-stackoverflow">
                     <a href="<?php echo the_author_meta('author_stackoverflow'); ?>" target="_blank">
                     <span class="icon-stackoverflow">
-                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/stack-exchange-24px.png"/>
+                      <img src="//rawgit.com/ibm-cds-labs/dW/master/images/stackoverflow.png"/>
                     </span></a></li>
                 <?php } ?>
               </ul>

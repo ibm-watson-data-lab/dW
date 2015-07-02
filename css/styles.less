@@ -21,6 +21,13 @@
 @primary-font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial, sans-serif;
 @secondary-font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
 
+// for formatting list of social links
+.social-links {
+  list-style-type: none;
+  display: inline;
+  padding-right: 8px;
+}
+
 //
 // GLOBAL STYLES
 //
@@ -561,7 +568,7 @@ nav.navbar {
 
 /* End home page */
 
-
+// Services page
 .services {
   padding-top: 2rem;
   .service {
@@ -582,6 +589,7 @@ nav.navbar {
 #post-128 .sidebar {
   margin-top: 16px;
 }
+// end Services page
 
 // Connect Page
 .advocate-row {
@@ -591,9 +599,7 @@ nav.navbar {
     margin: 0px;
 
     li {
-      list-style-type: none;
-      display: inline;
-      padding-right: 8px;
+      .social-links;
     }
   }
 }
@@ -715,6 +721,18 @@ nav.navbar {
   }
 }
 // end Events
+
+// Author page
+.author-bio {
+  ul.advocate-social {
+    margin: 0px;
+    li {
+      .social-links;
+    }
+  }
+}
+// end Author page
+
 /* Global footer */
 #menu-footer {
   li {
