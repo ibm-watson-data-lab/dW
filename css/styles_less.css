@@ -603,7 +603,7 @@ body.author h1 {
   font-style: normal;
 }
 body.author h2 {
-  color: #fff;
+  color: #fff !important;
 }
 body.author h3.pn-widgettitle {
   font-size: 14px;
@@ -614,6 +614,9 @@ body.author .pn-post-meta {
 }
 body.author .pn-post-meta .pn-meta-date {
   color: #a7a9ac;
+}
+body.author .widget_archive ul li {
+  font-size: 14px;
 }
 #events-calendar {
   padding-top: 8em !important;
