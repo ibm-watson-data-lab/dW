@@ -20,10 +20,6 @@ get_header(); ?>
 			
 			<div class="pn-columns">
               
-                <p class="intro">
-                    Tutorials, tips, and perspectives from our advocates.
-                </p>
-
 				<?php if ( is_active_sidebar('pnext_blog_post') ) { ?>
 					<div class="pn-col-6-4">
 				<?php } else { ?>
