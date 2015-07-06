@@ -590,6 +590,19 @@ body.author .all-content-by-author {
   font-size: 24px;
   margin-top: 20px;
 }
+body.author h1 {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+body.author h2 {
+  color: #fff;
+}
+body.author .pn-post-meta {
+  font-size: 14px;
+  font-weight: 400;
+}
+body.author .pn-post-meta .pn-meta-date {
+  color: #a7a9ac;
+}
 #events-calendar {
   padding-top: 8em !important;
 }
@@ -626,14 +639,6 @@ body.author .all-content-by-author {
 }
 .single-event .pn-copy {
   padding-top: 10rem;
-}
-.author-bio ul.advocate-social {
-  margin: 0px;
-}
-.author-bio ul.advocate-social li {
-  list-style-type: none;
-  display: inline;
-  padding-right: 8px;
 }
 /* Global footer */
 #menu-footer li a {
