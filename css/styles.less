@@ -51,7 +51,6 @@ body.page-id-21 { // events
 }
 body.blog, body.single-post { // blog
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue2.gif');
-  background-size: 100% 240px;
 }
 h1 {
   color: white !important;
@@ -653,9 +652,14 @@ nav.navbar {
 // end How-Tos Page
 
 // Blog
+body.blog #pnext-main .pn-pcon p.intro {
+  color: white;
+  font-size: 1.75rem;
+  margin: 2rem 0 6rem 0 !important;
+}
 .single-post {
   footer {
-    margin-top: 60px; // get out of the way of the big banner
+    margin-top: 100px; // get out of the way of the big banner
   }
 }
 .blog, .single-post {

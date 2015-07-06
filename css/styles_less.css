@@ -35,7 +35,6 @@ body.page-id-21 {
 body.blog,
 body.single-post {
   background-image: url('http://developer.ibm.com/clouddataservices/wp-content/uploads/sites/47/2015/06/blue2.gif');
-  background-size: 100% 240px;
 }
 h1 {
   color: white !important;
@@ -535,8 +534,13 @@ nav.navbar #menu-main li.current-menu-item {
   font-weight: 400 !important;
   font-size: 9pt !important;
 }
+body.blog #pnext-main .pn-pcon p.intro {
+  color: white;
+  font-size: 1.75rem;
+  margin: 2rem 0 6rem 0 !important;
+}
 .single-post footer {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .blog .pn-post-list,
 .single-post .pn-post-list {
