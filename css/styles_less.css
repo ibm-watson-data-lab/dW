@@ -550,28 +550,45 @@ body.blog #pnext-main .pn-pcon p.intro {
   margin-top: 100px;
 }
 .blog .pn-post-list,
-.single-post .pn-post-list {
+.single-post .pn-post-list,
+author .pn-post-list {
   margin-top: 100px;
 }
 .blog .post .pn-post-title,
-.single-post .post .pn-post-title {
+.single-post .post .pn-post-title,
+author .post .pn-post-title {
   font-style: normal;
   font-size: 18pt;
   font-weight: 500;
   font-family: inherit;
 }
 .blog .post footer,
-.single-post .post footer {
+.single-post .post footer,
+author .post footer {
   font-size: 10pt;
   color: #a7a9ac;
 }
 .blog .pn-widgettitle,
 .single-post .pn-widgettitle,
+author .pn-widgettitle,
 .blog .widget_archive > ul,
 .single-post .widget_archive > ul,
+author .widget_archive > ul,
 .blog .widget_categories > ul,
-.single-post .widget_categories > ul {
+.single-post .widget_categories > ul,
+author .widget_categories > ul {
   font-size: inherit;
+}
+body.author .flag-img {
+  vertical-align: top;
+  padding-top: 20px;
+}
+body.author .advocate-social {
+  margin: 60px 0 20px 0;
+}
+body.author .all-content-by-author {
+  font-size: 24px;
+  margin-top: 20px;
 }
 #events-calendar {
   padding-top: 8em !important;
