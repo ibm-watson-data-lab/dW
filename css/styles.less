@@ -72,12 +72,12 @@ h4, .subtitle {
   font-size: 12pt !important;
   font-weight: 200 !important;
 }
-a:hover, a:active {
-  color: @accent-color-secondary !important;
-  text-decoration: none !important;
-}
 a, a:visited {
   color: @link-color !important;
+}
+a:hover, a:active, a:link:hover, a:visited:hover {
+  color: @accent-color-secondary !important;
+  text-decoration: none !important;
 }
 /* don't let Bootstrap make the widest container size */
 @media (min-width:1200px){
