@@ -686,7 +686,7 @@ body.blog #pnext-main .pn-pcon p.intro {
     color: #FFF !important;
     margin-top: 2em; // get out of the way of the big banner
     a, a:link, a:visited {
-      color: #FFF;
+      color: #FFF !important;
       border-bottom: 2px dotted #fff;
     }
   }
@@ -787,10 +787,12 @@ body.author {
 // Widgets in sidebar
 // make widget text bigger by over-riding PNext styles
 .pn-widgets {
-  font-size: inherit;
+  font-size: 10pt !important;
   margin-top: 4em;
   .pn-widgettitle {
+    font-size: 12pt;
     font-weight: 400 !important;
+    color: @text-color-light;
   }
 }
 // .pn-widgettitle, .widget_archive > ul, .widget_categories > ul {
