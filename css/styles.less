@@ -12,12 +12,6 @@
     margin-bottom: 6rem;
   }
 }
-// transition style to make blog intro white until template gets bootstrap treatment
-.blog .intro {
-  color: white;
-  font-size: 1.75rem;
-  margin-bottom: 6rem;
-}
 @text-color: #333;
 @text-color-light: #A7A9AC;
 @background-color: #FFF;
@@ -665,14 +659,9 @@ body.blog #pnext-main .pn-pcon p.intro {
   font-size: 1.75rem;
   margin: 2rem 0 6rem 0 !important;
 }
-.single-post {
-  footer {
-    margin-top: 100px; // get out of the way of the big banner
-  }
-}
 .blog, .single-post, author {
   .pn-post-list {
-    margin-top: 100px; // get out of the way of the big banner
+    margin-top: 4em; // get out of the way of the big banner
   }
   .post {
     .pn-post-title {
@@ -683,12 +672,26 @@ body.blog #pnext-main .pn-pcon p.intro {
     }
     footer {
       font-size: 10pt;
-      color: @text-color-light;
     }
   }
-  // make widget text bigger by over-riding PNext styles
-  .pn-widgettitle, .widget_archive > ul, .widget_categories > ul {
-    font-size: inherit;
+  // transition style to make blog intro white until template gets bootstrap treatment
+  .intro {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 6rem;
+  }
+}
+.single-post {
+  footer {
+    color: #FFF !important;
+    margin-top: 2em; // get out of the way of the big banner
+    a, a:link, a:visited {
+      color: #FFF;
+      border-bottom: 2px dotted #fff;
+    }
+  }
+  .pn-copy {
+    margin-top: 2em;
   }
 }
 // end Blog page
@@ -780,6 +783,19 @@ body.author {
   }
 }
 // end Events
+
+// Widgets in sidebar
+// make widget text bigger by over-riding PNext styles
+.pn-widgets {
+  font-size: inherit;
+  margin-top: 4em;
+  .pn-widgettitle {
+    font-weight: 400 !important;
+  }
+}
+// .pn-widgettitle, .widget_archive > ul, .widget_categories > ul {
+//   font-size: inherit;
+// }
 
 /* Global footer */
 #menu-footer {
