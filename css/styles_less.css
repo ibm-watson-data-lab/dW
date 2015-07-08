@@ -664,7 +664,7 @@ body.author .widget_archive ul li {
 .pn-widgets .pn-widgettitle {
   font-size: 12pt;
   font-weight: 400 !important;
-  color: #a7a9ac;
+  color: #a7a9ac !important;
 }
 /* Global footer */
 #menu-footer li a {
