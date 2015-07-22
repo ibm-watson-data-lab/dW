@@ -2,14 +2,6 @@
  * Styles for IBM CDS developerWorks developer center
 */
 
-.single-doc_page .pn-nav-tree {
-  position: relative;
-  top: 80px;
-}
-.single-doc_page .pn-nav-tree li {
-  font-size: 12pt;
-}
-
 //
 // GLOBAL STYLES
 //
@@ -815,8 +807,13 @@ body.author {
 body.single-doc_page {
   background-size: 100% 220px;  
   article {
+    padding-left: 24px; // more spage between left sidebar and article
+    header {
+      position: relative;
+      left: -264px; // move title over to left align with all content
+    }
     footer {
-      display: none;
+      display: none; // hide author info
     }
     .pn-main-content {
       .description {
@@ -832,9 +829,9 @@ body.single-doc_page {
   .pn-nav-tree {
     position: relative;
     top: 80px;
-    li {
+    li a {
       font-size: 12pt;
-      color: #999 !important;
+      color: @text-color-light !important;
     }
   }
 }
@@ -844,7 +841,7 @@ body.single-doc_page {
 #menu-footer {
   li {
     a {
-      color: #999 !important;
+      color: @text-color-light !important;
       font-size: 12px;
     }
   }
