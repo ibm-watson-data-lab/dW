@@ -814,20 +814,32 @@ body.author {
 // Docs pages
 body.single-doc_page {
   background-size: 100% 220px;  
-
+  article {
+    footer {
+      display: none;
+    }
+    .pn-main-content {
+      .description {
+        font-size: 14pt;
+        color: @text-color-light;
+      }
+      .transcript {
+        text-align: right;
+        font-size: 10pt;
+      }
+    }
+  }
   .pn-nav-tree {
     position: relative;
     top: 80px;
-    
     li {
       font-size: 12pt;
       color: #999 !important;
     }
   }
 }
-
-
 // end Docs pages
+
 /* Global footer */
 #menu-footer {
   li {
