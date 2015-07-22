@@ -817,8 +817,8 @@ body.single-doc_page {
     }
     .pn-main-content {
       .description {
-        font-size: 14pt;
-        color: @text-color-light;
+        font-size: 14pt !important;
+        font-weight: 400 !important;
       }
       .transcript {
         text-align: right;
@@ -828,10 +828,13 @@ body.single-doc_page {
   }
   .pn-nav-tree {
     position: relative;
-    top: 80px;
+    margin-top: 80px;
     li a {
       font-size: 12pt;
       color: @text-color-light !important;
+    }
+    ul.children {
+      max-height: unset !important;
     }
   }
 
