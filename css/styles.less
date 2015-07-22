@@ -2,16 +2,17 @@
  * Styles for IBM CDS developerWorks developer center
 */
 
+.single-doc_page .pn-nav-tree {
+  position: relative;
+  top: 80px;
+}
+.single-doc_page .pn-nav-tree li {
+  font-size: 12pt;
+}
+
 //
 // GLOBAL STYLES
 //
-.pn-copy {
-  p.intro {
-    color: white;
-    font-size: 1.75rem;
-    margin-bottom: 9rem;
-  }
-}
 @text-color: #333;
 @text-color-light: #A7A9AC;
 @background-color: #FFF;
@@ -20,6 +21,14 @@
 @accent-color-secondary: #F16A55; // #F16A55 is Hot Salmon
 @primary-font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial, sans-serif;
 @secondary-font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial, sans-serif;
+
+.pn-copy {
+  p.intro {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 9rem;
+  }
+}
 
 // for formatting list of social links
 .social-links {
@@ -802,6 +811,23 @@ body.author {
 //   font-size: inherit;
 // }
 
+// Docs pages
+body.single-doc_page {
+  background-size: 100% 220px;  
+
+  .pn-nav-tree {
+    position: relative;
+    top: 80px;
+    
+    li {
+      font-size: 12pt;
+      color: #999 !important;
+    }
+  }
+}
+
+
+// end Docs pages
 /* Global footer */
 #menu-footer {
   li {
