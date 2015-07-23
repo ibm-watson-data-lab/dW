@@ -814,13 +814,18 @@ body.single-doc_page {
       height: 80px;
       .pn-page-title {
         margin-top: 0.25em !important;
+        @media (max-width: 700px) {
+          color: @text-color !important;
+        }
       }
       .learning-center-name {
         color: white;
         font-weight: 700;
+        @media (max-width: 700px) {
+          color: @text-color !important;
+        }
       }
       @media (max-width: 700px) {
-        color: @text-color !important;
         left: unset;
       }
     }
