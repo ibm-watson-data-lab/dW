@@ -23,8 +23,8 @@
 	endif; 
 	?>
 		
-	// this area was deleted to prevent listing child pages
-  // see version of this file in projectnext to get them back -- RRS
+	<!-- this area was deleted to prevent listing child pages -->
+  <!-- see version of this file in projectnext to get them back -- RRS -->
 
 	<div id="comments" class="ptl">
 	  <div id="respond">

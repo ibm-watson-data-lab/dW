@@ -8,7 +8,6 @@ get_header();
 
 get_template_part('partials/docs_leadspace');
 ?>
-
 <section class="pn-pcon ptl">
 
 <div class="pn-columns row">
@@ -77,6 +76,8 @@ get_template_part('partials/docs_leadspace');
 </div>
 
 </section>
+<script type="text/javascript" src="//rawgit.com/ibm-cds-labs/dW/master/js/learningcenter.js"></script>
+
 
 
 <?php
