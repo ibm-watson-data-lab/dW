@@ -1,6 +1,6 @@
 // this will only exist on pages with a parent docs page
 // var parentel = $('li.current_page_parent>span>a');
-var parentel = $('ul.pn-nav-tree>li>span>a');
+var parentel = $('ul.pn-nav-tree>li.isopen>span>a');
 if ( parentel ) {
   var parentname = parentel.text().trim();
   $('header').prepend('<div class="learning-center-name">'+parentname+'</div>');
