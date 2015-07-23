@@ -1,14 +1,14 @@
+var pathname = window.location.pathname;
 // this will only exist on pages with a parent docs page
-// var parentel = $('li.current_page_parent>span>a');
-var parentel = $('ul.pn-nav-tree>li.is-open>span>a');
-if ( parentel ) {
-  var parentname = parentel.text().trim();
-  $('header').prepend('<div class="learning-center-name">'+parentname+'</div>');
-}
+// var parentel = $('ul.pn-nav-tree>li.is-open>span>a');
+// if ( parentel.length>0 ) {
+//   var parentname = parentel.text().trim();
+//   $('header').prepend('<div class="learning-center-name">'+parentname+'</div>');
+// }
+if (pathname.startsWith('/clouddataservices/docs/dashdb/') ) 
+  $('header').prepend('<div class="learning-center-name">dashDB Learning Center</div>');
 
 // add static menu
-// var pathname = window.location.pathname;
-// if (pathname.startsWith('/clouddataservices/docs/dashdb/') ) {
 if ( $('#dashdb-menu') ) {
   var h = '<div class="btn-group" role="group">'
   h += '<div class="btn btn-default"><a href="http://www-01.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html">Docs</a></div>';
