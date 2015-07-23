@@ -7,6 +7,8 @@ var pathname = window.location.pathname;
 // }
 if (pathname.startsWith('/clouddataservices/docs/dashdb/') ) 
   $('header').prepend('<div class="learning-center-name">dashDB Learning Center</div>');
+else if (pathname.startsWith('/clouddataservices/docs/cloudant/') ) 
+  $('header').prepend('<div class="learning-center-name">Cloudant Learning Center</div>');
 
 // add static menu
 if ( $('#dashdb-menu') ) {
