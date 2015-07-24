@@ -719,7 +719,9 @@ body.single-doc_page .pn-nav-tree .children a {
   padding-left: 0;
 }
 body.single-doc_page .pn-nav-tree .toggle-wrap a {
-  color: #a7a9ac !important;
+  color: #333333 !important;
+  font-weight: normal;
+  font-size: 16px;
 }
 body.single-doc_page .pn-nav-tree ul.children {
   max-height: unset !important;
@@ -732,6 +734,9 @@ body.single-doc_page .pn-nav-tree .current_page_item > a,
 body.single-doc_page .pn-nav-tree .current_page_item > .toggle-wrap,
 body.single-doc_page .pn-nav-tree .current-cat > .toggle-wrap {
   background: none;
+}
+body.single-doc_page .pn-nav-tree .current_page_item > a {
+  font-weight: bold;
 }
 /* Global footer */
 #menu-footer li a {
