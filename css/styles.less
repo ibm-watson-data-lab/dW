@@ -847,11 +847,28 @@ body.single-doc_page {
     position: relative;
     margin-top: 100px;
     li a {
-      font-size: 12pt;
+      font-size: 13px;
+      color: @link-color !important;
+      &:hover {
+        background: none;
+      }
+    }
+    .children a {
+      padding-left: 0;
+    }
+    .toggle-wrap a {
       color: @text-color-light !important;
     }
     ul.children {
       max-height: unset !important;
+    }
+    .toggle-wrap:hover {
+      background: none;
+    }
+    .current-cat>a,
+    .current_page_item>.toggle-wrap,
+    .current-cat>.toggle-wrap {
+      background: none;
     }
   }
 }
