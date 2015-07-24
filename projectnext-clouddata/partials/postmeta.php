@@ -36,7 +36,6 @@ $show_author = (! $is_doc) || get_theme_option('docs_have_authors');
 			<span class="pn-meta-date">
 			<?php the_time(get_option('date_format')); ?>
 			</span>
-			<?php 
 		</div>
 
 	</div>

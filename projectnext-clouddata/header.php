@@ -87,4 +87,4 @@ get_template_part('partials/header-after-wp-head');
 	get_template_part('partials/top-menu-bar');
 	?>
 
-    <div id="pnext-main" class="mbxl pn-sticky-footer-body container" role="main">
+    <div id="pnext-main" class="mbxl pn-sticky-footer-body<?php if(!is_front_page()){ ?> container<?php } ?>" role="main">
