@@ -728,6 +728,7 @@ body.single-doc_page .pn-nav-tree .toggle-wrap:hover {
   background: none;
 }
 body.single-doc_page .pn-nav-tree .current-cat > a,
+body.single-doc_page .pn-nav-tree .current_page_item > a,
 body.single-doc_page .pn-nav-tree .current_page_item > .toggle-wrap,
 body.single-doc_page .pn-nav-tree .current-cat > .toggle-wrap {
   background: none;
