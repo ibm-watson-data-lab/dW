@@ -815,10 +815,11 @@ body.single-doc_page {
     font-weight: 700;
     display: inline;
     list-style: disc inside;
-    a, a:visited { color: white; }
+    a, a:visited { color: white !important; }
     a:hover, a:active, a:link:hover, a:visited:hover {
-      color: @link-color !important;
+      color: white !important;
       text-decoration: none !important;
+      border-bottom: 2px solid white;
     }
   }
   article {
