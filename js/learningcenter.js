@@ -1,14 +1,8 @@
 var pathname = window.location.pathname;
-// this will only exist on pages with a parent docs page
-// var parentel = $('ul.pn-nav-tree>li.is-open>span>a');
-// if ( parentel.length>0 ) {
-//   var parentname = parentel.text().trim();
-//   $('header').prepend('<div class="learning-center-name">'+parentname+'</div>');
-// }
 if (pathname.startsWith('/clouddataservices/docs/dashdb/') ) 
-  $('header').prepend('<div class="learning-center-name">dashDB Learning Center</div>');
+  $('.learning-center-name').append('dashDB Learning Center');
 else if (pathname.startsWith('/clouddataservices/docs/cloudant/') ) 
-  $('header').prepend('<div class="learning-center-name">Cloudant Learning Center</div>');
+  $('.learning-center-name').append('<div class="learning-center-name">Cloudant Learning Center</div>');
 
 // add static menu
 if ( $('#dashdb-menu') ) {
