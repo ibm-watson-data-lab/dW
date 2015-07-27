@@ -806,28 +806,15 @@ body.author {
 // Docs pages
 body.single-doc_page {
   background-size: 100% 220px;  
+  .learning-center-name {
+    color: white;
+    font-size: 18pt;
+  }
   article {
     padding-left: 24px; // more spage between left sidebar and article
     header {
-      position: relative;
-      left: -264px; // move title over to left align with all content
-      height: 80px;
-      .pn-page-title {
-        margin-top: 0.25em !important;
-        @media (max-width: 700px) {
-          color: @text-color !important;
-        }
-      }
-      .learning-center-name {
-        color: white;
-        font-weight: 700;
-        @media (max-width: 700px) {
-          color: @text-color !important;
-        }
-      }
-      @media (max-width: 700px) {
-        left: unset;
-      }
+      margin-top:100px !important;
+      h1.pn-page-title { color: unset; }
     }
     footer {
       display: none; // hide author info
