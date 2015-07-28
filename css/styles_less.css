@@ -585,6 +585,17 @@ author .intro {
 .single-post .pn-copy {
   margin-top: 2em;
 }
+.page-author-header {
+  margin-top: 27px;
+}
+.page-author-header footer {
+  color: #FFF !important;
+}
+.page-author-header footer a,
+.page-author-header footer a:link,
+.page-author-header footer a:visited {
+  color: #FFF !important;
+}
 body.author .flag-img {
   vertical-align: top;
   padding-top: 20px;
