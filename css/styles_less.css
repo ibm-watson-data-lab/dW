@@ -587,8 +587,10 @@ author .intro {
 }
 .page-author-header {
   margin-top: 27px;
+  margin-bottom: 22px;
 }
 .page-author-header footer {
+  font-size: 10pt;
   color: #FFF !important;
 }
 .page-author-header footer a,
