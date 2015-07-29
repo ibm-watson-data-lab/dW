@@ -711,6 +711,7 @@ body.blog #pnext-main .pn-pcon p.intro {
 
 // Author page
 body.author {
+  .pn-header-emphasis { background: unset !important; }
   .flag-img {
     vertical-align: top;
     padding-top: 20px;
@@ -724,15 +725,17 @@ body.author {
     }
   }
   .all-content-by-author {
-    font-size: 24px;
+    font-size: 24px !important;
     margin-top: 20px;
+    margin-left: 0 !important;
   }
   h1 {
-    font-family: @primary-font-family !important;
-    font-style: normal;
+    font-size: 32pt;
   }
   h2 {
     color: #fff !important;
+    font-size: 14pt;
+    margin-top: 0;
   }
   h3.pn-widgettitle {
     font-size: 14px;
@@ -749,6 +752,9 @@ body.author {
     ul li {
       font-size: 14px;
     }
+  }
+  article h1 {
+    font-size: 18pt;
   }
 }
 // End Author page
