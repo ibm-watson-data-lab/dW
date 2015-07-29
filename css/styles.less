@@ -665,7 +665,6 @@ body.home.page {
     }
   }
 }
-
 // end How-Tos Page
 
 // Blog
@@ -710,7 +709,6 @@ body.blog #pnext-main .pn-pcon p.intro {
 // end Blog page
 
 // Post Author header
-
 .page-author-header {
   margin-top: 27px;
   margin-bottom: 22px;
@@ -722,8 +720,7 @@ body.blog #pnext-main .pn-pcon p.intro {
     }
   }
 }
-
-// End Post Authoer header
+// End Post Author header
 
 // Author page
 body.author {
@@ -834,13 +831,16 @@ body.author {
 //   font-size: inherit;
 // }
 
-// Docs pages
+// Docs (Learning Center) pages
 body.single-doc_page {
   background-size: 100% 220px;  
   .learning-center-name {
     color: white;
     font-size: 24pt;
     padding-top: 24px;
+    @media (max-width:700px) {
+      font-size: 12pt;
+    }
   }
   .learning-center-menu ul li {
     font-weight: 500;
