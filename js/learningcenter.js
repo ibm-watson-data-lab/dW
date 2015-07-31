@@ -1,5 +1,5 @@
 var pathname = window.location.pathname;
-if (pathname.startsWith('/clouddataservices/docs/dashdb/') ) 
+if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) 
   $('.learning-center-name').append('dashDB Learning Center');
 else if (pathname.startsWith('/clouddataservices/docs/cloudant/') ) 
   $('.learning-center-name').append('<div class="learning-center-name">Cloudant Learning Center</div>');
