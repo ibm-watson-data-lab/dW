@@ -913,7 +913,13 @@ body.single-doc_page {
       }
     }
     .children {
-      padding-left: 1.75em !important; 
+      padding-left: 1.75em;
+      .children {
+        padding-left: 3.25em;
+        .children {
+          padding-left: 5.0em;
+        }
+      } 
       .toggle { 
         // padding-left: 0px !important;
       }
