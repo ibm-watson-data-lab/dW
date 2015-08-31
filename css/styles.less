@@ -920,8 +920,14 @@ body.single-doc_page {
       font-weight: normal;
       font-size: 16px;
     }
-    ul.children {
-      // max-height: unset !important;
+    .children {
+      padding-left: 1.75em !important;
+      .children {
+        padding-left: 3.25em !important;
+        .children {
+          padding-left: 5em !important;
+        }
+      }
     }
     .toggle-wrap:hover {
       background: none;
