@@ -23,6 +23,18 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
     $('.learning-center-menu').append(h);
   }
 
+} else if (pathname.indexOf('/clouddataservices/docs/dataworks/') == 0 ) {
+  $('.learning-center-name').append('DataWorks Learning Center');
+  // add static menu
+  if ( $('.learning-center-menu') ) {
+    var h = '<ul>'
+    h += '<li><a href="https://www.ng.bluemix.net/docs/services/dataworks1/index.html">Docs</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technology%22%2C%22value%22%3A%22DataWorks%22}]">How-Tos</a></li>';
+    h += '</ul>';
+
+    $('.learning-center-menu').append(h);
+  }  
+
 } else {
   $('.learning-center-name').append('Learning Centers');
 }
