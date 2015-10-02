@@ -34,6 +34,17 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
 
     $('.learning-center-menu').append(h);
   }  
+} else if (pathname.indexOf('/clouddataservices/docs/spark/') == 0 ) {
+  $('.learning-center-name').append('Spark Learning Center');
+  // add static menu
+  if ( $('.learning-center-menu') ) {
+    var h = '<ul>'
+    h += '<li><a href="https://www.ng.bluemix.net/docs/services/AnalyticsforApacheSpark/index.html#using_notebooks">Docs</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technology%22%2C%22value%22%3A%22Spark%22}]">How-Tos</a></li>';
+    h += '</ul>';
+
+    $('.learning-center-menu').append(h);
+  }  
 
 } else {
   $('.learning-center-name').append('Learning Centers');
