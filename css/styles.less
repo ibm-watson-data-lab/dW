@@ -71,18 +71,6 @@ h1 {
   font-weight: 400 !important;
   margin-bottom: 0.75rem !important;
 }
-body.single-doc_page article h1 {
-  font-size: 4.236rem !important;
-}
-.pn-copy h1 {
-  font-size: 4.236rem !important;
-}
-.pn-copy h2 {
-  font-size: 2.618rem !important;
-}
-.pn-copy h3 {
-  font-size: 1.618rem !important;
-}
 h4, .subtitle {
   color: @text-color-light !important;
   font-style: normal !important;
@@ -904,10 +892,18 @@ body.single-doc_page {
   article {
     padding-left: 24px; // more spage between left sidebar and article
     header {
-      h1.pn-page-title { color: unset !important; }
+      h1.pn-page-title { 
+        color: unset !important;
+        font-size: 4.236rem !important;
+      }
     }
     footer {
       display: none; // hide author info
+    }
+    .pn-copy { 
+      h1, h2, h3, h4 {
+        font-size: 4.236rem !important;
+      }
     }
     .pn-main-content {
       .description {
