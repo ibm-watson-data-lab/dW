@@ -36,7 +36,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   }  
   
 } else if (pathname.indexOf('/clouddataservices/docs/spark/') == 0 ) {
-  $('.learning-center-name').append('Spark Learning Center');
+  $('.learning-center-name').append('Apache Spark Learning Center');
   // add static menu
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
