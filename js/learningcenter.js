@@ -5,7 +5,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
     h += '<li><a href="http://www-01.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html">Docs</a></li>';
-    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technology%22%2C%22value%22%3A%22dashDB%22}]">How-Tos</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technologies%22%2C%22value%22%3A%22dashDB%22}]">How-Tos</a></li>';
     h += '</ul>';
 
     $('.learning-center-menu').append(h);
@@ -17,7 +17,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
     h += '<li><a href="http://docs.cloudant.com">Docs</a></li>';
-    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technology%22%2C%22value%22%3A%22cloudant%22}]">How-Tos</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technologies%22%2C%22value%22%3A%22cloudant%22}]">How-Tos</a></li>';
     h += '</ul>';
 
     $('.learning-center-menu').append(h);
@@ -29,7 +29,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
     h += '<li><a href="https://www.ng.bluemix.net/docs/services/dataworks1/index.html">Docs</a></li>';
-    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technology%22%2C%22value%22%3A%22DataWorks%22}]">How-Tos</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technologies%22%2C%22value%22%3A%22DataWorks%22}]">How-Tos</a></li>';
     h += '</ul>';
 
     $('.learning-center-menu').append(h);
@@ -41,7 +41,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
     h += '<li><a href="https://www.ng.bluemix.net/docs/services/AnalyticsforApacheSpark/index.html">Docs</a></li>';
-    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technology%22%2C%22value%22%3A%22Spark%22}]">How-Tos</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technologies%22%2C%22value%22%3A%22Spark%22}]">How-Tos</a></li>';
     h += '</ul>';
 
     $('.learning-center-menu').append(h);
