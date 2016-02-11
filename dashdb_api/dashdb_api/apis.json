@@ -1,0 +1,894 @@
+{
+    "basePath": "/dashdb-api",
+    "schemes": [
+        "https"
+    ],
+    "swagger": "2.0",
+    "definitions": {
+        "rscript_bodyInput": {
+            "properties": {
+                "rScript": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "rScript"
+            ]
+        },
+        "LoadGetTableResponse": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/LoadSuccessResponse"
+                    }
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ],
+            "example": {
+                "errorMessageCode": "NONE",
+                "message": "LOAD retrieved successfully",
+                "resultCode": "SUCCESS",
+                "result": [
+                    {
+                        "errorMessageCode": "NONE",
+                        "message": "Load completed successfully.",
+                        "resultCode": "SUCCESS",
+                        "result": {
+                            "ROWS_COMMITTED": 334518,
+                            "LOAD_ID": 1234567890,
+                            "LOAD_LOGFILE": "loadlogs/load_1234567890_DASH123456_ORDER_DETAILS_20160101-094119-CST.json",
+                            "START_TIME": "20160101 09:41:19 CST",
+                            "ROWS_REJECTED": 0,
+                            "LOAD_STATUS": "COMPLETE",
+                            "ROWS_SKIPPED": 0,
+                            "ROWS_DELETED": 0,
+                            "SCHEMA": "DASH123456",
+                            "ROWS_LOADED": 334518,
+                            "TABLE": "ORDER_DETAILS",
+                            "END_TIME": "20160101 09:41:27 CST",
+                            "ROWS_READ": 334518
+                        }
+                    },
+                    {
+                        "errorMessageCode": "NONE",
+                        "message": "Load completed successfully.",
+                        "resultCode": "SUCCESS",
+                        "result": {
+                            "ROWS_COMMITTED": 111505,
+                            "LOAD_ID": 2345678901,
+                            "LOAD_LOGFILE": "loadlogs/load_2345678901_DASH123456_ORDER_DETAILS_20160101-095500-CST.json",
+                            "START_TIME": "20160101 09:55:00 CST",
+                            "ROWS_REJECTED": 0,
+                            "LOAD_STATUS": "COMPLETE",
+                            "ROWS_SKIPPED": 0,
+                            "TABLE": "ORDER_DETAILS",
+                            "SCHEMA": "DASH123456",
+                            "ROWS_LOADED": 111505,
+                            "ROWS_DELETED": 0,
+                            "END_TIME": "20160101 09:55:03 CST",
+                            "ROWS_READ": 111505
+                        }
+                    }
+                ]
+            }
+        },
+        "SuccessResponse3": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "items": "object"
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ]
+        },
+        "rscript_bodyInput2": {
+            "properties": {
+                "arguments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": []
+        },
+        "LoadGetIdResponse": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "$ref": "#/definitions/LoadSuccessResponse"
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ],
+            "example": {
+                "errorMessageCode": "NONE",
+                "message": "LOAD retrieved successfully",
+                "resultCode": "SUCCESS",
+                "result": {
+                    "errorMessageCode": "NONE",
+                    "message": "Load completed successfully.",
+                    "resultCode": "SUCCESS",
+                    "result": {
+                        "ROWS_COMMITTED": 334518,
+                        "LOAD_ID": 1234567890,
+                        "LOAD_LOGFILE": "loadlogs/load_1234567890_DASH123456_ORDER_DETAILS_20160101-094119-CST.json",
+                        "START_TIME": "20160101 09:41:19 CST",
+                        "ROWS_REJECTED": 0,
+                        "LOAD_STATUS": "COMPLETE",
+                        "ROWS_SKIPPED": 0,
+                        "ROWS_DELETED": 0,
+                        "SCHEMA": "DASH123456",
+                        "ROWS_LOADED": 334518,
+                        "TABLE": "ORDER_DETAILS",
+                        "END_TIME": "20160101 09:41:27 CST",
+                        "ROWS_READ": 334518
+                    }
+                }
+            }
+        },
+        "LoadSuccessResponse": {
+            "type": "object",
+            "example": {
+                "errorMessageCode": "NONE",
+                "message": "Load completed successfully.",
+                "resultCode": "SUCCESS",
+                "result": {
+                    "ROWS_COMMITTED": 334518,
+                    "LOAD_ID": 1234567890,
+                    "LOAD_LOGFILE": "loadlogs/load_1234567890_DASH123456_ORDER_DETAILS_20160101-094119-CST.json",
+                    "START_TIME": "20160101 09:41:19 CST",
+                    "ROWS_REJECTED": 0,
+                    "LOAD_STATUS": "COMPLETE",
+                    "ROWS_SKIPPED": 0,
+                    "ROWS_DELETED": 0,
+                    "SCHEMA": "DASH123456",
+                    "ROWS_LOADED": 334518,
+                    "TABLE": "ORDER_DETAILS",
+                    "END_TIME": "20160101 09:41:27 CST",
+                    "ROWS_READ": 334518
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ],
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "$ref": "#/definitions/LoadResult"
+                }
+            }
+        },
+        "SuccessResponse": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ]
+        },
+        "LoadResult": {
+            "type": "object",
+            "required": [
+                "END_TIME",
+                "LOG_PATH",
+                "LOAD_ID",
+                "LOAD_STATUS",
+                "ROWS_COMMITTED",
+                "ROWS_DELETED",
+                "ROWS_LOADED",
+                "ROWS_READ",
+                "ROWS_REJECTED",
+                "ROWS_SKIPPED",
+                "SCHEMA",
+                "START_TIME",
+                "TABLE"
+            ],
+            "properties": {
+                "ROWS_COMMITTED": {
+                    "type": "string"
+                },
+                "LOAD_ID": {
+                    "type": "string"
+                },
+                "START_TIME": {
+                    "type": "string"
+                },
+                "ROWS_REJECTED": {
+                    "type": "string"
+                },
+                "LOG_PATH": {
+                    "type": "string"
+                },
+                "LOAD_STATUS": {
+                    "type": "string"
+                },
+                "ROWS_SKIPPED": {
+                    "type": "string"
+                },
+                "ROWS_DELETED": {
+                    "type": "string"
+                },
+                "SCHEMA": {
+                    "type": "string"
+                },
+                "ROWS_LOADED": {
+                    "type": "string"
+                },
+                "TABLE": {
+                    "type": "string"
+                },
+                "END_TIME": {
+                    "type": "string"
+                },
+                "ROWS_READ": {
+                    "type": "string"
+                }
+            }
+        },
+        "SuccessResponse2": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "type": "array",
+                    "items": "object"
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ]
+        },
+        "home_bodyInput": {
+            "properties": {
+                "timestamp": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "example": {
+                "timestamp": "20151029 17:52:47 UTC"
+            }
+        },
+        "ErrorResponse": {
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "errorMessageCode": {
+                    "type": "string"
+                },
+                "resultCode": {
+                    "type": "string"
+                },
+                "result": {
+                    "type": "array",
+                    "items": "object"
+                }
+            },
+            "required": [
+                "result",
+                "message",
+                "errorMessageCode",
+                "resultCode"
+            ]
+        }
+    },
+    "tags": [
+        {
+            "name": "home",
+            "description": "Home directory operations"
+        },
+        {
+            "name": "load",
+            "description": "Load data"
+        },
+        {
+            "name": "rscript",
+            "description": "Run R scripts"
+        }
+    ],
+    "paths": {
+        "/load/local/del/{tableName}": {
+            "post": {
+                "tags": [
+                    "load"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "tableName",
+                        "in": "path",
+                        "description": "The schema and table where the data is loaded (schema.'tableName'). The table must exist before the data is loaded.",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "name": "loadFile",
+                        "required": true,
+                        "in": "formData",
+                        "description": "Full path to the source data file on Windows, or relative path on UNIX based operating systems. For each additional file: -F 'loadFile=@\"/[filePath]/[fileName.csv]\"', where loadFile is unique.",
+                        "format": "binary"
+                    },
+                    {
+                        "type": "boolean",
+                        "name": "hasHeaderRow",
+                        "required": false,
+                        "in": "query",
+                        "description": "Indicates if the source data files include column names in a header row.  If this option is selected for a multi-file load job, all files must contain a header row.  Default value is \"false\".",
+                        "default": false
+                    },
+                    {
+                        "type": "string",
+                        "name": "delimiter",
+                        "required": false,
+                        "in": "query",
+                        "description": "Column delimiter used in the source file. Valid values are hexadecimal values 0x01 to 0x7F, excluding line-feed (0x0A), carriage return (0x0D), space (0x20), and decimal point (0x2E). You can enter either the hexadecimal or the character value. Default value is \",\" (corresponds to 0x2C).  If a load job includes one or more XLS or XLSX files, all files must use the default delimiter (,).",
+                        "default": ","
+                    },
+                    {
+                        "type": "string",
+                        "name": "loadAction",
+                        "required": false,
+                        "enum": [
+                            "insert",
+                            "replace"
+                        ],
+                        "in": "query",
+                        "description": "Specify if the data is inserted as new data or replaces the existing data in the target table. Valid values are \"insert\" or \"replace\". Default value is \"insert\".",
+                        "default": "insert"
+                    },
+                    {
+                        "type": "integer",
+                        "name": "codePage",
+                        "required": false,
+                        "in": "query",
+                        "description": "The character encoding of the source file.  Valid values are listed in <a href=\"http://www.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.admin.nls.doc/doc/r0004565.html\" target=\"_blank\">Supported territory codes and code pages</a>.  Default value is \"1208\" (corresponds to UTF-8).",
+                        "default": 1208,
+                        "format": "int32"
+                    },
+                    {
+                        "type": "boolean",
+                        "name": "hasDateTypes",
+                        "required": false,
+                        "in": "query",
+                        "description": "Indicates if the data contains date types. This sets the default date formats for Date (YYYY-MM-DD), Time (HH:MM:SS) and Timestamp (YYYY-MM-DD HH:MM:SS) if they aren't individually set. The default value is \"false\".",
+                        "default": false
+                    },
+                    {
+                        "type": "string",
+                        "name": "dateFormat",
+                        "required": false,
+                        "in": "query",
+                        "description": "A valid date format, such as \"DD-MM-YY\", \"YYYY-MMM-DD\", \"DD/MM/YYY\", \"M/D/YYYY\", \"M/DD\", \"YYYY\".  For a full list of supported formats, see 'Valid file type modifiers for the load utility: ASCII file formats (ASC/DEL)' in the <a href=\"http://www.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html\">LOAD command reference</a>. Default value is \"YYYY-MM-DD\".",
+                        "default": "YYYY-MM-DD"
+                    },
+                    {
+                        "type": "string",
+                        "name": "timeFormat",
+                        "required": false,
+                        "in": "query",
+                        "description": "A valid time format, such as \"HH-MM-SS\", \"H:MM:SS&nbsp;TT\", \"HH:MM\", \"H:MM&nbsp;TT\", \"H:M\", \"H:M:S\". For a full list of supported formats, see 'Valid file type modifiers for the load utility: ASCII file formats (ASC/DEL)' in the <a href=\"http://www.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html\">LOAD command reference</a>. Default value is \"HH:MM:SS\".",
+                        "default": "HH:MM:SS"
+                    },
+                    {
+                        "type": "string",
+                        "name": "timestampFormat",
+                        "required": false,
+                        "in": "query",
+                        "description": "A valid timestamp format, such as \"YYYY-MM-DD&nbsp;HH:MM:SS\", \"DD/MM/YYYY&nbsp;H:MM&nbsp;TT\", \"MMM&nbsp;DD&nbsp;YYYY&nbsp;HH:MM:SS&nbsp;TT\".  For a full list of supported formats, see 'Valid file type modifiers for the load utility: ASCII file formats (ASC/DEL)' in the <a href=\"http://www.ibm.com/support/knowledgecenter/SSEPGG_10.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html\">LOAD command reference</a>.  Default value is \"YYYY-MM-DD&nbsp;HH:MM:SS\".",
+                        "default": "YYYY-MM-DD HH:MM:SS"
+                    }
+                ],
+                "operationId": "POST_LocalDelCreateLoad",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/LoadSuccessResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Create a load job that streams delimited data from one or more CSV, XLS, or XLSX files and loads it into the specified table.  This POST request is asynchronous and returns before the load job is complete.  The parameters specified in the POST request apply to all files included in the same request.  If different parameters are needed, load the data using a separate POST request. <br/><br/>  Use the GET /load/{tableName} or GET /load/{loadID} endpoint to retrieve the status of the load job, and the GET /home/{filename} endpoint to retrieve a detailed load log file.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -H \"Content-Type: multipart/form-data\" -X POST \"https://[hostname]:[port]/dashdb-api/load/local/del/[tableName]?hasHeaderRow=\"[hasHeaderRow]\"&\"delimiter=\"[delimiter]\"&loadAction=\"[loadAction]\"&codePage=\"[codePage]\"&dateFormat=\"[dateFormat]\"&timeFormat=\"[timeFormat]\"&amp;timestampFormat=\"[timestampFormat]\"&hasDateTypes=\"[hasDateTypes]\"\" -F \"loadFile1=@\"\\filePath\\fileName.csv\"\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Load local delimited data into a table"
+            }
+        },
+        "/home": {
+            "get": {
+                "tags": [
+                    "home"
+                ],
+                "parameters": [
+                    {
+                        "name": "homeBody",
+                        "in": "body",
+                        "description": "A timestamp in the format \"yyyyMMdd HH:mm:ss z\". When specified, the list contains only files and folders created after the specified timestamp.",
+                        "schema": {
+                            "$ref": "#/definitions/home_bodyInput"
+                        },
+                        "required": false
+                    }
+                ],
+                "operationId": "GET_HomeDirectoryContent",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/SuccessResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "List the files and folders contained in the home directory.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -X GET \"https://[hostname]:[port]/dashdb-api/home/[filename]\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "List the contents of the home directory"
+            }
+        },
+        "/rscript/{filename}": {
+            "post": {
+                "tags": [
+                    "rscript"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "filename",
+                        "in": "path",
+                        "description": "The name of the R script file.",
+                        "required": true
+                    },
+                    {
+                        "name": "rScriptBody",
+                        "in": "body",
+                        "description": "Arguments that will be passed to the R script and readable using 'args <- commandArgs(TRUE)'.",
+                        "schema": {
+                            "$ref": "#/definitions/rscript_bodyInput2"
+                        },
+                        "required": false
+                    }
+                ],
+                "operationId": "POST_ExecuteRScript",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/SuccessResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Run an R script file that is located in the home directory, such as the sample dashDB R scripts and scripts generated by the integrated RStudio.<br><br/>Use the GET /home endpoint to find output files, and the GET /home/{filename} endpoint to retrieve output files.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -X POST \"https://[hostname]:[port]/dashdb-api/rscript/[filename]\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Run an existing R script file"
+            }
+        },
+        "/home/{filename}": {
+            "delete": {
+                "tags": [
+                    "home"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "filename",
+                        "in": "path",
+                        "description": "The name of the file to be deleted.",
+                        "required": true
+                    }
+                ],
+                "operationId": "DELETE_HomeDirectoryFile",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/SuccessResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Delete the specified file from the home directory.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -X DELETE \"https://[hostname]:[port]/dashdb-api/home/[filename]\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Delete a file in the home directory"
+            },
+            "get": {
+                "tags": [
+                    "home"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "filename",
+                        "in": "path",
+                        "description": "The name of the file to be returned.",
+                        "required": true
+                    }
+                ],
+                "operationId": "GET_HomeDirectoryFile",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "type": "file"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Get the specified file from the home directory.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -X GET \"https://[hostname]:[port]/dashdb-api/home\"</pre></div>",
+                "produces": [
+                    "application/octet-stream"
+                ],
+                "summary": "Get a file from the home directory"
+            }
+        },
+        "/load/{tableName}": {
+            "get": {
+                "tags": [
+                    "load"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "tableName",
+                        "in": "path",
+                        "description": "Name of the target table.",
+                        "required": true
+                    }
+                ],
+                "operationId": "GET_GetLoadStatusFromTable",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/LoadGetTableResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Get detailed information about active or completed load jobs initiated by the current user to load data into the specified table. The command will fail if there are no jobs associated with the current user that load data into the specified table.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -X GET \"https://[hostname]:[port]/dashdb-api/load/[tableName]\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Get information on load jobs based on tableName"
+            }
+        },
+        "/rscript": {
+            "post": {
+                "tags": [
+                    "rscript"
+                ],
+                "parameters": [
+                    {
+                        "name": "rScriptBody",
+                        "in": "body",
+                        "description": "Percent-encoded R script.",
+                        "schema": {
+                            "$ref": "#/definitions/rscript_bodyInput"
+                        },
+                        "required": true
+                    }
+                ],
+                "operationId": "POST_ExecuteTemporaryRScript",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/SuccessResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Run a temporary R script file in the home directory. After the script is run the temporary file is deleted.<br><br/>Use the GET /home endpoint to find output files, and the GET /home/{filename} endpoint to retrieve output files.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -H \"Content-Type: application/json\" -d \"@[rScriptBody.json]\" -X POST \"https://[hostname]:[port]/dashdb-api/rscript\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Run a temporary R script file"
+            }
+        },
+        "/load/{loadID}": {
+            "get": {
+                "tags": [
+                    "load"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "loadID",
+                        "in": "path",
+                        "description": "ID of the load job.",
+                        "required": true
+                    }
+                ],
+                "operationId": "GET_GetLoadStatusFromID",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "$ref": "#/definitions/LoadGetIdResponse"
+                        }
+                    },
+                    "405": {
+                        "description": "Method Not Allowed",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/ErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "description": "Get detailed information about an active or completed load job with the specified loadID. The command will fail if there is no load job with the specified loadID that is associated with the current user.<br></br><b>cURL</b><div class='curl'><pre>curl --user \"[userid]:[password]\" -X GET \"https://[hostname]:[port]/dashdb-api/load/[loadID]\"</pre></div>",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Get information on load jobs based on loadID"
+            }
+        }
+    },
+    "host": "[hostname]:[port]",
+    "info": {
+        "description": "",
+        "version": "1.0.0",
+        "title": "IBM dashDB API"
+    }
+}
