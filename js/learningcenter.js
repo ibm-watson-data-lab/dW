@@ -58,7 +58,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
 
     $('.learning-center-menu').append(h);
   }  
-} else if (pathname.indexOf('/clouddataservices/docs/Compose/') == 0 ) {
+} else if (pathname.indexOf('/clouddataservices/docs/compose/') == 0 ) {
   $('.learning-center-name').append('Compose Learning Center');
   // add static menu
   if ( $('.learning-center-menu') ) {
