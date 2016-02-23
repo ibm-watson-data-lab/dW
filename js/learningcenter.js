@@ -58,6 +58,17 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
 
     $('.learning-center-menu').append(h);
   }  
+} else if (pathname.indexOf('/clouddataservices/docs/Compose/') == 0 ) {
+  $('.learning-center-name').append('Compose Learning Center');
+  // add static menu
+  if ( $('.learning-center-menu') ) {
+    var h = '<ul>'
+    h += '<li><a href="https://help.compose.io/">Docs</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#!searchText=Compose">How-Tos</a></li>';
+    h += '</ul>';
+
+    $('.learning-center-menu').append(h);
+  }  
 
 } else {
   $('.learning-center-name').append('Learning Centers');
