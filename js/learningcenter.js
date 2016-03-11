@@ -47,7 +47,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
     $('.learning-center-menu').append(h);
   }  
 
-} else if (pathname.indexOf('/clouddataservices/docs/BigInsights/') == 0 ) {
+} else if (pathname.indexOf('/clouddataservices/docs/biginsights/') == 0 ) {
   $('.learning-center-name').append('BigInsights Learning Center');
   // add static menu
   if ( $('.learning-center-menu') ) {
