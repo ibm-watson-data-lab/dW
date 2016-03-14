@@ -16,7 +16,7 @@ Force IE8+ into Standards mode by default (now done with http header)
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
  -->
 
-<title><?php wp_title ('|', true); ?></title>
+<title><?php wp_title (' ', true); ?></title>
 
 <?php 
 get_template_part('partials/header-before-wp-head'); 
