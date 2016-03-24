@@ -47,13 +47,25 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
     $('.learning-center-menu').append(h);
   }  
 
-} else if (pathname.indexOf('/clouddataservices/docs/BigInsights/') == 0 ) {
+} else if (pathname.indexOf('/clouddataservices/docs/biginsights/') == 0 ) {
   $('.learning-center-name').append('BigInsights Learning Center');
   // add static menu
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
     h += '<li><a href="https://www.ng.bluemix.net/docs/#services/BigInsights/index.html#biginsights">Docs</a></li>';
     h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technologies%22%2C%22value%22%3A%22BigInsights%22}]">How-Tos</a></li>';
+    h += '</ul>';
+
+    $('.learning-center-menu').append(h);
+  }  
+  
+} else if (pathname.indexOf('/clouddataservices/docs/compose/') == 0 ) {
+  $('.learning-center-name').append('Compose Learning Center');
+  // add static menu
+  if ( $('.learning-center-menu') ) {
+    var h = '<ul>'
+    h += '<li><a href="https://help.compose.io/">Docs</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#!searchText=Compose">How-Tos</a></li>';
     h += '</ul>';
 
     $('.learning-center-menu').append(h);
