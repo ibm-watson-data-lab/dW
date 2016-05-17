@@ -74,7 +74,6 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
 } else {
   $('.learning-center-name').append('Learning Centers');
 }
-
   
 } else if (pathname.indexOf('/clouddataservices/docs/graph/') == 0 ) {
   $('.learning-center-name').append('Graph Learning Center');
