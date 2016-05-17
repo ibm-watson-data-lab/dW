@@ -75,4 +75,20 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   $('.learning-center-name').append('Learning Centers');
 }
 
+  
+} else if (pathname.indexOf('/clouddataservices/docs/graph/') == 0 ) {
+  $('.learning-center-name').append('Graph Learning Center');
+  // add static menu
+  if ( $('.learning-center-menu') ) {
+    var h = '<ul>'
+    h += '<li><a href="https://www.ng.bluemix.net/docs/services/graphdb/index.html">Docs</a></li>';
+    h += '<li><a href="/clouddataservices/how-tos/#&amp;filter=[{%22key%22%3A%22technologies%22%2C%22value%22%3A%22Graph%20Data%20Store%22}]">How-Tos</a></li>';
+    h += '</ul>';
+
+    $('.learning-center-menu').append(h);
+  }  
+
+} else {
+  $('.learning-center-name').append('Learning Centers');
+}
 
