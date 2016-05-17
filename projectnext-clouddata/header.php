@@ -34,7 +34,7 @@ get_template_part('partials/header-after-wp-head');
 <link rel="stylesheet" type="text/css" href="//rawgit.com/ibm-cds-labs/dW/master/css/styles_less.css">
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="//metrics-collector.mybluemix.net/tracker.js" siteid="cds.search.engine"></script>
+<!-- <script src="//metrics-collector.mybluemix.net/tracker.js" siteid="cds.search.engine"></script> -->
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
