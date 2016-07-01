@@ -115,11 +115,20 @@ var _paq = _paq || [];
   if (!trackerUrl) {
     //Compute it from the current location
     if (src) {
-      trackerUrl = extracturl(src) + '/tracker';
+      trackerUrl = extracturl(src);
     }
     else {
-      trackerUrl = defTrackerProtocol + '://' + defTrackerHost + '/tracker';
+      trackerUrl = defTrackerProtocol + '://' + defTrackerHost;
     }
+  }
+  else if (trackerUrl.lastIndexOf('/') === trackerUrl.length - 1) {
+    //remove trailing slash
+    trackerUrl = trackerUrl.substr(0, (trackerUrl.length - 1));
+  }
+
+  //append /tracker
+  if (trackerUrl.lastIndexOf('/tracker') != trackerUrl.length - 8) {
+    trackerUrl += '/tracker';
   }
 
   if (!siteid) {
