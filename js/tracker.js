@@ -54,16 +54,33 @@ var _paq = _paq || [];
   }
 
   var configureTracker = function(trackerUrl, siteid) {
-    // _paq.push(['addTracker', trackerUrl, siteid]);
-    _paq.push(['setSiteId', siteid]);
-    _paq.push(['setTrackerUrl', trackerUrl]);
-    _paq.push(['addPlugin', 'cds_custom_data', {
-      'link': customDataFn,
-      'sitesearch': customDataFn,
-      'log': customDataFn
-    }]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
+    //make sure tracker not already configured
+    var tracker = window.Piwik ? Piwik.getAsyncTracker(trackerUrl, siteid) : null;
+
+    if (!tracker
+        || (tracker.getTrackerUrl() != trackerUrl
+            && tracker.getSiteId() != siteid)) {
+
+      _paq.push(['addTracker', trackerUrl, siteid]);
+      // _paq.push(['setSiteId', siteid]);
+      // _paq.push(['setTrackerUrl', trackerUrl]);
+      _paq.push(['addPlugin', 'cds_custom_data', {
+        'link': customDataFn,
+        'sitesearch': customDataFn,
+        'log': customDataFn
+      }]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+    }
+    // else {
+    //   Piwik.addPlugin('cds_custom_data', {
+    //     'link': customDataFn,
+    //     'sitesearch': customDataFn,
+    //     'log': customDataFn
+    //   });
+    //   tracker.trackPageView();
+    //   tracker.enableLinkTracking();
+    // }
   }
 
   var addPiwikScriptTag = function(src) {
@@ -111,18 +128,35 @@ var _paq = _paq || [];
 
   //make sure piwik not already loaded
   if (typeof window.Piwik !== 'object') {
-    configureTracker(trackerUrl, siteid);
+    //if anyone else is configured for async tracking
+    //be a good citizen and not lose their work
+    var someOtherPiwikAsyncInit = window.piwikAsyncInit;
+
+    //get notified of piwik initialized
+    window.piwikAsyncInit = function() {
+      try {
+        //piwik loaded, configure a tracker
+        configureTracker(trackerUrl, siteid);
+
+        //tracker is configured, notify others of piwik initialization
+        if (someOtherPiwikAsyncInit) {
+          someOtherPiwikAsyncInit();
+
+          window.piwikAsyncInit = someOtherPiwikAsyncInit;
+          someOtherPiwikAsyncInit = null;
+        }
+      }
+      catch(err) {
+        console.error('error configuring tracker', err);
+      }
+    };
+
+    //add piwik script tag so it can get loaded/initialized
     addPiwikScriptTag(src);
   }
   else {
-    //make sure tracker not already configured
-    var tracker = window.Piwik.getAsyncTracker(trackerUrl, siteid);
-    if (!tracker
-        || (tracker.getTrackerUrl() != trackerUrl
-            && tracker.getSiteId() != siteid)) {
-
-      configureTracker(trackerUrl, siteid);
-    }
+    //piwik already loaded, just configure a tracker
+    configureTracker(trackerUrl, siteid);
   }
 })();
 
