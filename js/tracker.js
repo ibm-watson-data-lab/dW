@@ -54,9 +54,9 @@ var _paq = _paq || [];
   }
 
   var configureTracker = function(trackerUrl, siteid) {
-    _paq.push(['addTracker', trackerUrl, siteid]);
-    // _paq.push(['setSiteId', siteid]);
-    // _paq.push(['setTrackerUrl', trackerUrl]);
+    // _paq.push(['addTracker', trackerUrl, siteid]);
+    _paq.push(['setSiteId', siteid]);
+    _paq.push(['setTrackerUrl', trackerUrl]);
     _paq.push(['addPlugin', 'cds_custom_data', {
       'link': customDataFn,
       'sitesearch': customDataFn,
