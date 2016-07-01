@@ -52,6 +52,33 @@ var _paq = _paq || [];
     a.href = url;
     return a.protocol + '//' + a.hostname + (a.port ? (':' + a.port) : '');
   }
+
+  var configureTracker = function(trackerUrl, siteid) {
+    _paq.push(['addTracker', trackerUrl, siteid]);
+    // _paq.push(['setSiteId', siteid]);
+    // _paq.push(['setTrackerUrl', trackerUrl]);
+    _paq.push(['addPlugin', 'cds_custom_data', {
+      'link': customDataFn,
+      'sitesearch': customDataFn,
+      'log': customDataFn
+    }]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+  }
+
+  var addPiwikScriptTag = function(src) {
+    var index = src ? src.lastIndexOf('/') : -1;
+    var scriptSrc = index === -1 ? (src || '') : src.substr(0, index);
+
+    var g = document.createElement('script');
+    g.type='text/javascript';
+    g.defer = true;
+    g.async = true;
+    g.src = scriptSrc +'/piwik.js';
+
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(g, s);
+  }
   
   //Get the site id from custom script data attribute
   var scripts = document.getElementsByTagName('script');
@@ -81,28 +108,22 @@ var _paq = _paq || [];
   if (!siteid) {
     console.warn('siteid attribute missing in the script tag for tracker.js');
   }
-  // else {
-  //   console.info('configuring site', siteid, 'for tracker', trackerUrl);
-  // }
 
-  //Configure tracker
-  _paq.push(['setSiteId', siteid]);
-  _paq.push(['addPlugin', 'cds_custom_data', {'link': customDataFn, 'sitesearch': customDataFn, 'log': customDataFn}]);
-  _paq.push(['setTrackerUrl', trackerUrl]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
+  //make sure piwik not already loaded
+  if (typeof window.Piwik !== 'object') {
+    configureTracker(trackerUrl, siteid);
+    addPiwikScriptTag(src);
+  }
+  else {
+    //make sure tracker not already configured
+    var tracker = window.Piwik.getAsyncTracker(trackerUrl, siteid);
+    if (!tracker
+        || (tracker.getTrackerUrl() != trackerUrl
+            && tracker.getSiteId() != siteid)) {
 
-  var index = src.lastIndexOf('/');
-
-  //Create piwik.js script tag
-  var g = document.createElement('script');
-  g.type='text/javascript';
-  g.defer = true;
-  g.async = true;
-  g.src = src.substr(0, index) +'/piwik.js';
-
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(g, s); 
+      configureTracker(trackerUrl, siteid);
+    }
+  }
 })();
 
 //dynamically enable link tracking starting from provided DOM Element
