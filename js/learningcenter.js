@@ -88,7 +88,7 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
   // add static menu
   if ( $('.learning-center-menu') ) {
     var h = '<ul>'
-    h += '<li><a href="#"></a></li>';
+    h += '<li><a href="https://console.ng.bluemix.net/docs/services/lift/index.html">Docs</a></li>';
     h += '<li><a href="#"></a></li>';
     h += '</ul>';
 
