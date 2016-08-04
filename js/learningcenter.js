@@ -83,6 +83,18 @@ if ( pathname.indexOf('/clouddataservices/docs/dashdb/') == 0 ) {
     $('.learning-center-menu').append(h);
   }  
 
+} else if (pathname.indexOf('/clouddataservices/docs/lift/') == 0 ) {
+  $('.learning-center-name').append('Lift Learning Center');
+  // add static menu
+  if ( $('.learning-center-menu') ) {
+    var h = '<ul>'
+    h += '<li><a href="#"></a></li>';
+    h += '<li><a href="#"></a></li>';
+    h += '</ul>';
+
+    $('.learning-center-menu').append(h);
+  }  
+
 } else {
   $('.learning-center-name').append('Learning Centers');
 }
