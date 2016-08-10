@@ -101,7 +101,7 @@ var _paq = _paq || [];
   var scripts = document.getElementsByTagName('script');
   var siteid = null;
   var defTrackerProtocol = 'http';
-  var defTrackerHost = 'metrics-collector-ms.mybluemix.net';
+  var defTrackerHost = 'simple-logging-service-ms.mybluemix.net'; //'metrics-collector-ms.mybluemix.net';
   var trackerUrl = null;
   var src = null;
 
