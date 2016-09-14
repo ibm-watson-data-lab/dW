@@ -1,0 +1,93 @@
+//these styles overide styles pulled from the masthead
+//styles file that conflict css files that follow design
+
+// scss-lint:disable IdSelector
+// scss-lint:disable VendorPrefix
+
+body {
+  &#ibm-com {
+    background: $white;
+
+    #ibm-masthead {
+      position: fixed;
+      -webkit-transform: translate3d(0 , 0 , 0);
+      transform: 0;
+    }
+
+    h1,
+    h2 {
+      padding: 0;
+    }
+
+    ul>li,
+    ol>li {
+      padding-top: 0;
+      padding-left: 0;
+    }
+
+    .dropdown {
+      li {
+        padding-top: 10px;
+      }
+    }
+  }
+
+  ul>li::before,
+  ol>li::before {
+    content: no-close-quote;
+  }
+}
+
+#ibm-search-form {
+  #q {
+    border-bottom: 1px solid $masthead-grey;
+  }
+}
+
+.ibm-masthead-iconsonly {
+  li {
+    button {
+      &.ibm-masthead-signin-link {
+        margin-left: 25px;
+        border-bottom: 1px solid $masthead-grey;
+      }
+
+      &.ibm-masthead-menu-link {
+        border-bottom: 1px solid $masthead-grey;
+      }
+    }
+  }
+}
+
+.ibm-show-hide {
+  a {
+    &::before {
+      margin-top: -7px;
+     }
+   }
+}
+
+ul {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+p {
+  &.ibm-icononly {
+    &.ibm-fright {
+      word-wrap: normal;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.ibm-icononly {
+  a {
+    &.ibm-close-link {
+      height: 45px;
+    }
+  }
+}

@@ -1,0 +1,404 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/******************************************************************
+IMPORTS & DEPENDENCIES
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+******************************************************************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Typography
+
+Need to import a font or set of icons for your site? Drop them in
+here or just use this to establish your typographical grid. Or not.
+Do whatever you want to...GOSH!
+
+Helpful Articles:
+http://trentwalton.com/2012/06/19/fluid-type/
+http://ia.net/blog/responsive-typography-the-basics/
+http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+
+******************************************************************/
+/*********************
+FONT FACE (IN YOUR FACE)
+*********************/
+/*  To embed your own fonts, use this syntax
+  and place your fonts inside the
+  library/fonts folder. For more information
+  on embedding fonts, go to:
+  http://www.fontsquirrel.com/
+  Be sure to remove the comment brackets.
+*/
+/*  @font-face {
+      font-family: 'Font Name';
+      src: url('library/fonts/font-name.eot');
+      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+*/
+@font-face {
+  font-family: 'HelveticaNeue-light';
+  src: url("../../library/fonts/HelvNeueLightforIBM.eot");
+  src: url("../../library/fonts/HelvNeueLightforIBM.woff") format("woff"), url("../../library/fonts/HelvNeueLightforIBM.woff2") format("woff2"), url("../../library/fonts/HelvNeueLightforIBM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeue-medium';
+  src: url("../../library/fonts/HelvNeueMediumforIBM.eot");
+  src: url("../../library/fonts/HelvNeueMediumforIBM.woff") format("woff"), url("../../library/fonts/HelvNeueMediumforIBM.woff2") format("woff2"), url("../../library/fonts/HelvNeueMediumforIBM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeue-bold';
+  src: url("../../library/fonts/HelvNeueBoldforIBM.eot");
+  src: url("../../library/fonts/HelvNeueBoldforIBM.woff") format("woff"), url("../../library/fonts/HelvNeueBoldforIBM.woff2") format("woff2"), url("../../library/fonts/HelvNeueBoldforIBM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+The following is based of Typebase:
+https://github.com/devinhunt/typebase.css
+I've edited it a bit, but it's a nice starting point.
+*/
+/*
+ i imported this one in the functions file so bones would look sweet.
+ don't forget to remove it for your site.
+*/
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  margin: 0;
+  font: 16px helveticaneue-light;
+  line-height: 25px;
+  -ms-word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3;
+  -webkit-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Mixins Stylesheet
+
+This is where you can take advantage of Sass' great features: Mixins.
+I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+Helpful:
+http://sachagreif.com/useful-sass-mixins/
+http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+
+******************************************************************/
+/*********************
+TRANSITION
+*********************/
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SIZING
+*********************/
+/* @include box-sizing(border-box); */
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Grid Styles
+
+Since the example grid is based on media queries, so rather than
+setup some js library that would make IE8 and below understand
+media queries, let's just add some styles that serves a fixed grid.
+
+Again, if you want to roll your own, just remove this junk and put
+whatever you use in here.
+
+******************************************************************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+/*
+IMPORTANT NOTE ABOUT SASS 3.3 & UP
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
+/*********************
+NAVIGATION STYLES
+*********************/
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+  /* end .menu ul */ }
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+    .menu ul li {
+      /*
+				plan your menus and drop-downs wisely.
+				*/ }
+      .menu ul li a {
+        /*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/ }
+
+/* end .menu */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+.entry-content {
+  /* at this larger size, we can start to align images */ }
+  .entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left; }
+  .entry-content .alignright, .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right; }
+  .entry-content .aligncenter, .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both; }
+
+/* end .entry-content */
+/*********************
+FOOTER STYLES
+*********************/
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+/* end .footer-links */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  margin: 0 90px; }
+
+/*********************
+HEADER STYLES
+*********************/
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav {
+  border: 0;
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .nav ul {
+    background: #323944;
+    margin-top: 0; }
+  .nav li {
+    float: left;
+    position: relative;
+    /*
+		plan your menus and drop-downs wisely.
+		*/
+    /* showing sub-menus */ }
+    .nav li a {
+      border-bottom: 0;
+      /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
+      .nav li a:hover, .nav li a:focus {
+        color: #fff;
+        text-decoration: underline; }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      margin-top: 0;
+      border: 1px solid #ccc;
+      border-top: 0;
+      position: absolute;
+      visibility: hidden;
+      z-index: 8999;
+      /* highlight sub-menu current page */ }
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
+        /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/ }
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
+          padding-left: 10px;
+          border-right: 0;
+          display: block;
+          width: 180px;
+          border-bottom: 1px solid #ccc; }
+        .nav li ul.sub-menu li:last-child a,
+        .nav li ul.children li:last-child a {
+          border-bottom: 0; }
+        .nav li ul.sub-menu li ul,
+        .nav li ul.children li ul {
+          top: 0;
+          left: 100%; }
+    .nav li:hover > ul {
+      top: auto;
+      visibility: visible; }
+
+/* end .nav */
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+  margin-top: 2.2em; }
+
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em; }
+
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0; }
+  .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */ }
+    .widget ul li ul {
+      margin-top: 0.75em;
+      padding-left: 1em; }
+
+/* links widget */
+/* meta widget */
+/* pages widget */
+/* recent-posts widget */
+/* archives widget */
+/* tag-cloud widget */
+/* calendar widget */
+/* category widget */
+/* recent-comments widget */
+/* search widget */
+/* text widget */
+/*********************
+FOOTER STYLES
+*********************/
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links ul li {
+  /*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/ }
+
+/* end .footer-links */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+/*
+you can call the larger styles if you want, but there's really no need
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJpZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuU2l0ZSBOYW1lOlxuQXV0aG9yOlxuXG5TdHlsZXNoZWV0OiBJRSBTdHlsZXNoZWV0XG5cblNvIGluc3RlYWQgb2YgdXNpbmcgdGhlIHJlc3BvbmQuanMgZmlsZSB0byBhZGQgbWVkaWEgcXVlcnkgc3VwcG9ydFxudG8gSUUsIHdlJ3JlIGdvaW5nIHRvIHVzZSBTQVNTIHRvIGNyZWF0ZSBhbiBlYXNpbHkgcmVhZGFibGUgY3NzIGZpbGUuXG5IZXJlLCB3ZSBpbXBvcnQgYWxsIHRoZSBzdHlsZXMgdGhlIHN0YW5kYXJkIHN0eWxlc2hlZXQgZ2V0cywgb25seVxud2l0aG91dCB0aGUgbWVkaWEgcXVlcmllcy4gTm8gbmVlZCB0byB3b3JyeSBhYm91dCBlZGl0aW5nIGFueXRoaW5nIVxuXG4qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG5JTVBPUlRTICYgREVQRU5ERU5DSUVTXG5SZW1lbWJlciwgYWxsIHRoZSBCQVNFIHN0eWxlcyBhcmUgY2FsbGVkIGFscmVhZHkgc2luY2UgSUUgY2FuXG5yZWFkIHRob3NlLiBCZWxvdywgd2UgbmVlZCB0byBpbXBvcnQgb25seSB0aGUgc3R1ZmYgSUUgY2FuJ3RcbnVuZGVyc3RhbmQgKHdoYXQncyBpbnNpZGUgdGhlIG1lZGlhIHF1ZXJpZXMpLiBXZSBhbHNvIG5lZWQgdG9cbmltcG9ydCB0aGUgbWl4aW5zIGZpbGUgc28gU0FTUyBjYW4gdW5kZXJzdGFuZCB0aGUgdmFyaWFibGVzLlxuKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuU2l0ZSBOYW1lOlxuQXV0aG9yOlxuXG5TdHlsZXNoZWV0OiBUeXBvZ3JhcGh5XG5cbk5lZWQgdG8gaW1wb3J0IGEgZm9udCBvciBzZXQgb2YgaWNvbnMgZm9yIHlvdXIgc2l0ZT8gRHJvcCB0aGVtIGluXG5oZXJlIG9yIGp1c3QgdXNlIHRoaXMgdG8gZXN0YWJsaXNoIHlvdXIgdHlwb2dyYXBoaWNhbCBncmlkLiBPciBub3QuXG5EbyB3aGF0ZXZlciB5b3Ugd2FudCB0by4uLkdPU0ghXG5cbkhlbHBmdWwgQXJ0aWNsZXM6XG5odHRwOi8vdHJlbnR3YWx0b24uY29tLzIwMTIvMDYvMTkvZmx1aWQtdHlwZS9cbmh0dHA6Ly9pYS5uZXQvYmxvZy9yZXNwb25zaXZlLXR5cG9ncmFwaHktdGhlLWJhc2ljcy9cbmh0dHA6Ly9hbGlzdGFwYXJ0LmNvbS9jb2x1bW4vcmVzcG9uc2l2ZS10eXBvZ3JhcGh5LWlzLWEtcGh5c2ljYWwtZGlzY2lwbGluZVxuXG4qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKioqKioqKioqKioqKioqKioqKioqXG5GT05UIEZBQ0UgKElOIFlPVVIgRkFDRSlcbioqKioqKioqKioqKioqKioqKioqKi9cbi8qICBUbyBlbWJlZCB5b3VyIG93biBmb250cywgdXNlIHRoaXMgc3ludGF4XG4gIGFuZCBwbGFjZSB5b3VyIGZvbnRzIGluc2lkZSB0aGVcbiAgbGlicmFyeS9mb250cyBmb2xkZXIuIEZvciBtb3JlIGluZm9ybWF0aW9uXG4gIG9uIGVtYmVkZGluZyBmb250cywgZ28gdG86XG4gIGh0dHA6Ly93d3cuZm9udHNxdWlycmVsLmNvbS9cbiAgQmUgc3VyZSB0byByZW1vdmUgdGhlIGNvbW1lbnQgYnJhY2tldHMuXG4qL1xuLyogIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6ICdGb250IE5hbWUnO1xuICAgICAgc3JjOiB1cmwoJ2xpYnJhcnkvZm9udHMvZm9udC1uYW1lLmVvdCcpO1xuICAgICAgc3JjOiB1cmwoJ2xpYnJhcnkvZm9udHMvZm9udC1uYW1lLmVvdD8jaWVmaXgnKSBmb3JtYXQoJ2VtYmVkZGVkLW9wZW50eXBlJyksXG4gICAgICAgICAgICAgdXJsKCdsaWJyYXJ5L2ZvbnRzL2ZvbnQtbmFtZS53b2ZmJykgZm9ybWF0KCd3b2ZmJyksXG4gICAgICAgICAgICAgdXJsKCdsaWJyYXJ5L2ZvbnRzL2ZvbnQtbmFtZS50dGYnKSBmb3JtYXQoJ3RydWV0eXBlJyksXG4gICAgICAgICAgICAgdXJsKCdsaWJyYXJ5L2ZvbnRzL2ZvbnQtbmFtZS5zdmcjZm9udC1uYW1lJykgZm9ybWF0KCdzdmcnKTtcbiAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gIH1cbiovXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdIZWx2ZXRpY2FOZXVlLWxpZ2h0JztcbiAgc3JjOiB1cmwoXCIuLi8uLi9saWJyYXJ5L2ZvbnRzL0hlbHZOZXVlTGlnaHRmb3JJQk0uZW90XCIpO1xuICBzcmM6IHVybChcIi4uLy4uL2xpYnJhcnkvZm9udHMvSGVsdk5ldWVMaWdodGZvcklCTS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIiksIHVybChcIi4uLy4uL2xpYnJhcnkvZm9udHMvSGVsdk5ldWVMaWdodGZvcklCTS53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKSwgdXJsKFwiLi4vLi4vbGlicmFyeS9mb250cy9IZWx2TmV1ZUxpZ2h0Zm9ySUJNLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgZm9udC1zdHlsZTogbm9ybWFsOyB9XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0hlbHZldGljYU5ldWUtbWVkaXVtJztcbiAgc3JjOiB1cmwoXCIuLi8uLi9saWJyYXJ5L2ZvbnRzL0hlbHZOZXVlTWVkaXVtZm9ySUJNLmVvdFwiKTtcbiAgc3JjOiB1cmwoXCIuLi8uLi9saWJyYXJ5L2ZvbnRzL0hlbHZOZXVlTWVkaXVtZm9ySUJNLndvZmZcIikgZm9ybWF0KFwid29mZlwiKSwgdXJsKFwiLi4vLi4vbGlicmFyeS9mb250cy9IZWx2TmV1ZU1lZGl1bWZvcklCTS53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKSwgdXJsKFwiLi4vLi4vbGlicmFyeS9mb250cy9IZWx2TmV1ZU1lZGl1bWZvcklCTS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDsgfVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdIZWx2ZXRpY2FOZXVlLWJvbGQnO1xuICBzcmM6IHVybChcIi4uLy4uL2xpYnJhcnkvZm9udHMvSGVsdk5ldWVCb2xkZm9ySUJNLmVvdFwiKTtcbiAgc3JjOiB1cmwoXCIuLi8uLi9saWJyYXJ5L2ZvbnRzL0hlbHZOZXVlQm9sZGZvcklCTS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIiksIHVybChcIi4uLy4uL2xpYnJhcnkvZm9udHMvSGVsdk5ldWVCb2xkZm9ySUJNLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpLCB1cmwoXCIuLi8uLi9saWJyYXJ5L2ZvbnRzL0hlbHZOZXVlQm9sZGZvcklCTS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDsgfVxuXG4vKlxuVGhlIGZvbGxvd2luZyBpcyBiYXNlZCBvZiBUeXBlYmFzZTpcbmh0dHBzOi8vZ2l0aHViLmNvbS9kZXZpbmh1bnQvdHlwZWJhc2UuY3NzXG5JJ3ZlIGVkaXRlZCBpdCBhIGJpdCwgYnV0IGl0J3MgYSBuaWNlIHN0YXJ0aW5nIHBvaW50LlxuKi9cbi8qXG4gaSBpbXBvcnRlZCB0aGlzIG9uZSBpbiB0aGUgZnVuY3Rpb25zIGZpbGUgc28gYm9uZXMgd291bGQgbG9vayBzd2VldC5cbiBkb24ndCBmb3JnZXQgdG8gcmVtb3ZlIGl0IGZvciB5b3VyIHNpdGUuXG4qL1xuLypcbnNvbWUgbmljZSB0eXBvZ3JhcGhpY2FsIGRlZmF1bHRzXG5tb3JlIGhlcmU6IGh0dHA6Ly93d3cubmV3bmV0LXNvZnQuY29tL2Jsb2cvY3NzdHlwb2dyYXBoeVxuKi9cbnAge1xuICBtYXJnaW46IDA7XG4gIGZvbnQ6IDE2cHggaGVsdmV0aWNhbmV1ZS1saWdodDtcbiAgbGluZS1oZWlnaHQ6IDI1cHg7XG4gIC1tcy13b3JkLXdyYXA6IGJyZWFrLXdvcmQ7XG4gIC13ZWJraXQtaHlwaGVuczogYXV0bztcbiAgLW1vei1oeXBoZW5zOiBhdXRvO1xuICAtbXMtaHlwaGVuczogYXV0bztcbiAgICAgIGh5cGhlbnM6IGF1dG87XG4gIC13ZWJraXQtaHlwaGVuYXRlLWJlZm9yZTogMjtcbiAgLXdlYmtpdC1oeXBoZW5hdGUtYWZ0ZXI6IDM7XG4gIGh5cGhlbmF0ZS1saW5lczogMztcbiAgLXdlYmtpdC1mb250LWZlYXR1cmUtc2V0dGluZ3M6IFwibGlnYVwiLCBcImRsaWdcIjtcbiAgLW1zLWZvbnQtZmVhdHVyZS1zZXR0aW5nczogXCJsaWdhXCIsIFwiZGxpZ1wiO1xuICAtby1mb250LWZlYXR1cmUtc2V0dGluZ3M6IFwibGlnYVwiLCBcImRsaWdcIjtcbiAgZm9udC1mZWF0dXJlLXNldHRpbmdzOiBcImxpZ2FcIiwgXCJkbGlnXCI7IH1cblxuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuU2l0ZSBOYW1lOlxuQXV0aG9yOlxuXG5TdHlsZXNoZWV0OiBNaXhpbnMgU3R5bGVzaGVldFxuXG5UaGlzIGlzIHdoZXJlIHlvdSBjYW4gdGFrZSBhZHZhbnRhZ2Ugb2YgU2FzcycgZ3JlYXQgZmVhdHVyZXM6IE1peGlucy5cbkkgd29uJ3QgZ28gaW4tZGVwdGggb24gaG93IHRoZXkgd29yayBleGFjdGx5LFxudGhlcmUgYXJlIGEgZmV3IGFydGljbGVzIGJlbG93IHRoYXQgd2lsbCBoZWxwIGRvIHRoYXQuIFdoYXQgSSB3aWxsXG50ZWxsIHlvdSBpcyB0aGF0IHRoaXMgd2lsbCBoZWxwIHNwZWVkIHVwIHNpbXBsZSBjaGFuZ2VzIGxpa2VcbmNoYW5naW5nIGEgY29sb3Igb3IgYWRkaW5nIENTUzMgdGVjaG5pcXVlcyBncmFkaWVudHMuXG5cbkEgV09SRCBPRiBXQVJOSU5HOiBJdCdzIHZlcnkgZWFzeSB0byBvdmVyZG8gaXQgaGVyZS4gQmUgY2FyZWZ1bCBhbmRcbnJlbWVtYmVyIGxlc3MgaXMgbW9yZS5cblxuSGVscGZ1bDpcbmh0dHA6Ly9zYWNoYWdyZWlmLmNvbS91c2VmdWwtc2Fzcy1taXhpbnMvXG5odHRwOi8vdGhlc2Fzc3dheS5jb20vaW50ZXJtZWRpYXRlL2xldmVyYWdpbmctc2Fzcy1taXhpbnMtZm9yLWNsZWFuZXItY29kZVxuaHR0cDovL3dlYi1kZXNpZ24td2Vla2x5LmNvbS9ibG9nLzIwMTMvMDUvMTIvaGFuZHktc2Fzcy1taXhpbnMvXG5cbioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cbi8qKioqKioqKioqKioqKioqKioqKipcblRSQU5TSVRJT05cbioqKioqKioqKioqKioqKioqKioqKi9cbi8qXG5JIHRvdGFsbHkgcmV3cm90ZSB0aGlzIHRvIGJlIGNsZWFuZXIgYW5kIGVhc2llciB0byB1c2UuXG5Zb3UnbGwgbmVlZCB0byBiZSB1c2luZyBTYXNzIDMuMisgZm9yIHRoZXNlIHRvIHdvcmsuXG5UaGFua3MgdG8gQGFudGhvbnlzaG9ydCBmb3IgdGhlIGluc3BpcmF0aW9uIG9uIHRoZXNlLlxuVVNBR0U6IEBpbmNsdWRlIHRyYW5zaXRpb24oYWxsIDAuMnMgZWFzZS1pbi1vdXQpO1xuKi9cbi8qKioqKioqKioqKioqKioqKioqKipcbkNTUzMgR1JBRElFTlRTXG5CZSBjYXJlZnVsIHdpdGggdGhlc2Ugc2luY2UgdGhleSBjYW5cbnJlYWxseSBzbG93IGRvd24geW91ciBDU1MuIERvbid0IG92ZXJkbyBpdC5cbioqKioqKioqKioqKioqKioqKioqKi9cbi8qIEBpbmNsdWRlIGNzcy1ncmFkaWVudCgjZGZkZmRmLCNmOGY4ZjgpOyAqL1xuLyoqKioqKioqKioqKioqKioqKioqKlxuQk9YIFNJWklOR1xuKioqKioqKioqKioqKioqKioqKioqL1xuLyogQGluY2x1ZGUgYm94LXNpemluZyhib3JkZXItYm94KTsgKi9cbi8qIE5PVEU6IHZhbHVlIG9mIFwicGFkZGluZy1ib3hcIiBpcyBvbmx5IHN1cHBvcnRlZCBpbiBHZWNrby4gU29cbnByb2JhYmx5IGJlc3Qgbm90IHRvIHVzZSBpdC4gSSBtZWFuLCB3ZXJlIHlvdSBnb2luZyB0byBhbnl3YXk/ICovXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG5TaXRlIE5hbWU6XG5BdXRob3I6XG5cblN0eWxlc2hlZXQ6IElFIEdyaWQgU3R5bGVzXG5cblNpbmNlIHRoZSBleGFtcGxlIGdyaWQgaXMgYmFzZWQgb24gbWVkaWEgcXVlcmllcywgc28gcmF0aGVyIHRoYW5cbnNldHVwIHNvbWUganMgbGlicmFyeSB0aGF0IHdvdWxkIG1ha2UgSUU4IGFuZCBiZWxvdyB1bmRlcnN0YW5kXG5tZWRpYSBxdWVyaWVzLCBsZXQncyBqdXN0IGFkZCBzb21lIHN0eWxlcyB0aGF0IHNlcnZlcyBhIGZpeGVkIGdyaWQuXG5cbkFnYWluLCBpZiB5b3Ugd2FudCB0byByb2xsIHlvdXIgb3duLCBqdXN0IHJlbW92ZSB0aGlzIGp1bmsgYW5kIHB1dFxud2hhdGV2ZXIgeW91IHVzZSBpbiBoZXJlLlxuXG4qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqXG5TaXRlIE5hbWU6XG5BdXRob3I6XG5cblN0eWxlc2hlZXQ6IDQ4MXB4IGFuZCBVcCBTdHlsZXNoZWV0XG5cblRoaXMgc3R5bGVzaGVldCBpcyBsb2FkZWQgZm9yIGxhcmdlciBkZXZpY2VzLiBJdCdzIHNldCB0b1xuNDgxcHggYmVjYXVzZSBhdCA0ODBweCBpdCB3b3VsZCBsb2FkIG9uIGEgbGFuZHNjYXBlZCBpUGhvbmUuXG5UaGlzIGlzbid0IGlkZWFsIGJlY2F1c2UgdGhlbiB5b3Ugd291bGQgYmUgbG9hZGluZyBhbGwgdGhvc2VcbmV4dHJhIHN0eWxlcyBvbiB0aGF0IHNhbWUgbW9iaWxlIGNvbm5lY3Rpb24uXG5cbkEgd29yZCBvZiB3YXJuaW5nLiBUaGlzIHNpemUgQ09VTEQgYmUgYSBsYXJnZXIgbW9iaWxlIGRldmljZSxcbnNvIHlvdSBzdGlsbCB3YW50IHRvIGtlZXAgaXQgcHJldHR5IGxpZ2h0IGFuZCBzaW1wbHkgZXhwYW5kXG51cG9uIHlvdXIgYmFzZS5zY3NzIHN0eWxlcy5cblxuKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLypcbklNUE9SVEFOVCBOT1RFIEFCT1VUIFNBU1MgMy4zICYgVVBcbllvdSBjYW4ndCB1c2UgQGV4dGVuZCB3aXRoaW4gbWVkaWEgcXVlcmllc1xuYW55bW9yZSwgc28ganVzdCBiZSBhd2FyZSB0aGF0IGlmIHlvdSBkcm9wXG50aGVtIGluIGhlcmUsIHRoZXkgd29uJ3Qgd29yay5cbiovXG4vKioqKioqKioqKioqKioqKioqKioqXG5OQVZJR0FUSU9OIFNUWUxFU1xuKioqKioqKioqKioqKioqKioqKioqL1xuLyogLm1lbnUgaXMgY2xlYXJmaXhlZCBpbnNpZGUgbWl4aW5zLnNjc3MgKi9cbi5tZW51IHtcbiAgLyogZW5kIC5tZW51IHVsICovIH1cbiAgLm1lbnUgdWwge1xuICAgIC8qIGVuZCAubWVudSB1bCBsaSAqL1xuICAgIC8qIGhpZ2hsaWdodCBjdXJyZW50IHBhZ2UgKi9cbiAgICAvKiBlbmQgY3VycmVudCBoaWdobGlnaHRlcnMgKi8gfVxuICAgIC5tZW51IHVsIGxpIHtcbiAgICAgIC8qXG5cdFx0XHRcdHBsYW4geW91ciBtZW51cyBhbmQgZHJvcC1kb3ducyB3aXNlbHkuXG5cdFx0XHRcdCovIH1cbiAgICAgIC5tZW51IHVsIGxpIGEge1xuICAgICAgICAvKlxuXHRcdFx0XHRcdHlvdSBjYW4gdXNlIGhvdmVyIHN0eWxlcyBoZXJlIGV2ZW4gdGhvdWdoIHRoaXMgc2l6ZVxuXHRcdFx0XHRcdGhhcyB0aGUgcG9zc2liaWxpdHkgb2YgYmVpbmcgYSBtb2JpbGUgZGV2aWNlLlxuXHRcdFx0XHRcdCovIH1cblxuLyogZW5kIC5tZW51ICovXG4vKioqKioqKioqKioqKioqKioqKioqXG5QT1NUUyAmIENPTlRFTlQgU1RZTEVTXG4qKioqKioqKioqKioqKioqKioqKiovXG4vKiBlbnRyeSBjb250ZW50ICovXG4uZW50cnktY29udGVudCB7XG4gIC8qIGF0IHRoaXMgbGFyZ2VyIHNpemUsIHdlIGNhbiBzdGFydCB0byBhbGlnbiBpbWFnZXMgKi8gfVxuICAuZW50cnktY29udGVudCAuYWxpZ25sZWZ0LCAuZW50cnktY29udGVudCBpbWcuYWxpZ25sZWZ0IHtcbiAgICBtYXJnaW4tcmlnaHQ6IDEuNWVtO1xuICAgIGRpc3BsYXk6IGlubGluZTtcbiAgICBmbG9hdDogbGVmdDsgfVxuICAuZW50cnktY29udGVudCAuYWxpZ25yaWdodCwgLmVudHJ5LWNvbnRlbnQgaW1nLmFsaWducmlnaHQge1xuICAgIG1hcmdpbi1sZWZ0OiAxLjVlbTtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG4gICAgZmxvYXQ6IHJpZ2h0OyB9XG4gIC5lbnRyeS1jb250ZW50IC5hbGlnbmNlbnRlciwgLmVudHJ5LWNvbnRlbnQgaW1nLmFsaWduY2VudGVyIHtcbiAgICBtYXJnaW4tcmlnaHQ6IGF1dG87XG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgY2xlYXI6IGJvdGg7IH1cblxuLyogZW5kIC5lbnRyeS1jb250ZW50ICovXG4vKioqKioqKioqKioqKioqKioqKioqXG5GT09URVIgU1RZTEVTXG4qKioqKioqKioqKioqKioqKioqKiovXG4vKlxuY2hlY2sgeW91ciBtZW51cyBoZXJlLiBkbyB0aGV5IGxvb2sgZ29vZD9cbmRvIHRoZXkgbmVlZCB0d2Vha2luZz9cbiovXG4vKiBlbmQgLmZvb3Rlci1saW5rcyAqL1xuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuU2l0ZSBOYW1lOlxuQXV0aG9yOlxuXG5TdHlsZXNoZWV0OiBUYWJsZXQgJiBTbWFsbCBEZXNrdG9wIFN0eWxlc2hlZXRcblxuSGVyZSdzIHdoZXJlIHlvdSBjYW4gc3RhcnQgZ2V0dGluZyBpbnRvIHRoZSBnb29kIHN0dWZmLlxuVGhpcyBzaXplIHdpbGwgd29yayBvbiBpUGFkcywgb3RoZXIgdGFibGV0cywgYW5kIGRlc2t0b3BzLlxuU28geW91IGNhbiBzdGFydCB3b3JraW5nIHdpdGggbW9yZSBzdHlsZXMsIGJhY2tncm91bmQgaW1hZ2VzLFxuYW5kIG90aGVyIHJlc291cmNlcy4gWW91J2xsIGFsc28gbm90aWNlIHRoZSBncmlkIHN0YXJ0cyB0b1xuY29tZSBpbnRvIHBsYXkuIEhhdmUgZnVuIVxuXG4qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKioqKioqKioqKioqKioqKioqKioqXG5HRU5FUkFMIFNUWUxFU1xuKioqKioqKioqKioqKioqKioqKioqL1xuLyoqKioqKioqKioqKioqKioqKioqKlxuTEFZT1VUICYgR1JJRCBTVFlMRVNcbioqKioqKioqKioqKioqKioqKioqKi9cbi53cmFwIHtcbiAgbWFyZ2luOiAwIDkwcHg7IH1cblxuLyoqKioqKioqKioqKioqKioqKioqKlxuSEVBREVSIFNUWUxFU1xuKioqKioqKioqKioqKioqKioqKioqL1xuLyoqKioqKioqKioqKioqKioqKioqKlxuTkFWSUdBVElPTiBTVFlMRVNcbioqKioqKioqKioqKioqKioqKioqKi9cbi5uYXYge1xuICBib3JkZXI6IDA7XG4gIC8qIGVuZCAubWVudSB1bCBsaSAqL1xuICAvKiBoaWdobGlnaHQgY3VycmVudCBwYWdlICovXG4gIC8qIGVuZCBjdXJyZW50IGhpZ2hsaWdodGVycyAqLyB9XG4gIC5uYXYgdWwge1xuICAgIGJhY2tncm91bmQ6ICMzMjM5NDQ7XG4gICAgbWFyZ2luLXRvcDogMDsgfVxuICAubmF2IGxpIHtcbiAgICBmbG9hdDogbGVmdDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgLypcblx0XHRwbGFuIHlvdXIgbWVudXMgYW5kIGRyb3AtZG93bnMgd2lzZWx5LlxuXHRcdCovXG4gICAgLyogc2hvd2luZyBzdWItbWVudXMgKi8gfVxuICAgIC5uYXYgbGkgYSB7XG4gICAgICBib3JkZXItYm90dG9tOiAwO1xuICAgICAgLypcblx0XHRcdHlvdSBjYW4gdXNlIGhvdmVyIHN0eWxlcyBoZXJlIGV2ZW4gdGhvdWdoIHRoaXMgc2l6ZVxuXHRcdFx0aGFzIHRoZSBwb3NzaWJpbGl0eSBvZiBiZWluZyBhIG1vYmlsZSBkZXZpY2UuXG5cdFx0XHQqLyB9XG4gICAgICAubmF2IGxpIGE6aG92ZXIsIC5uYXYgbGkgYTpmb2N1cyB7XG4gICAgICAgIGNvbG9yOiAjZmZmO1xuICAgICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsgfVxuICAgIC5uYXYgbGkgdWwuc3ViLW1lbnUsXG4gICAgLm5hdiBsaSB1bC5jaGlsZHJlbiB7XG4gICAgICBtYXJnaW4tdG9wOiAwO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYztcbiAgICAgIGJvcmRlci10b3A6IDA7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgICB6LWluZGV4OiA4OTk5O1xuICAgICAgLyogaGlnaGxpZ2h0IHN1Yi1tZW51IGN1cnJlbnQgcGFnZSAqLyB9XG4gICAgICAubmF2IGxpIHVsLnN1Yi1tZW51IGxpLFxuICAgICAgLm5hdiBsaSB1bC5jaGlsZHJlbiBsaSB7XG4gICAgICAgIC8qXG5cdFx0XHRcdGlmIHlvdSBuZWVkIHRvIGdvIGRlZXBlciwgZ28gbnV0c1xuXHRcdFx0XHRqdXN0IHJlbWVtYmVyIGRlZXBlciBtZW51cyBzdWNrXG5cdFx0XHRcdGZvciB1c2FiaWxpdHkuIGssIGJhaS5cblx0XHRcdFx0Ki8gfVxuICAgICAgICAubmF2IGxpIHVsLnN1Yi1tZW51IGxpIGEsXG4gICAgICAgIC5uYXYgbGkgdWwuY2hpbGRyZW4gbGkgYSB7XG4gICAgICAgICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xuICAgICAgICAgIGJvcmRlci1yaWdodDogMDtcbiAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICB3aWR0aDogMTgwcHg7XG4gICAgICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNjY2M7IH1cbiAgICAgICAgLm5hdiBsaSB1bC5zdWItbWVudSBsaTpsYXN0LWNoaWxkIGEsXG4gICAgICAgIC5uYXYgbGkgdWwuY2hpbGRyZW4gbGk6bGFzdC1jaGlsZCBhIHtcbiAgICAgICAgICBib3JkZXItYm90dG9tOiAwOyB9XG4gICAgICAgIC5uYXYgbGkgdWwuc3ViLW1lbnUgbGkgdWwsXG4gICAgICAgIC5uYXYgbGkgdWwuY2hpbGRyZW4gbGkgdWwge1xuICAgICAgICAgIHRvcDogMDtcbiAgICAgICAgICBsZWZ0OiAxMDAlOyB9XG4gICAgLm5hdiBsaTpob3ZlciA+IHVsIHtcbiAgICAgIHRvcDogYXV0bztcbiAgICAgIHZpc2liaWxpdHk6IHZpc2libGU7IH1cblxuLyogZW5kIC5uYXYgKi9cbi8qKioqKioqKioqKioqKioqKioqKipcblNJREVCQVJTICYgQVNJREVTXG4qKioqKioqKioqKioqKioqKioqKiovXG4uc2lkZWJhciB7XG4gIG1hcmdpbi10b3A6IDIuMmVtOyB9XG5cbi53aWRnZXR0aXRsZSB7XG4gIGJvcmRlci1ib3R0b206IDJweCBzb2xpZCAjNDQ0O1xuICBtYXJnaW4tYm90dG9tOiAwLjc1ZW07IH1cblxuLndpZGdldCB7XG4gIHBhZGRpbmc6IDAgMTBweDtcbiAgbWFyZ2luOiAyLjJlbSAwOyB9XG4gIC53aWRnZXQgdWwgbGkge1xuICAgIG1hcmdpbi1ib3R0b206IDAuNzVlbTtcbiAgICAvKiBkZWVwIG5lc3RpbmcgKi8gfVxuICAgIC53aWRnZXQgdWwgbGkgdWwge1xuICAgICAgbWFyZ2luLXRvcDogMC43NWVtO1xuICAgICAgcGFkZGluZy1sZWZ0OiAxZW07IH1cblxuLyogbGlua3Mgd2lkZ2V0ICovXG4vKiBtZXRhIHdpZGdldCAqL1xuLyogcGFnZXMgd2lkZ2V0ICovXG4vKiByZWNlbnQtcG9zdHMgd2lkZ2V0ICovXG4vKiBhcmNoaXZlcyB3aWRnZXQgKi9cbi8qIHRhZy1jbG91ZCB3aWRnZXQgKi9cbi8qIGNhbGVuZGFyIHdpZGdldCAqL1xuLyogY2F0ZWdvcnkgd2lkZ2V0ICovXG4vKiByZWNlbnQtY29tbWVudHMgd2lkZ2V0ICovXG4vKiBzZWFyY2ggd2lkZ2V0ICovXG4vKiB0ZXh0IHdpZGdldCAqL1xuLyoqKioqKioqKioqKioqKioqKioqKlxuRk9PVEVSIFNUWUxFU1xuKioqKioqKioqKioqKioqKioqKioqL1xuLypcbnlvdSdsbCBwcm9iYWJseSBuZWVkIHRvIGRvIHF1aXRlIGEgYml0XG5vZiBvdmVycmlkaW5nIGhlcmUgaWYgeW91IHN0eWxlZCB0aGVtIGZvclxubW9iaWxlLiBNYWtlIHN1cmUgdG8gZG91YmxlIGNoZWNrIHRoZXNlIVxuKi9cbi5mb290ZXItbGlua3MgdWwgbGkge1xuICAvKlxuXHRcdFx0YmUgY2FyZWZ1bCB3aXRoIHRoZSBkZXB0aCBvZiB5b3VyIG1lbnVzLlxuXHRcdFx0aXQncyB2ZXJ5IHJhcmUgdG8gaGF2ZSBtdWx0aS1kZXB0aCBtZW51cyBpblxuXHRcdFx0dGhlIGZvb3Rlci5cblx0XHRcdCovIH1cblxuLyogZW5kIC5mb290ZXItbGlua3MgKi9cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKipcblNpdGUgTmFtZTpcbkF1dGhvcjpcblxuU3R5bGVzaGVldDogRGVza3RvcCBTdHlsc2hlZXRcblxuVGhpcyBpcyB0aGUgZGVza3RvcCBzaXplLiBJdCdzIGxhcmdlciB0aGFuIGFuIGlQYWQgc28gaXQgd2lsbCBvbmx5XG5iZSBzZWVuIG9uIHRoZSBEZXNrdG9wLlxuXG4qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKlxueW91IGNhbiBjYWxsIHRoZSBsYXJnZXIgc3R5bGVzIGlmIHlvdSB3YW50LCBidXQgdGhlcmUncyByZWFsbHkgbm8gbmVlZFxuKi9cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKipcbkFERElUSU9OQUwgSUUgRklYRVNcblRoZXNlIGZpeGVzIGFyZSBub3cgT05MWSBzZWVuIGJ5IElFLCBzbyB5b3UgZG9uJ3QgaGF2ZSB0byB3b3JyeVxuYWJvdXQgdXNpbmcgcHJlZml4ZXMsIGFsdGhvdWdoIGl0J3MgYmVzdCBwcmFjdGljZS4gRm9yIG1vcmUgaW5mb1xub24gdXNpbmcgTW9kZXJuaXpyIGNsYXNzZXMsIGNoZWNrIG91dCB0aGlzIGxpbms6XG5odHRwOi8vd3d3Lm1vZGVybml6ci5jb20vZG9jcy9cbioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cbi8qXG5Gb3IgZXhhbXBsZSwgeW91IGNhbiB1c2Ugc29tZXRoaW5nIGxpa2U6XG5cbi5uby10ZXh0c2hhZG93IC5jbGFzcyB7IC4uLiB9XG5cbllvdSBjYW4gYWxzbyB0YXJnZXQgc3BlY2lmaWMgdmVyc2lvbnMgYnkgdXNpbmcgdGhlIGNsYXNzZXMgYXBwbGllZCB0b1xudGhlIGh0bWwgZWxlbWVudC4gVGhlc2UgY2FuIHNvbWV0aW1lcyBjaGFuZ2UsIHNvIHRha2UgYSBsb29rIGluc2lkZSB0aGVcbmhlYWRlci5waHAgZmlsZSB0byBzZWUgd2hhdCB0aGV5IGFyZTpcblxuXG4ubHQtaWU4IC5jbGFzcyB7IC4uLiB9XG5cbiovXG4iXSwiZmlsZSI6ImllLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

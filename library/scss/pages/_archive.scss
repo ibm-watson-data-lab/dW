@@ -1,0 +1,29 @@
+.archive {
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.pub-info {
+  span {
+    img {
+      width: 36px;
+      height: 36px;
+    }
+
+    &:nth-of-type(2) {
+      position: relative;
+      top: -11px;
+      display: inline-block;
+      padding-left: 10px;
+      font: 20px $helveticaneue-medium;
+    }
+
+    &:nth-of-type(3) {
+      float: right;
+      font: 30px $helveticaneue-medium;
+      color: $light-blue;
+    }
+  }
+}
