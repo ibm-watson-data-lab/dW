@@ -1,0 +1,234 @@
+.showcase-single {
+  .project-btn {
+    padding: 0 75px;
+    margin: 60px 25px 100px 0;
+    font: 22px $helveticaneue-bold;
+    line-height: 55px;
+    border-radius: 5px;
+  }
+
+  .showcase-images {
+    max-width: 1200px;
+  }
+
+  .showcase-image {
+    display: inline-block;
+    width: 49%;
+    padding: 70px 35px 95px 0;
+
+    img {
+      width: 100%;
+      max-width: 530px;
+    }
+  }
+
+  article {
+    ul,
+    ol {
+      font: 16px $helveticaneue-light;
+      list-style: initial;
+    }
+  }
+}
+
+.project-updated {
+  margin-top: 18px;
+  font: 13px $helveticaneue-bold;
+}
+
+.project-access {
+  .github-logo-dk {
+    height: 50px;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+  iframe {
+    position: relative;
+    top: -9px;
+    left: 20px;
+  }
+
+  .bluemix-btn {
+    position: relative;
+    top: -9px;
+    left: 40px;
+  }
+
+  .git-deploys {
+    position: relative;
+    top: -9px;
+    left: 36px;
+    display: inline-block;
+    width: 32px;
+    height: 31px;
+    background: $turquoise;
+  }
+}
+
+.github-info {
+  margin: 40px 0 50px -50px;
+  font: 15px $helveticaneue-bold;
+
+  ul {
+    display: inline-block;
+    width: 16%;
+    min-height: 130px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    border-right: 1px solid $grey;
+
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+
+  .categories-list {
+    ul,
+    ol {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    a {
+      font: 15px $helveticaneue-bold;
+      color: $light-blue;
+    }
+  }
+
+  li {
+    padding-bottom: 14px;
+    color: $light-blue;
+  }
+
+  .key {
+    color: $content;
+  }
+}
+
+article {
+  p {
+    margin: 15px 0;
+    line-height: 25px;
+  }
+
+  div,
+  p {
+    a {
+      color: $turquoise;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+
+  .intro {
+    font: 30px $helveticaneue-bold;
+    color: $turquoise;
+  }
+
+  .showcase-single-cta {
+    a {
+      display: block;
+      float: left;
+      border-radius: 2px;
+    }
+
+    .project-btn {
+      padding: 6px 82px;
+      margin: 0 25px 100px;
+    }
+  }
+}
+
+.faq {
+  padding: 25px 0;
+
+  p {
+    padding-top: 25px;
+    line-height: 25px;
+  }
+
+  h3 {
+    padding-bottom: 0;
+  }
+}
+
+.intro-text {
+  span {
+    color: $turquoise;
+  }
+}
+
+.presentation {
+  float: right;
+  width: 455px;
+  height: 256px;
+  background: $teal;
+}
+
+.comments {
+  max-width: 1305px;
+  padding: 50px 0 105px;
+
+  .pn-post-comments {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1450px) {
+  .github-info {
+    margin-left: 0;
+
+    ul {
+      padding-left: 15px;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .github-info {
+    margin-left: 0;
+
+    ul {
+      width: 15%;
+      padding-left: 15px;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .showcase-single {
+    .showcase-image {
+      display: block;
+      width: 100%;
+      padding: 0 0 50px;
+    }
+  }
+
+  .github-info {
+    ul {
+      width: 32%;
+      min-width: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .github-info {
+    ul {
+      width: 49%;
+      padding-left: 10px;
+    }
+  }
+}

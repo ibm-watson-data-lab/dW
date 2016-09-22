@@ -1,0 +1,248 @@
+//css for the top bar with the textured background
+.top-art {
+  width: 100%;
+  min-height: 170px;
+  padding: 50px 0 10px;
+  background-color: $grey;
+  background-image: url('../images/top-art.png');
+  background-position: 120% 0%;
+  background-repeat: no-repeat;
+
+
+  .page-title {
+    position: relative;
+    display: inline-block;
+    margin-right: 120px;
+
+    h1 {
+      display: inline-block;
+      font-size: 40px;
+    }
+
+    hr {
+      height: 3px;
+      margin-top: 5px;
+      color: $turquoise;
+      background-color: $turquoise;
+    }
+  }
+}
+
+.carousel-container {
+  position: relative;
+  padding-top: 25px;
+  margin-left: -15px;
+
+  .carousel-item {
+    width: 305px;
+    height: 250px;
+    padding: 43px 40px 30px;
+    margin: 0 15px;
+    background: $white;
+    border: 1px solid $grey;
+
+    .date {
+      font: 30px $helveticaneue-medium;
+    }
+
+    h3 {
+      padding-bottom: 14px;
+      line-height: 30px;
+    }
+
+    .contribution {
+      padding-top: 25px;
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:nth-child(1) {
+        max-width: 35px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .adv-name p {
+    font: 20px $helveticaneue-medium;
+  }
+
+  // Overriding slick library inline styles
+  // scss-lint:disable ImportantRule
+  .slick-prev {
+    display: none !important;
+  }
+
+  .slick-next {
+    position: relative;
+    top: -135px;
+    left: 49px;
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+
+    &::before {
+      content: url('../images/next-arrow.png');
+    }
+
+    &::after {
+      color: $grey;
+    }
+  }
+}
+
+//css for the bottom section with the textured background
+.bottom-art {
+  width: 100%;
+  height: 340px;
+  margin-bottom: 100px;
+  background-color: $grey;
+
+  &.red {
+    background-image: url('../images/red-texture.png');
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  &.blue {
+    background-image: url('../images/blue-texture.png');
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.bottom-title {
+  padding-top: 10px;
+
+  h1 {
+    padding-top: 65px;
+    font-size: 40px;
+  }
+
+  hr {
+    width: 100%;
+    height: 2px;
+    max-width: 275px;
+    margin: 5px 0 0;
+    border: 0;
+  }
+}
+
+//red class changes carousel features to have red accents
+
+.red {
+  hr {
+    color: $salmon;
+    background-color: $salmon;
+  }
+
+  .date {
+    color: $salmon;
+  }
+
+  .carousel-item {
+    &:hover {
+      border-color: $salmon;
+    }
+  }
+}
+
+
+//blue class changes carousel features to have red accents
+.blue {
+  hr {
+    color: $light-blue;
+    background-color: $light-blue;
+  }
+
+  .date {
+    color: $light-blue;
+  }
+
+  .carousel-item {
+    &:hover {
+      border-color: $light-blue;
+    }
+  }
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+@media only screen and (min-width: 1240px) and (max-width: 1855px) {
+  .top-art {
+    .wrap {
+      margin: 0 0 0 165px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+  .region-filter,
+  .scope-filter {
+    width: 170px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-art {
+    background-position: 40% 0%;
+
+    .wrap {
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-container {
+    margin-left: 0;
+
+    .carousel-item {
+      width: auto;
+      padding: 40px 20px;
+      margin: 0 5px;
+
+      .date {
+        font: 25px $helveticaneue-medium;
+      }
+
+      h3 {
+        font-size: 25px;
+        line-height: 25px;
+      }
+
+      .contribution {
+        padding-top: 20px;
+      }
+    }
+
+    .adv-name p {
+      font: 15px $helveticaneue-medium;
+    }
+
+    // Overriding slick library inline styles
+    // scss-lint:disable ImportantRule
+    .slick-prev,
+    .slick-next {
+      display: none !important;
+    }
+  }
+}

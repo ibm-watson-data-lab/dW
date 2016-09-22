@@ -1,0 +1,67 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Login Stylesheet
+
+This stylesheet is loaded (if admin.php is setup in your
+functions file) on the login page. This way you can style
+the login page. It won't affect any other page, admin or front-end.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+/* the form box */
+/*
+This is the Wordpress logo in the admin area.
+You'll have to load your own images and mess
+with the width and height.
+*/
+.login h1 a {
+  background: url(../images/login-logo.png) no-repeat top center;
+  /* make sure to replace this! */
+  width: 326px;
+  height: 67px;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  display: block; }
+
+form {
+  margin-left: 8px;
+  padding: 26px 24px 46px;
+  font-weight: normal;
+  background: white;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+  box-shadow: none; }
+
+body form .input {
+  font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  width: 97%;
+  padding: 3px;
+  margin-top: 2px;
+  margin-right: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #E5E5E5;
+  background: #FBFBFB;
+  outline: none;
+  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2); }
+
+/*
+You'll have to override some of the default styles
+but since we're referencing the id, it should be easy.
+*/
+/* login button*/
+/*
+retina login logo
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .login h1 a {
+    background: url(../images/login-logo@2x.png) no-repeat top center;
+    /* make sure to replace this! */ } }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJsb2dpbi5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKlxuU2l0ZSBOYW1lOlxuQXV0aG9yOlxuXG5TdHlsZXNoZWV0OiBMb2dpbiBTdHlsZXNoZWV0XG5cblRoaXMgc3R5bGVzaGVldCBpcyBsb2FkZWQgKGlmIGFkbWluLnBocCBpcyBzZXR1cCBpbiB5b3VyXG5mdW5jdGlvbnMgZmlsZSkgb24gdGhlIGxvZ2luIHBhZ2UuIFRoaXMgd2F5IHlvdSBjYW4gc3R5bGVcbnRoZSBsb2dpbiBwYWdlLiBJdCB3b24ndCBhZmZlY3QgYW55IG90aGVyIHBhZ2UsIGFkbWluIG9yIGZyb250LWVuZC5cblxuRm9yIG1vcmUgaW5mbywgY2hlY2sgb3V0IHRoZSBjb2RleDpcbmh0dHA6Ly9jb2RleC53b3JkcHJlc3Mub3JnL0NyZWF0aW5nX0FkbWluX1RoZW1lc1xuXG4qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovXG4vKiB0aGUgZm9ybSBib3ggKi9cbi8qXG5UaGlzIGlzIHRoZSBXb3JkcHJlc3MgbG9nbyBpbiB0aGUgYWRtaW4gYXJlYS5cbllvdSdsbCBoYXZlIHRvIGxvYWQgeW91ciBvd24gaW1hZ2VzIGFuZCBtZXNzXG53aXRoIHRoZSB3aWR0aCBhbmQgaGVpZ2h0LlxuKi9cbi5sb2dpbiBoMSBhIHtcbiAgYmFja2dyb3VuZDogdXJsKC4uL2ltYWdlcy9sb2dpbi1sb2dvLnBuZykgbm8tcmVwZWF0IHRvcCBjZW50ZXI7XG4gIC8qIG1ha2Ugc3VyZSB0byByZXBsYWNlIHRoaXMhICovXG4gIHdpZHRoOiAzMjZweDtcbiAgaGVpZ2h0OiA2N3B4O1xuICB0ZXh0LWluZGVudDogLTk5OTlweDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gIGRpc3BsYXk6IGJsb2NrOyB9XG5cbmZvcm0ge1xuICBtYXJnaW4tbGVmdDogOHB4O1xuICBwYWRkaW5nOiAyNnB4IDI0cHggNDZweDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNFNUU1RTU7XG4gIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgYm94LXNoYWRvdzogbm9uZTsgfVxuXG5ib2R5IGZvcm0gLmlucHV0IHtcbiAgZm9udC1mYW1pbHk6IFwiSGVsdmV0aWNhTmV1ZS1MaWdodFwiLFwiSGVsdmV0aWNhIE5ldWUgTGlnaHRcIixcIkhlbHZldGljYSBOZXVlXCIsc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDIwMDtcbiAgZm9udC1zaXplOiAyNHB4O1xuICB3aWR0aDogOTclO1xuICBwYWRkaW5nOiAzcHg7XG4gIG1hcmdpbi10b3A6IDJweDtcbiAgbWFyZ2luLXJpZ2h0OiA2cHg7XG4gIG1hcmdpbi1ib3R0b206IDE2cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNFNUU1RTU7XG4gIGJhY2tncm91bmQ6ICNGQkZCRkI7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJveC1zaGFkb3c6IGluc2V0IDFweCAxcHggMnB4IHJnYmEoMjAwLCAyMDAsIDIwMCwgMC4yKTsgfVxuXG4vKlxuWW91J2xsIGhhdmUgdG8gb3ZlcnJpZGUgc29tZSBvZiB0aGUgZGVmYXVsdCBzdHlsZXNcbmJ1dCBzaW5jZSB3ZSdyZSByZWZlcmVuY2luZyB0aGUgaWQsIGl0IHNob3VsZCBiZSBlYXN5LlxuKi9cbi8qIGxvZ2luIGJ1dHRvbiovXG4vKlxucmV0aW5hIGxvZ2luIGxvZ29cbiovXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kICgtd2Via2l0LW1pbi1kZXZpY2UtcGl4ZWwtcmF0aW86IDEuNSksIG9ubHkgc2NyZWVuIGFuZCAobWluLS1tb3otZGV2aWNlLXBpeGVsLXJhdGlvOiAxLjUpLCBvbmx5IHNjcmVlbiBhbmQgKG1pbi1kZXZpY2UtcGl4ZWwtcmF0aW86IDEuNSkge1xuICAubG9naW4gaDEgYSB7XG4gICAgYmFja2dyb3VuZDogdXJsKC4uL2ltYWdlcy9sb2dpbi1sb2dvQDJ4LnBuZykgbm8tcmVwZWF0IHRvcCBjZW50ZXI7XG4gICAgLyogbWFrZSBzdXJlIHRvIHJlcGxhY2UgdGhpcyEgKi8gfSB9XG4iXSwiZmlsZSI6ImxvZ2luLmNzcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

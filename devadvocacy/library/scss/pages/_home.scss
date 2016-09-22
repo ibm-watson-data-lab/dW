@@ -1,0 +1,152 @@
+.hero {
+  position: relative;
+  padding-top: 12.1%;
+  padding-bottom: 13.3%;
+  background-image: url('../images/home-hero.png');
+  background-size: cover;
+
+  h1 {
+    max-width: 900px;
+    padding-bottom: 6.5%;
+    font-size: 64px;
+    line-height: 80px;
+    color: $white;
+  }
+
+  span {
+    color: $turquoise;
+  }
+
+  .project-btn {
+    width: 305px;
+    padding-top: 4px; // padding top temporary baseline fix
+    font: 22px $helveticaneue-bold;
+    line-height: 55px;
+
+    a,
+    &:visited {
+      color: $content;
+    }
+  }
+}
+
+.home-page {
+  .dev-intro {
+    margin: 0 0 30px;
+
+    .intro-text {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .showcase-container {
+    .showcase-item {
+      margin-top: 45px;
+    }
+  }
+}
+
+.resource-links {
+  max-width: 1280px;
+  margin: 45px 0 90px;
+
+  ul {
+    display: inline-block;
+    width: 32%;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .resource-title {
+    padding-bottom: 20px;
+    font: 26px $helveticaneue-bold;
+  }
+
+  .facet {
+    padding-bottom: 15px;
+    color: $pink;
+
+    a {
+      font-size: 18px;
+      color: $pink;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  .expand {
+    padding-top: 40px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+.slider-container {
+  .wrap {
+    max-width: 1340px;
+  }
+}
+
+@media(max-width: 767px) {
+  .hero {
+    h1 {
+      font-size: 40px;
+    }
+
+    .project-btn {
+      width: auto;
+      padding: 0 40px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }
+
+  .resource-links {
+    margin: 20px 0 40px;
+
+    ul {
+      display: block;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    .resource-title {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 905px) {
+  .hero {
+    .project-btn {
+      width: 240px;
+      padding: 4px 25.25px 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 766px) {
+  .wrap {
+    margin: 0 33px;
+  }
+
+  .header,
+  .home,
+  .main-menu {
+    display: none;
+  }
+
+  .hero {
+    .project-btn {
+      width: auto;
+      padding: 0 10px;
+      font-size: 13px;
+    }
+  }
+}

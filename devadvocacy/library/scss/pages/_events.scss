@@ -1,0 +1,140 @@
+.total-events {
+  padding-top: 55px;
+}
+
+.total-count {
+  padding-top: 55px;
+}
+
+.event-filters {
+  .filter-type {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .dropdown {
+    height: 80px;
+  }
+}
+
+.event-content {
+  padding-top: 60px;
+
+  &:last-of-type {
+    margin-bottom: 140px;
+  }
+
+  .project-btn {
+    padding: 4px 24.25px 0; // padding top temporary baseline fix
+
+    &:hover {
+      color: $content;
+    }
+
+  }
+
+  .event,
+  aside {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .event {
+    width: 57%;
+    max-width: 585px;
+    margin-right: 150px;
+
+    div {
+      display: inline-block;
+
+      &:nth-child(1) {
+        padding-right: 40px;
+        font: 30px $helveticaneue-medium;
+      }
+
+      &:nth-child(2) {
+        font: 14px $helveticaneue-light;
+        color: $pink;
+      }
+    }
+
+    p {
+      padding: 45px 0;
+    }
+  }
+
+  aside {
+    font: 14px $helveticaneue-light;
+
+
+    div {
+      padding-bottom: 10px;
+
+      &:nth-child(1) {
+        font: 30px $helveticaneue-medium;
+      }
+    }
+  }
+
+  .dev-attend {
+
+    .avatar {
+      width: 33px;
+      height: 33px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    a {
+      font: 20px $helveticaneue-medium;
+
+      &:hover {
+        color: $turquoise;
+      }
+    }
+
+    .name {
+      padding-top: 15px;
+    }
+
+    div {
+      display: inline-block;
+      font: 20px $helveticaneue-medium;
+      vertical-align: middle;
+
+      &:first-of-type {
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1239px) {
+  .event-content {
+    .event {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .event-content {
+    .event {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .event-content {
+    .event {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+
+      p {
+        padding: 20px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,264 @@
+.showcase-container {
+  position: relative;
+  padding-top: 65px;
+
+  li {
+    display: inline;
+
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .showcase-item {
+    max-width: 1100px;
+    margin-bottom: 85px;
+  }
+
+  .info {
+    display: inline-block;
+    vertical-align: middle;
+
+    &.no-image {
+      width: 100%;
+    }
+  }
+
+  .showcase-author {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .left {
+    width: 49%;
+    max-width: 400px;
+    margin-right: 8%;
+    margin-bottom: 15px;
+  }
+
+  .right {
+    width: 42%;
+    max-width: 456px;
+    max-height: 256px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contribution {
+    color: $content;
+
+    &.github-info {
+      margin: 40px 0 11px;
+
+      li {
+        color: $content;
+      }
+
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+      vertical-align: middle;
+    }
+
+    li {
+      font: 11px $helveticaneue-bold;
+      vertical-align: middle;
+
+      &:nth-child(1) {
+        padding-right: 15px;
+      }
+
+      &:nth-child(2) {
+        padding-right: 25px;
+        font: 16px $helveticaneue-medium;
+      }
+
+      &:nth-child(3) {
+        padding-right: 20px;
+      }
+
+      &:nth-child(4) {
+        padding-right: 20px;
+      }
+    }
+  }
+
+
+  .snippet {
+    padding-top: 20px;
+    color: $content;
+  }
+
+  .category {
+    padding-top: 5px;
+    margin-bottom: 23px;
+    font: 18px $helveticaneue-light;
+    color: $pink;
+
+    li {
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    a {
+      color: $pink;
+    }
+  }
+}
+
+// ids used to style ninja forms wordpress plugin
+.subscribe {
+  padding: 50px 0 105px;
+
+  h2 {
+    padding: 70px 0 30px !important;
+    font-size: 30px;
+  }
+
+  .subscribe-text,
+  .sign-up,
+  .sign-up-field,
+  .project-btn,
+  #ninja_forms_field_5,
+  #ninja_forms_field_2 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .subscribe-text {
+    max-width: 365px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+  }
+
+  .sign-up {
+    width: calc(100% - 370px);
+    max-width: 885px;
+  }
+
+  .sign-up-field,
+  #ninja_forms_field_2_div_wrap {
+    float: left;
+    width: calc(100% - 180px);
+    margin-right: 25px;
+    vertical-align: middle;
+  }
+
+  #ninja_forms_field_2 {
+    line-height: 49px;
+  }
+
+  .field-wrap {
+    margin-bottom: 0;
+  }
+
+  .label-above {
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  .project-btn,
+  #ninja_forms_field_5 {
+    padding: 4px 18.25px 0; // padding top temporary baseline fix
+    margin-right: 0;
+    margin-bottom: 0; // margin bottom temporary baseline fix
+    font: 22px $helveticaneue-bold;
+    line-height: 51px; // 55px to 51px temporary baseline fix
+    background-color: $turquoise;
+    border: 0;
+  }
+
+  .ninja-forms-success-msg {
+    a {
+      color: $turquoise;
+    }
+  }
+
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 4px 47.25px 0; // padding top temporary baseline fix
+  margin-right: 25px;
+  margin-bottom: 5px;
+  font: 13px $helveticaneue-bold;
+  line-height: 33px;
+  color: $content;
+  text-align: center;
+  background: $turquoise;
+}
+
+.showcase-cta {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+hr {
+  height: 1px;
+  margin: 0;
+  color: $grey;
+  background-color: $grey;
+  border: 0;
+}
+
+@media (max-width: 1239px) {
+  .showcase-container {
+    .left {
+      width: 100%;
+      max-width: none;
+      margin-right: auto;
+    }
+
+    .right {
+      width: 100%;
+    }
+
+    .category {
+      li {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .subscribe {
+    .sign-up {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .showcase-container {
+    .right {
+      display: none;
+    }
+  }
+
+  .subscribe {
+    padding: 50px 0;
+
+    .sign-up-field {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .project-btn {
+      width: 100%;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+}

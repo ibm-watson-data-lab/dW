@@ -1,0 +1,132 @@
+.search-tool,
+.search-filters,
+.event-filters {
+  display: inline-block;
+}
+
+.search-tool,
+.search-filters {
+  vertical-align: top;
+}
+
+.search-filters,
+.event-filters {
+  padding: 10px 0;
+}
+
+.filter-box {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  font: 12px $helveticaneue-bold;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.filter,
+.scope-filter,
+.region-filter {
+  position: relative;
+  width: 220px;
+  font: 18px $helveticaneue-light;
+  line-height: 42px;
+  color: $content;
+  text-align: center;
+  cursor: pointer;
+  background: $turquoise;
+  outline: none;
+
+  span {
+    &:nth-of-type(2) {
+      float: right;
+    }
+  }
+
+  img {
+    float: right;
+    padding: 15px 10px 0 0;
+  }
+
+  &.active {
+    font: 18px $helveticaneue-bold;
+    line-height: 42px;
+
+    .dropdown {
+      z-index: 1;
+      display: block;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    display: none;
+    height: 73px;
+    overflow: auto;
+    font-weight: normal;
+    list-style: none;
+    background: $white;
+    border: 1px solid rgba($base-black, 0.17);
+    border-radius: inherit;
+    opacity: 0;
+    box-shadow: 0 0 5px rgba($base-black, 0.1);
+    transition: all 0.5s ease-in;
+
+    li {
+      display: block;
+      padding: 10px;
+      font: 16px $helveticaneue-light;
+      color: $content;
+      text-decoration: none;
+      border-bottom: 1px solid $grey;
+      box-shadow: inset 0 1px 0 rgba($white, 1);
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background: $turquoise;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: 15px;
+      bottom: 100%;
+      width: 15px;
+      height: 15px;
+      border-color: $white transparent;
+      border-style: solid;
+      border-width: 0 6px 6px;
+      content: '';
+    }
+
+    &::before {
+      position: absolute;
+      right: 13px;
+      bottom: 100%;
+      width: 0;
+      height: 0;
+      border-color: rgba($base-black, 0.1) transparent;
+      border-style: solid;
+      border-width: 0 8px 8px;
+      content: '';
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .search-filters,
+  .event-filters {
+    width: 100%;
+  }
+
+  .filter-box {
+    display: block;
+    margin-right: 0;
+  }
+}
