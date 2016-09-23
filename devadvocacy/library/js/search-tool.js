@@ -1,3 +1,4 @@
+var SITE_URL = "http://localhost/wordpress"; //"https://developer.ibm.com/clouddataservices2";
 var BASE_URL = "https://d14f43e9-5102-45bc-b394-c92520c2c0bd-bluemix.cloudant.com/devcenter/_design/search/_search/search?q=";
 var generatedSearchString = "";
 var filterUrl = "";
@@ -319,12 +320,14 @@ function clearFacets() {
 // createSearchString()
 // Build the search request string for AJAX request.
 function createSearchString() {
+  var stdpart = '&limit=20&counts=["topic","technologies","languages"]&include_docs=true';
+  var namespacepart = '+AND+namespace:\'Cloud+Data+Services\'';
   if(freeTextString.length <= 0 && facetString.length > 0) {
-    generatedSearchString = BASE_URL + '*:*+AND+' + facetString + '&limit=20&counts=["topic","technologies","languages"]&include_docs=true&sort=["-date"]';
+    generatedSearchString = BASE_URL + '*:*' + namespacepart + '+AND+' + facetString + stdpart + '&sort=["-date"]';
   } else if(freeTextString.length > 0 && facetString.length <= 0) {
-    generatedSearchString = BASE_URL + freeTextString + '&limit=20&counts=["topic","technologies","languages"]&include_docs=true';
+    generatedSearchString = BASE_URL + freeTextString + namespacepart + stdpart;
   } else if(freeTextString.length > 0 && facetString.length > 0) {
-    generatedSearchString = BASE_URL + freeTextString + '+AND+' + facetString + '&limit=20&counts=["topic","technologies","languages"]&include_docs=true';
+    generatedSearchString = BASE_URL + freeTextString + namespacepart + '+AND+' + facetString + stdpart;
   }
   searchRequest();
 }
@@ -359,11 +362,11 @@ function buildUrlParam() {
 // Updates the current url to match the generated search query
 function updateLocation(urlQuery) {
   if(urlQuery.length > 0) {
-    document.location.href = "http://developer.ibm.com/clouddataservices2/how-tos/#!" + urlQuery
+    document.location.href = SITE_URL + "/how-tos/#!" + urlQuery
     parseUrl.decodeUrlQuery();
     closeTray();
   } else {
-    document.location.href = "http://developer.ibm.com/clouddataservices2/how-tos/#";
+    document.location.href = SITE_URL + "/how-tos/#";
     initSearch();
   }
 }
