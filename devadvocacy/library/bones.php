@@ -121,7 +121,6 @@ SCRIPTS & ENQUEUEING
 function bones_scripts_and_styles() {
 
   global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
-
   if (!is_admin()) {
 
 		wp_enqueue_script('expose$', get_stylesheet_directory_uri() . '/library/js/expose$.js');
@@ -178,6 +177,7 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'slick', get_stylesheet_directory_uri() . '/library/js/libs/slick.min.js', array('jquery'), '', true );
 
 		// enqueue styles and scripts
+		// wp_enqueue_script( 'jquery' ); // Raj
 		wp_enqueue_script('bones-modernizr');
 		wp_enqueue_script('masthead-header');
 		wp_enqueue_script('animate');

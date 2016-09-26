@@ -1,4 +1,4 @@
-var SITE_URL = "http://localhost/wordpress"; //"https://developer.ibm.com/clouddataservices2";
+var SITE_URL = "http://localhost/wordpress";//"https://developer.ibm.com/clouddataservices2"; //
 var BASE_URL = "https://d14f43e9-5102-45bc-b394-c92520c2c0bd-bluemix.cloudant.com/devcenter/_design/search/_search/search?q=";
 var generatedSearchString = "";
 var filterUrl = "";
@@ -473,7 +473,8 @@ function searchRequest() {
         $('.results-content').append(
           '<div class="result clearfix">' +
             '<div class="title"><a href="' + el.doc.url + '">' + el.doc.name + '</a></div>' +
-            '<p class="snippet">' + el.doc.description + '</p>' +
+            '<p class="snippet">' + el.doc.description + 
+            ' <span class="hiddeneditor"><a href="https://devcenter.mybluemix.net/doc?id=' + el.doc._id + '"><img src="../wp-content/themes/devadvocacy/library/images/next-arrow.png" height="12" target="_blank"></a></span>' + '</p>' +
             '<a href="' + el.doc.url + '">' + el.doc.url + '</a>' +
           '</div>'
         )
