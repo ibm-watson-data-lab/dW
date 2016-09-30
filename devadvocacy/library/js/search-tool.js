@@ -450,7 +450,7 @@ function initSearch() {
           '<div class="result clearfix">' +
             '<div class="title"><a href="' + el.doc.url + '">' + el.doc.name + '</a></div>' +
             '<p class="snippet">' + el.doc.description + 
-            ' <span class="hiddeneditor"><a href="https://devcenter.mybluemix.net/doc?id=' + el.doc._id + '"><img src="../wp-content/themes/devadvocacy/library/images/next-arrow.png" height="12" target="_blank"></a></span>' + '</p>' +
+            ' <span class="hiddeneditor"><a href="https://devcenter.mybluemix.net/doc?id=' + el.doc._id + '" target="_blank"><img src="../wp-content/themes/devadvocacy/library/images/next-arrow.png" height="12"></a></span>' + '</p>' +
             '<a href="' + el.doc.url + '">' + el.doc.url + '</a>' +
           '</div>')
         );
@@ -475,7 +475,7 @@ function searchRequest() {
           '<div class="result clearfix">' +
             '<div class="title"><a href="' + el.doc.url + '">' + el.doc.name + '</a></div>' +
             '<p class="snippet">' + el.doc.description + 
-            ' <span class="hiddeneditor"><a href="https://devcenter.mybluemix.net/doc?id=' + el.doc._id + '"><img src="../wp-content/themes/devadvocacy/library/images/next-arrow.png" height="12" target="_blank"></a></span>' + '</p>' +
+            ' <span class="hiddeneditor"><a href="https://devcenter.mybluemix.net/doc?id=' + el.doc._id + '" target="_blank"><img src="../wp-content/themes/devadvocacy/library/images/next-arrow.png" height="12"></a></span>' + '</p>' +
             '<a href="' + el.doc.url + '">' + el.doc.url + '</a>' +
           '</div>'
         )

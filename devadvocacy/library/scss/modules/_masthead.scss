@@ -30,16 +30,24 @@ body {
     }
 
     blockquote {
+      padding: 15px;
       font-style: italic;
+      background: $grey;
+      border-left: 2px solid $turquoise;
 
       p {
         font-style: italic;
       }
     }
 
-    .wp-caption {
+    .wp-caption,
+    .wp-caption-text {
       font-style: italic;
       font-weight: 600;
+    }
+
+    .alignright {
+      float: right;
     }
 
     .dropdown {
@@ -52,6 +60,19 @@ body {
   ul>li::before,
   ol>li::before {
     content: no-close-quote;
+  }
+}
+
+ul,
+ol {
+  li {
+    a {
+      color: $turquoise;
+
+      &:hover {
+        color: $pink;
+      }    
+    }
   }
 }
 

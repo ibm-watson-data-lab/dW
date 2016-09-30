@@ -65,13 +65,14 @@ h1 {
 
     a {
       padding: 10px 0;
-      color: $turquoise;
 
       &:hover {
-        color: $pink;
         text-decoration: none;
       }
     }
+  }
+  ol {
+    list-style-type: decimal;
   }
 
   img {

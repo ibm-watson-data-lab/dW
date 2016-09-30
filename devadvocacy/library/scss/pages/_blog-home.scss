@@ -157,6 +157,9 @@
     font: 16px $helveticaneue-light;
     list-style: initial;
   }
+  ol {
+    list-style-type: decimal;
+  }
 
   li {
     padding: 10px 0;
