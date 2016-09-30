@@ -146,6 +146,9 @@ function bones_scripts_and_styles() {
 		// interactions for the service and search trays
 		wp_register_script( 'infobox', get_stylesheet_directory_uri() . '/library/js/infobox.js', array(), '', false );
 
+		// site metrics tracking
+		// wp_register_script( 'tracker', 'https://ibm-cds-labs.github.io/dW/js/tracker.js?siteid=cds.devcenter&trackerurl=http://simple-logging-service-ms.mybluemix.net/tracker', array(), '', false );
+
 		// register main stylesheet
 		// wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', false );
 
@@ -189,6 +192,7 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script('resources_menu');
 		wp_enqueue_script('infobox');
 		wp_enqueue_script('tray-interaction');
+		// wp_enqueue_script('tracker');
 		wp_enqueue_script('events-filter');
 		wp_enqueue_style( 'bones-stylesheet');
 		wp_enqueue_style( 'bones-ie-only');

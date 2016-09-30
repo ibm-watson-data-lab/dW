@@ -110,6 +110,11 @@
     });
   </script>
 
+  <script type="text/javascript" 
+      src="https://ibm-cds-labs.github.io/dW/js/tracker.js" 
+      siteid="cds.devcenter" 
+      trackerurl="http://simple-logging-service-ms.mybluemix.net/tracker">
+  </script>
 
   </body>
 </html> <!-- end of site. what a ride! -->
