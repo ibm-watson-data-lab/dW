@@ -19,6 +19,8 @@
     <?php
     $type = 'doc_page';
     $args = array(
+      'orderby' => 'menu_order', 
+      'order' => 'ASC',
       'post_parent' => 0,
       'post_type' => $type,
       'numberposts'=>30
@@ -28,7 +30,8 @@
     <div class ="service-item clearfix">
       <a href="<?php the_permalink() ?>">
         <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-        <div class="service-icon"><img src="<?php echo $url ?>" alt="thumbnail"/></div><div class="service-title"><?php the_title(); ?></div>
+        <div class="service-icon"><img src="<?php echo $url ?>" alt="thumbnail"/></div>
+        <div class="service-title"><?php the_title(); ?></div>
       </a>
       <p>
         <?php
