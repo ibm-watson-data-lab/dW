@@ -20,7 +20,7 @@
 
 					<?php
 						$avatar = array(
-							'role'=> 'Author',
+							'role'=> 'Administrator',
 							'number'=> 6,
 							'orderby'=>'display_name'
 						);
@@ -39,7 +39,7 @@
 
 						<?php
 						$args = array(
-							'role'=> 'Author',
+							'role'=> 'Administrator',
 							'orderby'=>'display_name'
 						);
 						$user_query = new WP_User_Query($args);
