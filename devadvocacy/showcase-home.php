@@ -26,6 +26,7 @@ Template Name: Showcase Home Page
     <section class="showcase-container">
     <?php
       $args = array(
+        'orderby' => 'menu_order', 
         'order' => 'ASC',
         'post_type'=> 'page',
         'tax_query' => array(
