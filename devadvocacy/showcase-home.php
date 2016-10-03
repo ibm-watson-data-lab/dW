@@ -48,7 +48,6 @@ Template Name: Showcase Home Page
             <li class="showcase-author"><?php echo get_avatar( $post->post_author);?></li>
             <li class="adv-name"><?php the_author();?></li>
             <li><span>Updated:</span>&nbsp;<span class="featured-updated"></span></li>
-            <li><span>Deploys</span>&nbsp;<span class="featured-deploys"></span></li>
             <li><span>Forks:</span>&nbsp;<span class="featured-forks"></span></li>
           </ul>
           <p class ="snippet"><?php echo wp_trim_words(get_the_content(), 50, '...');?></p>
@@ -61,11 +60,12 @@ Template Name: Showcase Home Page
           <div class="showcase-cta">
             <a href="<?php the_permalink(); ?>" class="project-btn">Details</a>
             <?php
+              $gh_hash = md5(get_post_meta(get_the_ID(), 'github_repo', TRUE));
               $bluemix_btn = get_post_meta(get_the_ID(), 'bluemix_url', TRUE);
               if ($bluemix_btn=='')
             {?>
             <?php } else { ?>
-              <a href="<?php echo get_post_meta(get_the_ID(), 'bluemix_url', TRUE);?>" class="bluemix"><img src="<?php bloginfo('template_url'); ?>/library/images/bluemix.png" alt="deploy"/></a>
+              <a href="<?php echo get_post_meta(get_the_ID(), 'bluemix_url', TRUE);?>" class="bluemix"><img src="https://deployment-tracker.mybluemix.net/stats/<?php echo $gh_hash; ?>/button.svg" alt="deploy"/></a>
             <?php } ?>
           </div>
         </div>

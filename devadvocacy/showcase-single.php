@@ -33,12 +33,13 @@ Template Name: Single Showcase Page
           <iframe class="fork-num" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>
         </a>
         <?php
+          $gh_hash = md5(get_post_meta(get_the_ID(), 'github_repo', TRUE));
           $bluemix_btn = get_post_meta(get_the_ID(), 'bluemix_url', TRUE);
           if ($bluemix_btn=='')
           {?>
         <?php } else { ?>
-          <a href="<?php echo get_post_meta(get_the_ID(), 'bluemix_url', TRUE);?>"><img class="bluemix-btn" src="<?php bloginfo('template_url'); ?>/library/images/bluemix.png" alt="deploy"/>
-            <span class="git-deploys"></span>
+          <a href="<?php echo get_post_meta(get_the_ID(), 'bluemix_url', TRUE);?>">
+          <img class="bluemix-btn" src="https://deployment-tracker.mybluemix.net/stats/<?php echo $gh_hash; ?>/button.svg" alt="deploy"/>
           </a>
         <?php } ?>
       </div>
@@ -81,7 +82,7 @@ Template Name: Single Showcase Page
             {?>
           <?php } else { ?>
             <a target="_blank" href="<?php echo get_post_meta(get_the_ID(), 'bluemix_url', TRUE);?>">
-              <img src="<?php bloginfo('template_url'); ?>/library/images/bluemix-lg.png" alt="deploy"/>
+              <img src="https://deployment-tracker.mybluemix.net/stats/<?php echo $gh_hash; ?>/button.svg" alt="deploy"/>
             </a>
           <?php } ?>
           <a target="_blank" href="<?php echo get_post_meta(get_the_ID(), 'github_repo', TRUE);?>" class="project-btn">View on Github</a>

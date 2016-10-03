@@ -4720,7 +4720,8 @@ view.
 .project-access .bluemix-btn {
   position: relative;
   top: -9px;
-  left: 40px; }
+  left: 40px;
+  max-height: 36px; }
 .project-access .git-deploys {
   position: relative;
   top: -9px;
@@ -4949,7 +4950,9 @@ article .showcase-single-cta .project-btn {
 
 .showcase-cta a {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: top; }
+.showcase-cta .bluemix img {
+  height: 36px; }
 
 hr {
   height: 1px;

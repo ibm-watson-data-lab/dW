@@ -199,7 +199,11 @@
 .showcase-cta {
   a {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+  }
+
+  .bluemix img {
+    height: 36px;
   }
 }
 
