@@ -54,9 +54,9 @@ Template Name: Single Showcase Page
           <li class="git-updated"></li>
         </ul>
         <ul>
-          <li class="key">Watch</li>
+          <li class="key">Watchers</li>
           <li class="git-watch"></li>
-          <li class="key">Star</li>
+          <li class="key">Stars</li>
           <li class="git-stargazers"></li>
         </ul>
         <ul>
@@ -70,12 +70,6 @@ Template Name: Single Showcase Page
           <li class="git-requests"></li>
           <li class="key">Forks</li>
           <li class="git-forks"></li>
-        </ul>
-        <ul>
-          <li class="key">Branches</li>
-          <li class="git-branches"></li>
-          <li class="key">Release</li>
-          <li class="git-releases"></li>
         </ul>
       </div>
       <article>
