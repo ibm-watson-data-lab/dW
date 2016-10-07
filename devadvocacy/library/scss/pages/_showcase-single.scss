@@ -27,6 +27,13 @@
     ol {
       font: 16px $helveticaneue-light;
       list-style: initial;
+      margin: 1em 0 1em 1.5em;
+      padding: 0;
+    }
+
+    ul > li,
+    ol > li {
+      line-height: 25px;
     }
   }
 }

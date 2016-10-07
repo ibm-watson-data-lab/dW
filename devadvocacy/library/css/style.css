@@ -4558,9 +4558,10 @@ view.
       display: inline-block;
       width: 18px;
       height: 18px;
-      padding-left: 5px;
+      padding-left: 6px;
+      padding-top: 1px;
       margin-left: 5px;
-      font-size: 17px;
+      font-size: 15px;
       border: 1px solid;
       border-radius: 50%; } }
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
@@ -4703,7 +4704,12 @@ view.
 .showcase-single article ul,
 .showcase-single article ol {
   font: 16px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
-  list-style: initial; }
+  list-style: initial;
+  margin: 1em 0 1em 1.5em;
+  padding: 0; }
+.showcase-single article ul > li,
+.showcase-single article ol > li {
+  line-height: 25px; }
 
 .project-updated {
   margin-top: 18px;
