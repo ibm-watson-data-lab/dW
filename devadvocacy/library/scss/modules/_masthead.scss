@@ -78,6 +78,8 @@ body {
       padding: 0;
     }
 
+    aside,
+    .dev-sidebar,
     .sidebar {
       ol,
       ul {
@@ -103,6 +105,14 @@ body {
       li {
         padding-bottom: 14px;
       }
+    }
+  }
+
+  #inner-footer {
+    ol,
+    ul {
+      list-style: none;
+      margin: 0;
     }
   }
 }

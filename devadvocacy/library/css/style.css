@@ -3362,7 +3362,15 @@ body .wrap.cf ul,
 body .wrap.comment-respond ul {
   margin: 1em 0 1em 1.5em;
   padding: 0; }
-body .wrap.cf .sidebar ol, body .wrap.comment-respond .sidebar ol,
+body .wrap.cf aside ol, body .wrap.comment-respond aside ol,
+body .wrap.cf aside ul,
+body .wrap.comment-respond aside ul,
+body .wrap.cf .dev-sidebar ol,
+body .wrap.comment-respond .dev-sidebar ol,
+body .wrap.cf .dev-sidebar ul,
+body .wrap.comment-respond .dev-sidebar ul,
+body .wrap.cf .sidebar ol,
+body .wrap.comment-respond .sidebar ol,
 body .wrap.cf .sidebar ul,
 body .wrap.comment-respond .sidebar ul {
   list-style: none;
@@ -3376,6 +3384,10 @@ body .wrap.cf .github-info .categories-list ul, body .wrap.comment-respond .gith
   padding-left: 0; }
 body .wrap.cf .github-info li, body .wrap.comment-respond .github-info li {
   padding-bottom: 14px; }
+body #inner-footer ol,
+body #inner-footer ul {
+  list-style: none;
+  margin: 0; }
 
 ul li a,
 ol li a {
