@@ -3339,7 +3339,8 @@ body#ibm-com {
     font-style: italic;
     background: #f0f2f4;
     border-left: 2px solid #41d5c2; }
-    body#ibm-com blockquote p {
+    body#ibm-com blockquote p,
+    body#ibm-com blockquote a {
       font-style: italic; }
   body#ibm-com .wp-caption,
   body#ibm-com .wp-caption-text {

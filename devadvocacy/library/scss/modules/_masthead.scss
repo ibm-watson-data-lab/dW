@@ -35,7 +35,8 @@ body {
       background: $grey;
       border-left: 2px solid $turquoise;
 
-      p {
+      p,
+      a {
         font-style: italic;
       }
     }
