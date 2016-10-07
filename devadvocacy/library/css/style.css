@@ -3388,6 +3388,12 @@ body #inner-footer ol,
 body #inner-footer ul {
   list-style: none;
   margin: 0; }
+body .transcript {
+  font-size: 12px;
+  margin-right: calc((100% - 680px) / 2);
+  text-align: right; }
+body .transcript a {
+  font-size: 12px; }
 
 ul li a,
 ol li a {

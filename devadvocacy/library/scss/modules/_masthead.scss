@@ -115,6 +115,16 @@ body {
       margin: 0;
     }
   }
+
+  .transcript {
+    font-size: 12px;
+    margin-right: calc((100% - 680px) / 2);
+    text-align: right;
+  }
+
+  .transcript a {
+    font-size: 12px;
+  }
 }
 
 ul,
