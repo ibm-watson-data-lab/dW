@@ -1,37 +1,14 @@
       <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
         <div id="inner-footer" class="wrap cf">
-          <ul class="footer-github">
-            <li class="resource-logo"><a target="_blank" href="https://github.com/ibm-cds-labs"><img class="github-logo" src="<?php bloginfo('template_url'); ?>/library/images/github-logo-lt.png" alt="Github"/></a></li>
-            <li>Recent Updates</li>
-            <li class="project-name"></li>
-            <li class="updated">Updated:&nbsp;<span class="repo-update"></span></li>
-            <li class="cds-snippet"></li>
-          </ul>
-
-          <ul>
-            <li class="resource"><a href="#"><img src="<?php bloginfo('template_url'); ?>/library/images/stackoverflow-logo.png" alt="Stackoverflow"/></a></li>
-            <li>Recent Updates</li>
-            <li class="updated">Updated...</li>
-            <li class="snippet">Pipes connector for generating training, test
-              and blind data for flight predictor spark MLLib. application
-            </li>
-            <li class="data">
-              <div>
-                <p>0</p>
-                <p>votes</p>
-              </div>
-              <div>
-                <p>1</p>
-                <p>answer</p>
-              </div>
-              <div>
-                <p>20</p>
-                <p>views</p>
-              </div>
-            </li>
-          </ul>
-
+          <div class="footer-github">
+            <h1 class="resource-logo">
+              <a target="_blank" href="https://github.com/ibm-cds-labs"><img class="github-logo" src="<?php bloginfo('template_url'); ?>/library/images/github-logo-lt.png" alt="Github"/></a>
+            </h1>
+            <h2>Recent Updates</h2>
+            <ul>
+            </ul>
+          </div>
           <ul class="footer-blog">
             <?php
               $args = array(

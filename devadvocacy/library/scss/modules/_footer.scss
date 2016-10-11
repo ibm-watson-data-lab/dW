@@ -83,6 +83,36 @@
     }
   }
 
+  .footer-github {
+    display: inline-block;
+    width: 64%;
+    ul {
+      width: 100%;
+    }
+    h1 {
+      margin: 0;
+      padding-bottom: 25px;
+    }
+    h2 {
+      color: #f8f9fa;
+      font-size: 20px;
+      margin: 0;
+    }
+    .updated {
+      font: 14px "HelveticaNeue-light",Helvetica,Arial,sans-serif;
+      padding-bottom: 25px;
+    }
+    .cds-snippet {
+      color: #41d5c2;
+      font: 14px "HelveticaNeue-medium",Helvetica,Arial,sans-serif;
+      padding-bottom: 25px;
+    }
+    .footer-github-repo {
+      float: left;
+      margin-right: 15px;
+      width: calc(50% - 25px);
+    }
+  }
 
   a,
   a:visited {

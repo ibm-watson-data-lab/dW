@@ -1,4 +1,4 @@
-var GH_TOKEN = "56d1f579c05fcc76bb082b6459b7bd548c37b9ca";// "0fa278f898415de326b7925bdae042d58feb3ef2";
+var GH_TOKEN = "290f1461867d4e60fb9f28b4574bac15dc0b5753" //"56d1f579c05fcc76bb082b6459b7bd548c37b9ca";// "0fa278f898415de326b7925bdae042d58feb3ef2";
 
 
 //Ajax request to the Github API to load info about the showcases
@@ -56,17 +56,22 @@ function getInfobox() {
     method: "GET",
     url: "https://api.github.com/orgs/ibm-cds-labs/repos?sort=pushed&order=desc&access_token="+GH_TOKEN,
     dataType: "json",
-    success: function(data){
-      var date = new Date(data[0].updated_at);
-      var mm = date.getMonth() +1;
-      var dd = date.getDate();
-      var yyyy = date.getFullYear();
-      var cds_updated = mm + '/' + dd + '/' + yyyy;
-      var description = data[0].description;
-      var name = data[0].name;
-      $('.project-name').html(name);
-      $('.repo-update').html(cds_updated);
-      $('.cds-snippet').html(description);
+    success: function(data) {
+      for (var i = 0; i < 2 && i < data.length; i++) {
+        var date = new Date(data[i].updated_at);
+        var mm = date.getMonth() + 1;
+        var dd = date.getDate();
+        var yyyy = date.getFullYear();
+        var cds_updated = mm + '/' + dd + '/' + yyyy;
+
+        var li = $('<li></li>')
+          .addClass('footer-github-repo')
+          .appendTo('.footer-github > ul');
+
+        $('<div></div>').addClass('project-name').text(data[i].name).appendTo(li);
+        $('<div></div>').addClass('updated').html('Updated:&nbsp;<span class="repo-update">' + cds_updated + '</span>').appendTo(li);
+        $('<div></div>').addClass('cds-snippet').text(data[i].description).appendTo(li);
+      }
     }
   });
 
