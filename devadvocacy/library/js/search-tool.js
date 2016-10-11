@@ -326,6 +326,7 @@ function clearFacets() {
 // createSearchString()
 // Build the search request string for AJAX request.
 function createSearchString() {
+  paging.bookmarks = [];
   var stdpart = '&limit=' + paging.limit + '&counts=["topic","technologies","languages"]&include_docs=true';
   var namespacepart = '+AND+namespace:\'Cloud+Data+Services\'';
   if(freeTextString.length <= 0 && facetString.length > 0) {
