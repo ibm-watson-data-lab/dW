@@ -5567,14 +5567,15 @@ h1 a {
 .results-paging {
   padding-bottom: 60px; }
   .results-paging span {
-    font: 16px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
+    font: 24px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
     color: #db2780;
     cursor: pointer;
     display: none; }
   .results-paging .results-paging-prev {
-    margin-right: 50px; }
+    margin: 0px; }
   .results-paging .results-paging-next {
-    margin-left: 0px; }
+    float: right;
+    margin-right: 15vw; }
 
 .searching {
   display: inline-block;

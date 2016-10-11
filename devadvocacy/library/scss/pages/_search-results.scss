@@ -132,18 +132,19 @@
   padding-bottom: 60px;
 
   span {
-    font: 16px $helveticaneue-light;
+    font: 24px $helveticaneue-light;
     color: $pink;
     cursor: pointer;
     display: none;
   }
 
   .results-paging-prev {
-    margin-right: 50px;
+    margin: 0px;
   }
 
   .results-paging-next {
-    margin-left: 0px;
+    float: right;
+    margin-right: 15vw;
   }
 }
 
