@@ -56,6 +56,10 @@
     <div class="intro-text total-count"><span>0</span>&nbsp;Search results</div>
     <hr>
     <div class="results-content clearfix"></div>
+		<div class="results-paging clearfix">
+			<span class="results-paging-prev">Prev</span>
+			<span class="results-paging-next">Next</span>
+		</div>
   </div>
 </div>
 

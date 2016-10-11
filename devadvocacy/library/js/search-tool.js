@@ -6,6 +6,12 @@ var facetString = "";
 
 var facets = [];
 
+var paging = {
+  bookmarks: [],
+  hasMore: false,
+  limit: 20
+}
+
 
 function DropDown(el) {
   this.dd = el;
@@ -320,7 +326,7 @@ function clearFacets() {
 // createSearchString()
 // Build the search request string for AJAX request.
 function createSearchString() {
-  var stdpart = '&limit=20&counts=["topic","technologies","languages"]&include_docs=true';
+  var stdpart = '&limit=' + paging.limit + '&counts=["topic","technologies","languages"]&include_docs=true';
   var namespacepart = '+AND+namespace:\'Cloud+Data+Services\'';
   if(freeTextString.length <= 0 && facetString.length > 0) {
     generatedSearchString = BASE_URL + '*:*' + namespacepart + '+AND+' + facetString + stdpart + '&sort=["-date"]';
@@ -437,36 +443,27 @@ function initSearch() {
     parseUrl.decodeUrlQuery();
   }
   if(url <= 0) {
-    $.getJSON(BASE_URL + '*:*&limit=20&counts=["topic","technologies","languages"]&include_docs=true&sort=["-date"]', function(data) {
-      var searchResults = data.rows;
-      var searchCount = searchResults.length;
-
-      $('.total-count > span').html(searchCount);
-      $('.results-content').empty();
-
-      searchResults.map(function(el) {
-        return (
-          $('.results-content').append(
-          '<div class="result clearfix">' +
-            '<div class="title"><a href="' + el.doc.url + '">' + el.doc.name + '</a></div>' +
-            '<p class="snippet">' + el.doc.description + 
-            ' <span class="hiddeneditor"><a href="https://devcenter.mybluemix.net/doc?id=' + el.doc._id + '" target="_blank"><img src="../wp-content/themes/devadvocacy/library/images/next-arrow.png" height="12"></a></span>' + '</p>' +
-            '<a href="' + el.doc.url + '">' + el.doc.url + '</a>' +
-          '</div>')
-        );
-      });
-    });
+    generatedSearchString = BASE_URL + '*:*&limit=' + paging.limit + '&counts=["topic","technologies","languages"]&include_docs=true&sort=["-date"]';
+    paging.bookmarks = [];
+    searchRequest();
   }
 }
 
 
 // Make a search Request Based on user provided results
-function searchRequest() {
-  $.getJSON(generatedSearchString, function(data) {
+function searchRequest(searchString) {
+  $('.total-count').html('Searching...');
+  $('.results-content').html('<div class="searching">&#8978;</div>')
+
+  $.getJSON(searchString || generatedSearchString, function(data) {
     var searchResults = data.rows;
     var searchCount = searchResults.length;
+    var total = data.total_rows;
 
-    $('.total-count > span').html(searchCount);
+    if (data.bookmark) {
+      paging.bookmarks.push(data.bookmark);
+    }
+
     $('.results-content').empty();
 
     searchResults.map(function(el) {
@@ -482,8 +479,62 @@ function searchRequest() {
       );
     });
     populateFilterDropdowns(data);
+    updatePaging(data);
     // updateTrayFacets(data);
   });
+}
+
+function initPaging() {
+  $('.results-paging-prev')
+    .on('click', function() {
+      if (paging.bookmarks.length > 1) {
+        paging.bookmarks.splice(-2, 2);
+        if (paging.bookmarks.length > 0) {
+          var bookmark = paging.bookmarks[paging.bookmarks.length - 1];
+          searchRequest(generatedSearchString + '&bookmark=' + bookmark);
+        }
+        else {
+          searchRequest(generatedSearchString);
+        }
+      }
+    });
+  $('.results-paging-next')
+    .on('click', function() {
+      if (paging.bookmarks.length > 0 && paging.hasMore) {
+        var bookmark = paging.bookmarks[paging.bookmarks.length - 1];
+        searchRequest(generatedSearchString + '&bookmark=' + bookmark);
+      }
+    });
+}
+
+function updatePaging(data) {
+  var page = paging.bookmarks.length - 1;
+  var total = data.total_rows;
+
+  var start = (page * paging.limit) + 1;
+  var end = start + paging.limit - 1;
+
+  if (start < 1) {
+    start = 1;
+  }
+
+  if (total < 1) {
+    start = 0;
+  }
+
+  if (end > total) {
+    end = total;
+  }
+
+  if (start > end) {
+    end = start;
+  }
+
+  paging.hasMore = data.total_rows > (paging.bookmarks.length * (paging.limit ? paging.limit : 1));
+  $('.results-paging-next').css('display', end >= total ? 'none' : 'inline-block');
+  $('.results-paging-prev').css('display', start <= 1 ? 'none' : 'inline-block');
+
+  $('.total-count').html('Showing <span>' + start + ' - ' + end + '</span> of <span>' + total + '</span> Search results');
 }
 
 
@@ -493,5 +544,6 @@ $(document).ready(function(){
   initSearch();
   getSearchString();
   catToFacet();
+  initPaging();
   new DropDown($('.filter'));
 });
