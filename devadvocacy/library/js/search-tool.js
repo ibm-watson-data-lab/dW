@@ -472,6 +472,10 @@ function searchRequest(searchString) {
       paging.bookmarks.push(data.bookmark);
     }
 
+    if (typeof _paq !== 'undefined') {
+      _paq.push(['trackSiteSearch', freeTextString, facetString, data ? (total || 0) : 0]);
+    }
+
     $('.results-content').empty();
 
     searchResults.map(function(el) {
@@ -542,7 +546,7 @@ function updatePaging(data) {
   $('.results-paging-next').css('display', end >= total ? 'none' : 'inline-block');
   $('.results-paging-prev').css('display', start <= 1 ? 'none' : 'inline-block');
 
-  $('.total-count').html('Showing <span>' + start + ' - ' + end + '</span> of <span>' + total + '</span> Search results');
+  $('.total-count').html('Showing <span>' + start + ' - ' + end + '</span> of <span>' + total + '</span> search results');
 }
 
 
