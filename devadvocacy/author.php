@@ -43,7 +43,7 @@
         <h2>All Posts</h2>
       </div>
       <div class="advocate-posts">
-        <?php query_posts($query_string . '&showposts=7'); ?>
+        <?php query_posts($query_string . '&showposts=20'); ?>
         <?php if (have_posts()) : while (have_posts()):the_post(); ?>
         <article class="single-post">
           <div class="post-title">

@@ -258,14 +258,14 @@ function iconRemove(){
 //functionality that displays addition post by author once clicked
 //functionality exists the Developer Advocate's page (author.php)
 function seeMore(){
-  $('.single-post:gt(1)').hide();
+  $('.single-post:gt(2)').hide();
   $('.more-posts span').on('click', function(){
     if($(this).hasClass('posts-open')){
-      $('.single-post:gt(1)').slideUp('slow');
+      $('.single-post:gt(2)').slideUp('slow');
       $('.more-posts span').html('See More').removeClass('posts-open');
     }
     else {
-      $('.single-post:gt(1)').slideDown('slow');
+      $('.single-post:gt(2)').slideDown('slow');
       $('.more-posts span').html('Show Less').addClass('posts-open');
     }
   });
