@@ -2577,6 +2577,10 @@ dfn,
 em,
 .em {
   font-style: italic; }
+  dfn a,
+  em a,
+  .em a {
+    font-style: italic; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -2632,7 +2636,9 @@ q:after {
   content: none; }
 
 small, .small {
-  font-size: 75%; }
+  font-size: 85%; }
+  small a, .small a {
+    font-size: inherit; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
