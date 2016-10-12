@@ -473,7 +473,7 @@ function searchRequest(searchString) {
     }
 
     if (typeof _paq !== 'undefined') {
-      _paq.push(['trackSiteSearch', freeTextString, facetString, data ? (total || 0) : 0]);
+      _paq.push(['trackSiteSearch', freeTextString, JSON.stringify(facets), data ? (total || 0) : 0]);
     }
 
     $('.results-content').empty();
