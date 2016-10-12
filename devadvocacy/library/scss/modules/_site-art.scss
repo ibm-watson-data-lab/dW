@@ -35,14 +35,21 @@
 
   .carousel-item {
     width: 305px;
-    height: 250px;
-    padding: 43px 40px 30px;
+    height: 210px;
+    padding: 40px;
     margin: 0 15px;
     background: $white;
     border: 1px solid $grey;
 
     .date {
-      font: 30px $helveticaneue-medium;
+      font: 20px $helveticaneue-medium;
+    }
+
+    a {
+      h2 {
+        font-size: 25px;
+        margin-top: 0;
+      }
     }
 
     h3 {
@@ -51,7 +58,7 @@
     }
 
     .contribution {
-      padding-top: 25px;
+      padding-top: 0;
     }
 
     img {
@@ -78,6 +85,7 @@
 
   .adv-name p {
     font: 20px $helveticaneue-medium;
+    padding: 0;
   }
 
   // Overriding slick library inline styles
@@ -129,8 +137,9 @@
   padding-top: 10px;
 
   h1 {
-    padding-top: 65px;
+    padding-top: 0;
     font-size: 40px;
+    margin-top: 25px;
   }
 
   hr {
