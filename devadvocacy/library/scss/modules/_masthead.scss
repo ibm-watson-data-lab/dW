@@ -65,6 +65,10 @@ body {
 
   .wrap.cf ol {
     list-style: decimal;
+    
+    ol {
+      list-style: lower-latin;
+    }
   }
 
   .wrap.cf ul {

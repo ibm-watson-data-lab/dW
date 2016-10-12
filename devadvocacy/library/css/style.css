@@ -3355,6 +3355,8 @@ body ol > li::before {
   content: no-close-quote; }
 body .wrap.cf ol, body .wrap.comment-respond ol {
   list-style: decimal; }
+  body .wrap.cf ol ol, body .wrap.comment-respond ol ol {
+    list-style: lower-latin; }
 body .wrap.cf ul, body .wrap.comment-respond ul {
   list-style: disc; }
 body .wrap.cf ol, body .wrap.comment-respond ol,
@@ -5477,7 +5479,8 @@ h1 a {
   font: 25px "HelveticaNeue-bold", Helvetica, Arial, sans-serif;
   list-style: none; }
   .pagenav ul {
-    padding-left: 0; }
+    padding-left: 0;
+    list-style: none !important; }
   .pagenav .current_page_item a {
     font-weight: bold;
     color: #152935; }
