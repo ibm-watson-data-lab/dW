@@ -4470,6 +4470,7 @@ view.
       .modal.advocates .adv-image img {
         border-radius: 50%; }
     .modal.advocates .adv-expertise {
+      font-size: 0.85rem;
       width: 90%;
       min-height: 150px; }
     .modal.advocates .arrow-up {
@@ -5468,7 +5469,9 @@ h1 a {
   list-style: initial; }
   .service-article ul li,
   .service-article ol li {
-    font: 16px "HelveticaNeue-light", Helvetica, Arial, sans-serif; }
+    font: 16px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
+    line-height: 32px;
+    padding-left: 7px !important; }
   .service-article ul a,
   .service-article ol a {
     padding: 10px 0; }
