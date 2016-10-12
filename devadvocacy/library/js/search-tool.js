@@ -288,13 +288,10 @@ function getSearchString() {
     e.preventDefault();
     var val = $(this).closest('form').find('input[name=search]').val();
 
+    createSearchTextQuery(val);
     if(val.length > 0) {
-      createSearchTextQuery(val);
       $(this).closest('form').find('input[name=search]').val();
-    } else {
-      initSearch();
     }
-    clearFacets();
   });
 }
 
@@ -326,7 +323,6 @@ function clearFacets() {
 // createSearchString()
 // Build the search request string for AJAX request.
 function createSearchString() {
-  paging.bookmarks = [];
   var stdpart = '&limit=' + paging.limit + '&counts=["topic","technologies","languages"]&include_docs=true';
   var namespacepart = '+AND+namespace:\'Cloud+Data+Services\'';
   if(freeTextString.length <= 0 && facetString.length > 0) {
@@ -344,7 +340,7 @@ var freeTextUrl = ""
 // freeText: search input field value
 // generates a URL friendly search string for search text
 function createSearchTextQuery(freeText) {
-  freeTextUrl = "searchText=" + freeText.split(' ').join('%20');
+  freeTextUrl = freeText ? ("searchText=" + freeText.split(' ').join('%20')) : '';
   buildUrlParam();
 }
 
@@ -394,35 +390,43 @@ function updateLocation(urlQuery) {
 
 var parseUrl = {
   decodeUrlQuery: function() {
-    var that = this;
     var url = window.location.hash.slice(2);
     var paramaters = url.split("&");
+    var searchparam = null;
+    var filterparam = null;
 
     paramaters.map(function(el) {
-
       if (el.substr(0, el.indexOf("=")) === "searchText") {
         $('input[name=search]').val(el.substr(el.indexOf("=")+1).split("%20").join(" "));
-        if(freeTextString <= 0) {
-          that.searchParam(el.substr(el.indexOf("=")+1));
-        }
+        searchparam = el.substr(el.indexOf("=") + 1);
       }
       if (el.substr(0, el.indexOf("=")) === "filter") {
-        that.filterParams(el.substr(el.indexOf("=")+1));
+        filterparam = el.substr(el.indexOf("=") + 1);
       }
     });
+
+    this.searchParam(searchparam, !filterparam);
+    this.filterParams(filterparam);
+
     addFacetTags();
   },
-  searchParam: function(request) {
-    var searchText = request.split('%20');
-    freeTextString = searchText.join('+');
-    createSearchString();
+  searchParam: function(request, dosearch) {
+    if (request) {
+      var searchText = request.split('%20');
+      freeTextString = searchText.join('+');
+      if (dosearch) {
+        createSearchString();
+      }
+    }
   },
   filterParams: function(request) {
-    var filterArray = decodeURI(request);
-    var firstFilter = filterArray.replace(/%3A/g, ":");
-    var secondFilter = firstFilter.replace(/%2C/g, ",");
-    facets = JSON.parse(secondFilter)
-    this.getFacetString();
+    if (request) {
+      var filterArray = decodeURI(request);
+      var firstFilter = filterArray.replace(/%3A/g, ":");
+      var secondFilter = firstFilter.replace(/%2C/g, ",");
+      facets = JSON.parse(secondFilter)
+      this.getFacetString();
+    }
   },
   getFacetString: function() {
     facetString = facets.map(function(el) {
@@ -445,7 +449,6 @@ function initSearch() {
   }
   if(url <= 0) {
     generatedSearchString = BASE_URL + '*:*&limit=' + paging.limit + '&counts=["topic","technologies","languages"]&include_docs=true&sort=["-date"]';
-    paging.bookmarks = [];
     searchRequest();
   }
 }
@@ -455,6 +458,10 @@ function initSearch() {
 function searchRequest(searchString) {
   $('.total-count').html('Searching...');
   $('.results-content').html('<div class="searching">&#8978;</div>')
+
+  if (!searchString || searchString.indexOf('bookmark=') === -1) {
+    paging.bookmarks = [];
+  }
 
   $.getJSON(searchString || generatedSearchString, function(data) {
     var searchResults = data.rows;
@@ -495,7 +502,7 @@ function initPaging() {
           searchRequest(generatedSearchString + '&bookmark=' + bookmark);
         }
         else {
-          searchRequest(generatedSearchString);
+          searchRequest();
         }
       }
     });

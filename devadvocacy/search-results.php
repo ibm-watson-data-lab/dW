@@ -53,7 +53,7 @@
   </div>
 
   <div id="inner-content" class="wrap cf">
-    <div class="intro-text total-count"><span>0</span>&nbsp;Search results</div>
+    <div class="intro-text total-count">Search results</div>
     <hr>
     <div class="results-content clearfix"></div>
 		<div class="results-paging clearfix">
