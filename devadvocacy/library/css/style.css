@@ -5387,7 +5387,8 @@ aside .social a:not(.site) {
         font: 30px "HelveticaNeue-medium", Helvetica, Arial, sans-serif; }
       .event-content .event div:nth-child(2) {
         font: 14px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
-        color: #db2780; }
+        color: #db2780;
+        display: block; }
     .event-content .event p {
       padding: 45px 0; }
   .event-content aside {

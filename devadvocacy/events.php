@@ -93,7 +93,31 @@ $home = get_home_url();
 			<div class="event-content clearfix" data-scope="<?php echo $scope?>" data-country="<?php echo $country?>" data-region="<?php echo $region_code?>">
 				<div class="event clearfix">
 					<div class="title"><?php echo $name; ?></div>
-					<div class="location"><?php echo $location;?>, <?php echo $town;?>, <?php echo $state;?></div>
+					<div class="location">
+					<!--<?php echo $location;?>, <?php echo $town;?>, <?php echo $state;?>-->
+						<?php
+							$eventlocation = $location;
+							if (!empty($town)) {
+								if (!empty($eventlocation)) {
+									$eventlocation .= ', ';
+								}
+								$eventlocation .= $town;
+							}
+							if (!empty($state)) {
+								if (!empty($eventlocation)) {
+									$eventlocation .= ', ';
+								}
+								$eventlocation .= $state;
+							}
+							if (!empty($country)) {
+								if (!empty($eventlocation)) {
+									$eventlocation .= ', ';
+								}
+								$eventlocation .= $country;
+							}
+							echo $eventlocation;
+						?>
+					</div>
 					<p><?php echo $content; ?></p>
           <a target="_blank" href="<?php echo $attributes["registration_link"];?>" class="project-btn">Register</a>
 				</div>
