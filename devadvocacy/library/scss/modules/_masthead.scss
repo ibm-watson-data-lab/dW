@@ -131,6 +131,13 @@ body {
   }
 }
 
+p {
+  &.intro {
+    font: 30px $helveticaneue-bold;
+    color: $turquoise;
+  }
+}
+
 ul,
 ol {
   li {

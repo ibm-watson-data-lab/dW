@@ -3403,6 +3403,10 @@ body .transcript {
 body .transcript a {
   font-size: 12px; }
 
+p.intro {
+  font: 30px "HelveticaNeue-bold", Helvetica, Arial, sans-serif;
+  color: #41d5c2; }
+
 ul li a,
 ol li a {
   color: #41d5c2; }
@@ -5451,9 +5455,8 @@ h1 a {
   .parent a:hover {
     padding-right: 0;
     padding-left: 0;
-    font-weight: bold;
-    color: #152935;
-    border-bottom: 2px solid #152935; }
+    color: #323944;
+    border-bottom: 2px solid #323944; }
   .parent.current_page_item a, .parent.current_page_parent a, .parent.current_page_ancestor a {
     font: 20px "HelveticaNeue-bold", Helvetica, Arial, sans-serif;
     border-bottom: 3px solid #152935; }
