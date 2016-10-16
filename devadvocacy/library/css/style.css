@@ -3213,6 +3213,9 @@ them however you see fit.
   .filter-box:last-of-type {
     margin-right: 0; }
 
+button.filter {
+  border: 0; }
+
 .filter,
 .scope-filter,
 .region-filter {
@@ -3234,6 +3237,13 @@ them however you see fit.
   .region-filter img {
     float: right;
     padding: 15px 10px 0 0; }
+  .filter:hover, .filter:focus,
+  .scope-filter:hover,
+  .scope-filter:focus,
+  .region-filter:hover,
+  .region-filter:focus {
+    font: 18px "HelveticaNeue-bold", Helvetica, Arial, sans-serif;
+    line-height: 42px; }
   .filter.active,
   .scope-filter.active,
   .region-filter.active {
@@ -3275,9 +3285,11 @@ them however you see fit.
       border-bottom: 1px solid #f0f2f4;
       box-shadow: inset 0 1px 0 white;
       transition: all 0.3s ease-out; }
-      .filter .dropdown li:hover,
+      .filter .dropdown li:hover, .filter .dropdown li:focus,
       .scope-filter .dropdown li:hover,
-      .region-filter .dropdown li:hover {
+      .scope-filter .dropdown li:focus,
+      .region-filter .dropdown li:hover,
+      .region-filter .dropdown li:focus {
         background: #41d5c2; }
     .filter .dropdown::after,
     .scope-filter .dropdown::after,
@@ -5547,9 +5559,12 @@ h1 a {
     height: 42px;
     padding: 4px 0 0;
     margin-bottom: 0;
-    font: 18px "HelveticaNeue-bold", Helvetica, Arial, sans-serif;
+    font: 18px "HelveticaNeue-medium", Helvetica, Arial, sans-serif;
     text-align: center;
     vertical-align: middle; }
+  .search-tool .project-btn:hover,
+  .search-tool .project-btn:focus {
+    font-family: "HelveticaNeue-bold", Helvetica, Arial, sans-serif; }
   .search-tool .selection {
     display: inline-block;
     padding: 10px 5px 10px 10px;
@@ -5565,10 +5580,11 @@ h1 a {
       height: 25px;
       padding-top: 10px; }
   .search-tool .delete {
-    width: 100%;
-    height: 100%;
     background: url("../images/close-sm.png") center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    height: 25px;
+    vertical-align: text-bottom;
+    width: 25px; }
 
 .search .filters {
   padding-left: 25px; }
@@ -5605,16 +5621,19 @@ h1 a {
     font-size: 20px;
     color: #41d5c2;
     word-wrap: break-word; }
-    .results-content a:hover {
+    .results-content a:hover, .results-content a:focus {
       color: #db2780; }
 
 .results-paging {
   padding-bottom: 60px; }
-  .results-paging span {
+  .results-paging button {
     font: 24px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
     color: #db2780;
-    cursor: pointer;
+    background-color: transparent;
+    border: medium none;
     display: none; }
+  .results-paging button:focus {
+    border-bottom: 2px solid #db2780; }
   .results-paging .results-paging-prev {
     margin: 0px; }
   .results-paging .results-paging-next {

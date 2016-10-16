@@ -25,6 +25,13 @@
   }
 }
 
+
+button {
+  &.filter {
+    border: 0;
+  }
+}
+
 .filter,
 .scope-filter,
 .region-filter {
@@ -47,6 +54,12 @@
   img {
     float: right;
     padding: 15px 10px 0 0;
+  }
+
+  &:hover,
+  &:focus {
+    font: 18px $helveticaneue-bold;
+    line-height: 42px;
   }
 
   &.active {
@@ -88,7 +101,8 @@
       box-shadow: inset 0 1px 0 rgba($white, 1);
       transition: all 0.3s ease-out;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: $turquoise;
       }
     }

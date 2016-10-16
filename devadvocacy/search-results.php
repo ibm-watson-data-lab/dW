@@ -26,7 +26,7 @@
 
 	    <div class="search-filters">
 	      <div class="filter-box">
-	        <div class="filter">
+	        <div class="filter" tabindex="0">
 	          <span>Add Topic</span>
             <span><img src="<?php bloginfo('template_url'); ?>/library/images/down-arrow.png" alt="down-arrow"/></span>
 	          <ul class="dropdown topic"></ul>
@@ -34,7 +34,7 @@
 	      </div>
 
 	      <div class="filter-box">
-	        <div class="filter">
+	        <div class="filter" tabindex="0">
 	          <span>Add Language</span>
             <span><img src="<?php bloginfo('template_url'); ?>/library/images/down-arrow.png" alt="down-arrow"/></span>
 	          <ul class="dropdown language"></ul>
@@ -42,7 +42,7 @@
 	      </div>
 
 	      <div class="filter-box">
-	        <div class="filter">
+	        <div class="filter" tabindex="0">
 	          <span>Add Technology</span>
             <span><img src="<?php bloginfo('template_url'); ?>/library/images/down-arrow.png" alt="down-arrow"/></span>
 	          <ul class="dropdown technology"></ul>
@@ -57,8 +57,8 @@
     <hr>
     <div class="results-content clearfix"></div>
 		<div class="results-paging clearfix">
-			<span class="results-paging-prev">Prev</span>
-			<span class="results-paging-next">Next</span>
+			<button class="results-paging-prev">Prev</button>
+			<button class="results-paging-next">Next</button>
 		</div>
   </div>
 </div>

@@ -1,4 +1,5 @@
-var SITE_URL = "https://developer.ibm.com/clouddataservices2"; //"http://localhost/wordpress";//
+var SITE_URL = "https://developer.ibm.com/clouddataservices2";
+//var SITE_URL = "http://localhost/clouddataservices2";
 var BASE_URL = "https://d14f43e9-5102-45bc-b394-c92520c2c0bd-bluemix.cloudant.com/devcenter/_design/search/_search/search?q=";
 var generatedSearchString = "";
 var filterUrl = "";
@@ -26,24 +27,30 @@ function DropDown(el) {
 DropDown.prototype = {
   initEvents: function() {
 
-    this.dd.on('click', function(event) {
-      $(event.currentTarget).toggleClass('active');
-      return false;
+    this.dd.on('click keypress', function(event) {
+      if (event.type === 'click' || event.which === 13 || event.which === 32) {
+        event.preventDefault();
+        $(event.currentTarget).toggleClass('active');
+        return false;
+      }
     });
 
-    this.opts.on('click', 'li', function() {
-      var self = $(this);
-      var found = facets.some(function(el) {
-        return el.key === self.text() && el.value === self.data().count;
-      });
-
-      if(!found) {
-        facets.push({
-          value: self.text(),
-          key: self.data().count
+    this.opts.on('click keypress', 'li', function(event) {
+      if (event.type === 'click' || event.which === 13 || event.which === 32) {
+        event.preventDefault();
+        var self = $(this);
+        var found = facets.some(function(el) {
+          return el.key === self.text() && el.value === self.data().count;
         });
-        buildFilterQuery();
-        addFacetTags();
+
+        if(!found) {
+          facets.push({
+            value: self.text(),
+            key: self.data().count
+          });
+          buildFilterQuery();
+          addFacetTags();
+        }
       }
     });
   },
@@ -103,9 +110,7 @@ function addFacetTags() {
       $('.query_selections').append(
         '<div class="selection" data-item="' + el.value + '">' +
           '<span>' + el.value + '</span>' +
-          '<a href="#">' +
-            '<div class="delete" data-delete="' + el.value + '" data-count="' + el.key + '"></div>' +
-          '</a>' +
+          '<span role="button" tabindex="0" class="delete" data-delete="' + el.value + '" data-count="' + el.key + '"></span>' +
         '</div>'
       )
     );
@@ -214,7 +219,7 @@ function populateFilterDropdowns(data) {
 
   $('.dropdown.language').empty();
   $.each(languages, function(language) {
-    var each_language = '<li data-count="languages">' + language + '</li>';
+    var each_language = '<li data-count="languages" tabindex="0">' + language + '</li>';
     $('.dropdown.language').append(each_language);
   });
 
@@ -226,7 +231,7 @@ function populateFilterDropdowns(data) {
 
   $('.dropdown.technology').empty();
   $.each(technologies, function(technology) {
-    var each_tech = '<li data-count="technologies">' + technology + '</li>';
+    var each_tech = '<li data-count="technologies" tabindex="0">' + technology + '</li>';
     $('.dropdown.technology').append(each_tech);
   });
 
@@ -238,7 +243,7 @@ function populateFilterDropdowns(data) {
 
   $('.dropdown.topic').empty();
   $.each(topics, function(topic) {
-    var each_topic = '<li data-count="topic">'+topic+'</li>';
+    var each_topic = '<li data-count="topic" tabindex="0">'+topic+'</li>';
     $('.dropdown.topic').append(each_topic);
   });
 
@@ -248,22 +253,24 @@ function populateFilterDropdowns(data) {
 // deleteSearchTag()
 // When a user removes a seleceted filter/facet update the facets array
 function deleteSearchTag() {
-  $('.search-tool .delete').on('click', function(e) {
-    e.preventDefault();
-    var deleteItem = $(this).data('delete');
-    var deleteCount = $(this).data('count');
-    var deleteTag = $(this).closest('.selection').data('item');
+  $('.search-tool .delete').on('click keypress', function(event) {
+    if (event.type === 'click' || event.which === 13 || event.which === 32) {
+      event.preventDefault();
+      var deleteItem = $(this).data('delete');
+      var deleteCount = $(this).data('count');
+      var deleteTag = $(this).closest('.selection').data('item');
 
-    for(var i = facets.length - 1; i >= 0; i--) {
-      if(facets[i].key === deleteCount && facets[i].value === deleteItem) {
-        facets.splice(i, 1);
+      for(var i = facets.length - 1; i >= 0; i--) {
+        if(facets[i].key === deleteCount && facets[i].value === deleteItem) {
+          facets.splice(i, 1);
+        }
       }
-    }
 
-    if (deleteTag === deleteItem) {
-      $(this).closest('.selection').remove();
+      if (deleteTag === deleteItem) {
+        $(this).closest('.selection').remove();
+      }
+      buildFilterQuery();
     }
-    buildFilterQuery();
   });
 }
 
@@ -457,7 +464,9 @@ function initSearch() {
 // Make a search Request Based on user provided results
 function searchRequest(searchString) {
   $('.total-count').html('Searching...');
-  $('.results-content').html('<div class="searching">&#8978;</div>')
+  $('.results-content').html('<div class="searching">&#8978;</div>');
+  $(window).scrollTop(0);
+  $('#search-cloudant').find('input[name=search]').focus();
 
   if (!searchString || searchString.indexOf('bookmark=') === -1) {
     paging.bookmarks = [];
