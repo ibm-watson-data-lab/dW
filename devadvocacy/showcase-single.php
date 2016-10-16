@@ -61,16 +61,10 @@ Template Name: Single Showcase Page
           <li class="git-stargazers"></li>
         </ul>
         <ul>
-          <li class="key">Contributors</li>
-          <li class="git-contributors"></li>
-          <li class="key">Issues</li>
-          <li class="git-issues"></li>
-        </ul>
-        <ul>
-          <li class="key">Pull requests</li>
-          <li class="git-requests"></li>
           <li class="key">Forks</li>
           <li class="git-forks"></li>
+          <li class="key">Issues</li>
+          <li class="git-issues"></li>
         </ul>
       </div>
       <article>
