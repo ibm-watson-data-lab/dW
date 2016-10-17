@@ -13,49 +13,76 @@
 		<div id="inner-content" class="wrap cf blog-dev-advocates">
 			<div class="dev-intro">
 				<div class= "intro-text">
-					<span>Tutorials, tips, and perspectives from our Developer Advocates.</span>
-				</div>
-				<div class="dev-images">
-					<p class="more-info">Meet our Developer Advocates</p>
+					<span>Tutorials, tips, and perspectives from our Developer Advocates</span>
 
-					<?php
-						$avatar = array(
-							'role'=> 'Administrator',
-							'number'=> 6,
-							'orderby'=>'display_name'
-						);
-						$user_query = new WP_User_Query($avatar);
-						$authors = $user_query->get_results();
-						foreach($authors as $author):
-							$id=$author->ID;?>
-						<div class="adv-lineup"><span class="more-info"><?php echo get_avatar($id);?></span></div>
-					<?php endforeach; wp_reset_postdata(); ?>
-
-						<div class="modal advocates">
-							<div class="arrow-up"></div>
-							<div class="exit clearfix"><a href="#"><img src="<?php bloginfo('template_url'); ?>/library/images/close-x.png" alt="close"/></a></div>
-							<div class="intro-text">Our <span>Developer</span> Advocates</div>
-							<div class="sub-text">Here to help you realize your most ambitious projects. Reach out.</div>
-
+					<div class="dev-images">
 						<?php
-						$args = array(
-							'role'=> 'Administrator',
-							'orderby'=>'display_name'
-						);
-						$user_query = new WP_User_Query($args);
-						$authors = $user_query->get_results();
+							$avatar = array(
+								'role'=> 'Administrator',
+								'number'=> 12,
+								'orderby'=>'display_name'
+							);
+							$user_query = new WP_User_Query($avatar);
+							$authors = $user_query->get_results();
 							foreach($authors as $author):
-								$id=$author->ID;
-							?>
-							<div class="adv-snippet">
-								<div><a href="<?php echo get_author_posts_url($id);?>"><?php echo get_avatar($id);?></a></div>
-								<div class="adv-name"><?php echo $author->display_name; ?></php></div>
-								<div class="adv-expertise"><?php echo wp_trim_words($author->description, 20);?></div>
-							</div>
-						<?php endforeach; wp_reset_postdata();?>
+								$id=$author->ID;?>
+							<div class="adv-lineup"><span class="more-info"><?php echo get_avatar($id);?></span></div>
+						<?php endforeach; wp_reset_postdata(); ?>
 
+							<div class="modal advocates">
+								<div class="arrow-up"></div>
+								<div class="exit clearfix"><a href="#"><img src="<?php bloginfo('template_url'); ?>/library/images/close-x.png" alt="close"/></a></div>
+								<div class="intro-text">Our <span>Developer</span> Advocates</div>
+								<div class="sub-text">Here to help you realize your most ambitious projects. Reach out.</div>
+
+							<?php
+							$args = array(
+								'role'=> 'Administrator',
+								'orderby'=>'display_name'
+							);
+							$user_query = new WP_User_Query($args);
+							$authors = $user_query->get_results();
+								foreach($authors as $author):
+									$id=$author->ID;
+								?>
+								<div class="adv-snippet">
+									<div><a href="<?php echo get_author_posts_url($id);?>"><?php echo get_avatar($id);?></a></div>
+									<div class="adv-name"><?php echo $author->display_name; ?></php></div>
+									<div class="adv-expertise"><?php echo wp_trim_words($author->description, 20);?></div>
+								</div>
+							<?php endforeach; wp_reset_postdata();?>
+
+							</div>
 						</div>
-					</div>
+
+				</div>
+				<?php echo do_shortcode( '[jetpack_subscription_form title="Subscribe to Blog Updates" subscribe_text="Enter your email address to get notified of new posts." subscribe_button="Subscribe"]' ); ?>
+<!--
+<div class="jetpack_subscription_widget"><h2 class="widgettitle">Subscribe to Blog Updates</h2>
+	<form id="subscribe-blog-519" accept-charset="utf-8" method="post" action="#">
+		<div id="subscribe-text">
+			<p>Enter your email address to get notified of new posts.</p>
+		</div>
+		<p id="subscribe-email">
+			<label for="subscribe-field-519" id="jetpack-subscribe-label" style="clip: rect(1px, 1px, 1px, 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;">
+				Email Address
+			</label>
+			<input type="email" placeholder="Email Address" id="subscribe-field-519" value="" class="required" required="required" name="email">
+		</p>
+		<p id="subscribe-submit">
+			<input type="hidden" value="subscribe" name="action">
+			<input type="hidden" value="https://developer.ibm.com/clouddataservices2/" name="source">
+			<input type="hidden" value="widget" name="sub-type">
+			<input type="hidden" value="519" name="redirect_fragment">
+			<input type="submit" name="jetpack_subscriptions_widget" value="Subscribe">
+		</p>
+	</form>
+
+	<div class="success">
+		<p>Success! An email was just sent to confirm your subscription. Please find the email now and click activate to start subscribing.</p>
+	</div>
+</div>
+-->
 				</div>
 			<hr class="line">
 

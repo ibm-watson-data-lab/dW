@@ -179,7 +179,7 @@
     </div>
   </div>
 
-  <div id="inner-content" class="cf subscribe wrap">
+  <div id="inner-content" class="cf subscribe wrap" style="display:none">
     <hr class="line">
     <h2>Email Subscription</h2>
     <p class="subscribe-text">Sign up and receive quarterly updates on the latest services for IBM Developer Service</p>

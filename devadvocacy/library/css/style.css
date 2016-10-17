@@ -5114,15 +5114,42 @@ hr {
       .subscribe #ninja_forms_field_2_div_wrap .ninja-forms-field {
         border: 2px solid #9fa6b4; } }
 .blog-dev-advocates .dev-intro .intro-text {
-  width: 46%; }
+  margin-right: 150px;
+  max-width: 658px;
+  width: 57%; }
 
 .dev-intro {
   max-width: 1394px;
-  margin: 55px 0 50px; }
+  margin: 55px 0 30px; }
   .dev-intro .intro-text,
-  .dev-intro .dev-images {
+  .dev-intro .dev-images,
+  .dev-intro .jetpack_subscription_widget {
     display: inline-block;
     vertical-align: top; }
+    .dev-intro .intro-text p,
+    .dev-intro .dev-images p,
+    .dev-intro .jetpack_subscription_widget p {
+      margin: 0;
+      padding: 0; }
+  .dev-intro .jetpack_subscription_widget {
+    max-width: 350px; }
+    .dev-intro .jetpack_subscription_widget p {
+      font-size: 14px; }
+    .dev-intro .jetpack_subscription_widget .widgettitle {
+      border-bottom: 0;
+      color: #323232;
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-top: 10px; }
+    .dev-intro .jetpack_subscription_widget input {
+      margin: 3px 0;
+      width: 100%; }
+      .dev-intro .jetpack_subscription_widget input[type="submit"] {
+        background-color: #41d5c2;
+        border: 0 none;
+        font: 13px/33px "HelveticaNeue-bold",Helvetica,Arial,sans-serif;
+        height: 30px;
+        width: auto; }
   .dev-intro .intro-text {
     width: 50%;
     margin-right: 110px; }
@@ -5133,7 +5160,9 @@ hr {
     top: 279px;
     right: 750px; }
   .dev-intro .dev-images {
-    position: relative; }
+    display: block;
+    position: relative;
+    margin-top: 10px; }
     .dev-intro .dev-images .adv-lineup {
       float: left;
       margin-right: 15px;

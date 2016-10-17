@@ -1,19 +1,56 @@
 .blog-dev-advocates {
   .dev-intro {
     .intro-text {
-      width: 46%;
+      margin-right: 150px;
+      max-width: 658px;
+      width: 57%;
     }
   }
 }
 
 .dev-intro {
   max-width: 1394px;
-  margin: 55px 0 50px;
+  margin: 55px 0 30px;
 
   .intro-text,
-  .dev-images {
+  .dev-images,
+  .jetpack_subscription_widget {
     display: inline-block;
     vertical-align: top;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .jetpack_subscription_widget {
+    max-width: 350px;
+
+    p {
+      font-size: 14px;
+    }
+
+    .widgettitle {
+      border-bottom: 0;
+      color: $content;
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+    input {
+      margin: 3px 0;
+      width: 100%;
+
+      &[type="submit"] {
+        background-color: $turquoise;
+        border: 0 none;
+        font: 13px/33px "HelveticaNeue-bold",Helvetica,Arial,sans-serif;
+        height: 30px;
+        width: auto;
+      }
+    }
   }
 
   .intro-text {
@@ -33,7 +70,9 @@
   }
 
   .dev-images {
+    display: block;
     position: relative;
+    margin-top: 10px;
 
     .adv-lineup {
       float: left;
