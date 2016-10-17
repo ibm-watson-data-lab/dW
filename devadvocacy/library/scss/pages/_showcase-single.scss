@@ -80,9 +80,8 @@
 
   ul {
     display: inline-block;
-    width: 16%;
     min-height: 130px;
-    padding-left: 50px;
+    padding: 0 40px;
     margin-bottom: 20px;
     vertical-align: top;
     border-right: 1px solid $grey;
@@ -191,7 +190,7 @@ article {
     margin-left: 0;
 
     ul {
-      padding-left: 15px;
+      padding: 0 20px;
 
       &:first-of-type {
         padding-left: 0;
@@ -205,8 +204,7 @@ article {
     margin-left: 0;
 
     ul {
-      width: 15%;
-      padding-left: 15px;
+      padding: 0 15px;
 
       &:first-of-type {
         padding-left: 0;
@@ -226,7 +224,6 @@ article {
 
   .github-info {
     ul {
-      width: 32%;
       min-width: auto;
     }
   }
@@ -235,8 +232,7 @@ article {
 @media only screen and (max-width: 480px) {
   .github-info {
     ul {
-      width: 49%;
-      padding-left: 10px;
+      padding: 0 10px;
     }
   }
 }

@@ -54,6 +54,12 @@
 
   .footer-blog {
     padding-top: 15px;
+
+    li {
+      & > a {
+        font-weight: 600;
+      }
+    }
   }
 
 
@@ -109,8 +115,20 @@
     }
     .footer-github-repo {
       float: left;
-      margin-right: 15px;
-      width: calc(50% - 25px);
+      margin-right: 50px;
+      max-width: calc(30% - 30px);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      .project-name {
+        margin: 5px 0;
+
+        a {
+          font-weight: 600;
+        }
+      }
     }
   }
 
@@ -173,16 +191,31 @@
       padding-right: 10px;
     }
   }
+
+  .footer {
+    .footer-github {
+      .footer-github-repo {
+        max-width: 100%;
+        padding-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .footer ul {
-    display: none;
+  .footer {
+    ul {
+      display: none;
 
-    &:first-child {
-      display: block;
-      width: 100%;
-      padding-right: 0;
+      &:first-child {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    .footer-github {
+      display: none;
     }
   }
 }

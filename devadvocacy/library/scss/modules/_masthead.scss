@@ -71,8 +71,16 @@ body {
     }
   }
 
-  .wrap.cf ul {
-    list-style: disc;
+  .wrap.cf {
+    ul {
+      list-style: disc;
+    }
+
+    .resource-links {
+      ul {
+        list-style: none;
+      }
+    }
   }
 
   .wrap.cf {
@@ -95,7 +103,7 @@ body {
     .github-info {
       ul {
         list-style: none;
-        padding-left: 50px;
+        padding: 0 40px;
         margin: 0;
         margin-bottom: 20px;
       }

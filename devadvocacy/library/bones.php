@@ -203,6 +203,10 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 
+		// making the site_url available in the search-tool.js
+		// by calling: dev_advo.siteurl
+		$dev_advo = array('siteurl' => get_option('siteurl'));
+		wp_localize_script('search-tool', 'dev_advo', $dev_advo);
 	}
 }
 

@@ -3377,6 +3377,8 @@ body .wrap.cf ol, body .wrap.comment-respond ol {
     list-style: lower-latin; }
 body .wrap.cf ul, body .wrap.comment-respond ul {
   list-style: disc; }
+body .wrap.cf .resource-links ul, body .wrap.comment-respond .resource-links ul {
+  list-style: none; }
 body .wrap.cf ol, body .wrap.comment-respond ol,
 body .wrap.cf ul,
 body .wrap.comment-respond ul {
@@ -3397,7 +3399,7 @@ body .wrap.comment-respond .sidebar ul {
   margin: 0; }
 body .wrap.cf .github-info ul, body .wrap.comment-respond .github-info ul {
   list-style: none;
-  padding-left: 50px;
+  padding: 0 40px;
   margin: 0;
   margin-bottom: 20px; }
 body .wrap.cf .github-info .categories-list ul, body .wrap.comment-respond .github-info .categories-list ul {
@@ -4154,6 +4156,8 @@ view.
     color: #41d5c2; }
   .footer .footer-blog {
     padding-top: 15px; }
+    .footer .footer-blog li > a {
+      font-weight: 600; }
   .footer .footer-github li:nth-child(2),
   .footer .footer-blog li:nth-child(2) {
     font: 20px "HelveticaNeue-bold", Helvetica, Arial, sans-serif; }
@@ -4192,8 +4196,14 @@ view.
       padding-bottom: 25px; }
     .footer .footer-github .footer-github-repo {
       float: left;
-      margin-right: 15px;
-      width: calc(50% - 25px); }
+      margin-right: 50px;
+      max-width: calc(30% - 30px); }
+      .footer .footer-github .footer-github-repo:last-of-type {
+        margin-right: 0; }
+      .footer .footer-github .footer-github-repo .project-name {
+        margin: 5px 0; }
+        .footer .footer-github .footer-github-repo .project-name a {
+          font-weight: 600; }
   .footer a,
   .footer a:visited {
     color: #fff; }
@@ -4229,14 +4239,20 @@ view.
 
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
   .footer ul {
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .footer .footer-github .footer-github-repo {
+    max-width: 100%;
+    padding-bottom: 20px; } }
 @media only screen and (max-width: 767px) {
   .footer ul {
     display: none; }
     .footer ul:first-child {
       display: block;
       width: 100%;
-      padding-right: 0; } }
+      padding-right: 0; }
+  .footer .footer-github {
+    display: none; } }
 .top-art {
   width: 100%;
   min-height: 170px;
@@ -4581,6 +4597,7 @@ view.
       width: 96%;
       padding-top: 25px; }
     .tray.service-resources .service-item {
+      clear: none;
       float: left;
       width: 31%;
       max-height: 150px;
@@ -4837,9 +4854,8 @@ view.
   font: 15px "HelveticaNeue-bold", Helvetica, Arial, sans-serif; }
   .github-info ul {
     display: inline-block;
-    width: 16%;
     min-height: 130px;
-    padding-left: 50px;
+    padding: 0 40px;
     margin-bottom: 20px;
     vertical-align: top;
     border-right: 1px solid #f0f2f4; }
@@ -4905,15 +4921,14 @@ article .showcase-single-cta .project-btn {
   .github-info {
     margin-left: 0; }
     .github-info ul {
-      padding-left: 15px; }
+      padding: 0 20px; }
       .github-info ul:first-of-type {
         padding-left: 0; } }
 @media only screen and (max-width: 1030px) {
   .github-info {
     margin-left: 0; }
     .github-info ul {
-      width: 15%;
-      padding-left: 15px; }
+      padding: 0 15px; }
       .github-info ul:first-of-type {
         padding-left: 0; } }
 @media only screen and (max-width: 767px) {
@@ -4923,12 +4938,10 @@ article .showcase-single-cta .project-btn {
     padding: 0 0 50px; }
 
   .github-info ul {
-    width: 32%;
     min-width: auto; } }
 @media only screen and (max-width: 480px) {
   .github-info ul {
-    width: 49%;
-    padding-left: 10px; } }
+    padding: 0 10px; } }
 .showcase-container {
   position: relative;
   padding-top: 65px; }
@@ -4989,8 +5002,11 @@ article .showcase-single-cta .project-btn {
     font: 18px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
     color: #db2780; }
     .showcase-container .category li {
-      padding-right: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
       cursor: pointer; }
+      .showcase-container .category li:first-of-type {
+        padding-left: 0; }
     .showcase-container .category a {
       color: #db2780; }
 
@@ -5088,7 +5104,15 @@ hr {
     .subscribe .project-btn {
       width: 100%;
       font-size: 18px;
-      line-height: 40px; } }
+      line-height: 40px; }
+    .subscribe #ninja_forms_field_2_div_wrap {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+      margin-right: 0;
+      vertical-align: middle; }
+      .subscribe #ninja_forms_field_2_div_wrap .ninja-forms-field {
+        border: 2px solid #9fa6b4; } }
 .blog-dev-advocates .dev-intro .intro-text {
   width: 46%; }
 
@@ -5582,6 +5606,7 @@ h1 a {
   .search-tool .delete {
     background: url("../images/close-sm.png") center;
     background-repeat: no-repeat;
+    cursor: pointer;
     height: 25px;
     vertical-align: text-bottom;
     width: 25px; }
