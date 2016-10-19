@@ -5132,6 +5132,7 @@ hr {
       margin: 0;
       padding: 0; }
   .dev-intro .jetpack_subscription_widget {
+    margin-bottom: 40px;
     max-width: 350px; }
     .dev-intro .jetpack_subscription_widget p {
       font-size: 14px; }
@@ -5148,7 +5149,8 @@ hr {
         background-color: #41d5c2;
         border: 0 none;
         font: 13px/33px "HelveticaNeue-bold",Helvetica,Arial,sans-serif;
-        height: 30px;
+        height: 32px;
+        padding: 1px 12px;
         width: auto; }
   .dev-intro .intro-text {
     width: 50%;
@@ -5162,7 +5164,9 @@ hr {
   .dev-intro .dev-images {
     display: block;
     position: relative;
-    margin-top: 10px; }
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 35px; }
     .dev-intro .dev-images .adv-lineup {
       float: left;
       margin-right: 15px;
@@ -5252,10 +5256,20 @@ hr {
   max-width: 930px;
   margin-bottom: 100px; }
 
+@media only screen and (max-width: 1745px) {
+  .dev-intro .jetpack_subscription_widget {
+    max-width: 200px; } }
+@media only screen and (max-width: 1340px) {
+  .dev-intro .jetpack_subscription_widget {
+    max-width: 150px; } }
 @media only screen and (max-width: 1239px) {
   .blog-dev-advocates .dev-intro .intro-text,
   .blog-dev-advocates .dev-intro .dev-images {
-    width: 100%; } }
+    width: 100%; }
+  .blog-dev-advocates .dev-intro .jetpack_subscription_widget {
+    margin-bottom: 25px;
+    margin-top: 15px;
+    max-width: 100%; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .dev-intro .intro-text {
     margin-right: 75px; }

@@ -25,6 +25,7 @@
   }
 
   .jetpack_subscription_widget {
+    margin-bottom: 40px;
     max-width: 350px;
 
     p {
@@ -47,7 +48,8 @@
         background-color: $turquoise;
         border: 0 none;
         font: 13px/33px "HelveticaNeue-bold",Helvetica,Arial,sans-serif;
-        height: 30px;
+        height: 32px;
+        padding: 1px 12px;
         width: auto;
       }
     }
@@ -73,6 +75,8 @@
     display: block;
     position: relative;
     margin-top: 10px;
+    overflow: hidden;
+    max-height: 35px;
 
     .adv-lineup {
       float: left;
@@ -224,12 +228,36 @@
   }
 }
 
+@media only screen and (max-width: 1745px) {
+  .dev-intro {
+    .jetpack_subscription_widget {
+      max-width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .dev-intro {
+    .jetpack_subscription_widget {
+      max-width: 150px;
+    }
+  }
+}
+
 @media only screen and (max-width: 1239px) {
   .blog-dev-advocates {
     .dev-intro {
       .intro-text,
       .dev-images {
         width: 100%;
+      }
+    }
+
+    .dev-intro {
+      .jetpack_subscription_widget {
+        margin-bottom: 25px;
+        margin-top: 15px;
+        max-width: 100%;
       }
     }
   }

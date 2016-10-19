@@ -17,17 +17,24 @@
 
 					<div class="dev-images">
 						<?php
-							$avatar = array(
-								'role'=> 'Administrator',
-								'number'=> 12,
-								'orderby'=>'display_name'
+							$avatar = array (
+								'role' => 'Administrator'
 							);
 							$user_query = new WP_User_Query($avatar);
-							$authors = $user_query->get_results();
-							foreach($authors as $author):
-								$id=$author->ID;?>
-							<div class="adv-lineup"><span class="more-info"><?php echo get_avatar($id);?></span></div>
-						<?php endforeach; wp_reset_postdata(); ?>
+							$devadvos = $user_query->get_results();
+							$devadvoids = array();
+							foreach($devadvos as $devadvo):
+								array_push($devadvoids,$devadvo->ID);
+							endforeach;
+							$recentauthors = authors_by_recent_post($devadvoids);
+							for ($i = 0; $i < count($recentauthors) && $i < 15; ++$i) {
+									$id = $recentauthors[$i]->post_author;
+									$author = get_userdata($id);
+									$dname = $author->display_name;
+									$pcount = count_user_posts($id);
+						?>
+							<div class="adv-lineup"><span class="more-info" data-user-info="<?php echo $dname.' ('.$pcount.')';?>"><?php echo get_avatar($id);?></span></div>
+						<?php } wp_reset_postdata(); ?>
 
 							<div class="modal advocates">
 								<div class="arrow-up"></div>

@@ -1,6 +1,6 @@
 (function($) {
-  // var GH_TOKEN = '290f1461867d4e60fb9f28b4574bac15dc0b5753';// '0fa278f898415de326b7925bdae042d58feb3ef2';
-  var repoUrl = 'https://de352a73-71f2-46b5-a8ee-5f55f9b4c366-bluemix.cloudant.com/repoinfo/';
+  // var repoUrl = "https://de352a73-71f2-46b5-a8ee-5f55f9b4c366-bluemix.cloudant.com/repoinfo/";
+  var repoUrl = "https://opendata.cloudant.com/repoinfo/";
   var maxRepos = 3;
 
   //Ajax request to the Github API to load info about the showcases
@@ -51,7 +51,7 @@
 
     $.ajax({
       method: 'GET',
-      url: 'https://de352a73-71f2-46b5-a8ee-5f55f9b4c366-bluemix.cloudant.com/repoinfo/_design/views/_view/chrono?reduce=false&include_docs=true&descending=true&limit=' + maxRepos, 
+      url: repoUrl + '/_design/views/_view/chrono?reduce=false&include_docs=true&descending=true&limit=' + maxRepos, 
       dataType: 'json',
       success: function(data) {
         for (var i = 0; i < data.rows.length; i++) {
@@ -90,7 +90,7 @@
         var language = data.language;
         var forks = data.forks_count;
         var stars = data.stargazers_count;
-        var watch = data.watchers_count;
+        var watch = data.subscribers_count;
         var date = new Date(data.updated_at);
         var mm = date.getMonth() +1;
         var dd = date.getDate();

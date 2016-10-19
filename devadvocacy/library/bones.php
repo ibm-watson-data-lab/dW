@@ -307,6 +307,26 @@ function bones_related_posts() {
 } /* end bones related posts function */
 
 /*********************
+AUTHORS ORDERED BY MOST RECENT POST PUBLISH DATE
+*********************/
+
+// Authors ordered by most recent published post date
+function authors_by_recent_post($authorids) {
+    global $wpdb;
+		//SELECT DISTINCT post_author from cds_posts where post_status = 'publish' and post_type = 'post' and post_author IN (17, 11, 4) order BY post_date DESC
+		$querystr = 'SELECT DISTINCT post_author FROM '.$wpdb->posts;
+		$querystr .= ' WHERE post_status=\'publish\' AND post_type=\'post\'';
+
+		if ($authorids) {
+			$querystr .= ' AND post_author IN (' . implode (",", $authorids) . ')';
+		}
+
+		$querystr .= ' ORDER BY post_date DESC';
+		return $wpdb->get_results($querystr);
+}
+// end Authors ordered by most recent published post date
+
+/*********************
 PAGE NAVI
 *********************/
 
