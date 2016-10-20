@@ -154,7 +154,7 @@ $serviceActive = in_array('single-doc_page', $class) ? 'active' : '';
         <nav role="navigation" class="navigation-main">
             <div class="home">
               <a href="<?php echo $home?>"  class="home-link <?php echo $homeActive?>">
-                <span>IBM</span> <span class="bold">Developer Advocacy</span>
+                <span>IBM Cloud Data Services Dev</span>
                 <button class="nav-trigger">Open Menu</button>
               </a>
             </div>

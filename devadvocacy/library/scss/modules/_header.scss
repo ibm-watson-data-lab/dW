@@ -45,6 +45,18 @@
     height: 700px;
     background-color: $teal;
 
+    .home-link {
+      background-image: url(../images/IBM_CDS_Logo.png);
+      background-position: 25px center;
+      background-repeat: no-repeat;
+      height: 65px;
+      background-size: calc(100% - 70px);
+
+      span {
+        display: none;
+      }
+    }
+
     .nav-trigger {
       display: none;
     }
@@ -116,7 +128,7 @@
       &.active {
         font: 20px $helveticaneue-bold;
         color: $content;
-        background: $turquoise;
+        background-color: $turquoise;
 
         .cls-1 {
           stroke: $content;

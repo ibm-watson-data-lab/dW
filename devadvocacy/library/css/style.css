@@ -3946,6 +3946,14 @@ view.
     width: 100%;
     height: 700px;
     background-color: #152935; }
+    .navigation-main .home-link {
+      background-image: url(../images/IBM_CDS_Logo.png);
+      background-position: 25px center;
+      background-repeat: no-repeat;
+      height: 65px;
+      background-size: calc(100% - 70px); }
+      .navigation-main .home-link span {
+        display: none; }
     .navigation-main .nav-trigger {
       display: none; }
     .navigation-main .home {
@@ -3987,7 +3995,7 @@ view.
     .navigation-main a:hover, .navigation-main a.active {
       font: 20px "HelveticaNeue-bold", Helvetica, Arial, sans-serif;
       color: #323232;
-      background: #41d5c2; }
+      background-color: #41d5c2; }
       .navigation-main a:hover .cls-1, .navigation-main a.active .cls-1 {
         stroke: #323232; }
     .navigation-main span {
@@ -5206,7 +5214,6 @@ hr {
     display: block;
     position: relative;
     margin-top: 10px;
-    overflow: hidden;
     max-height: 35px; }
     .dev-intro .dev-images .adv-lineup {
       float: left;
