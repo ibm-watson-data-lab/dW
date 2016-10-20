@@ -130,14 +130,62 @@ body {
 
   .transcript {
     font-size: 12px;
-    margin-right: calc((100% - 680px) / 2);
-    text-align: right;
   }
 
   .transcript a {
     font-size: 12px;
   }
+
+  pre {
+    background-color: #f7f7f7;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    font-size: 13px;
+    line-height: 1.42857;
+    margin: 0 0 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+
+    code {
+        background-color: transparent;
+        border-radius: 0;
+        color: inherit;
+        font-size: inherit;
+        padding: 0;
+    }
+  }
+
+  code {
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    color: #c7254e;
+    font-size: 90%;
+    padding: 2px 4px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  kbd,
+  pre,
+  samp {
+    font-family: monospace;
+    font-size: 1em;
+  }
 }
+
+dl {
+  margin-bottom: 20px;
+}
+dt {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
 
 p {
   &.intro {
@@ -211,4 +259,8 @@ p {
       height: 45px;
     }
   }
+}
+
+.embed-youtube {
+  text-align: left !important;
 }
