@@ -46,14 +46,29 @@
     background-color: $teal;
 
     .home-link {
-      background-image: url(../images/IBM_CDS_Logo.png);
-      background-position: 25px center;
-      background-repeat: no-repeat;
-      height: 65px;
-      background-size: calc(100% - 70px);
+      &>span {
+        display: inline-block;
+      }
+      .cds-logo-text {
+        display: block;
+        font: bold 24px $helveticaneue-light;
+        padding-top: 5px;
+      }
+      .labs-logo-text {
+        color: $turquoise;
+        display: block;
+        font: bold 20px $helveticaneue-medium;
+        line-height: 16px;
+        text-align: right;
+      }
 
-      span {
-        display: none;
+      &:hover {
+        .cds-logo-text {
+          color: $content;
+        }
+        .labs-logo-text {
+          color: $light-blue;
+        }
       }
     }
 
@@ -183,6 +198,15 @@
     a:visited,
     a:active {
       padding-left: 15px;
+    }
+
+    .home-link {
+      .cds-logo-text {
+        font-size: 16px;
+      }
+      .labs-logo-text {
+        font-size: 15px;
+      }
     }
   }
 }

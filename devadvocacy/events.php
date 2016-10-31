@@ -109,6 +109,12 @@ $home = get_home_url();
 								}
 								$eventlocation .= $state;
 							}
+							if (!empty($country)) {
+								if (!empty($eventlocation)) {
+									$eventlocation .= ' ';
+								}
+								$eventlocation .= $country;
+							}
 							echo $eventlocation;
 						?>
 					</div>

@@ -3946,14 +3946,22 @@ view.
     width: 100%;
     height: 700px;
     background-color: #152935; }
-    .navigation-main .home-link {
-      background-image: url(../images/IBM_CDS_Logo.png);
-      background-position: 25px center;
-      background-repeat: no-repeat;
-      height: 65px;
-      background-size: calc(100% - 70px); }
-      .navigation-main .home-link span {
-        display: none; }
+    .navigation-main .home-link > span {
+      display: inline-block; }
+    .navigation-main .home-link .cds-logo-text {
+      display: block;
+      font: bold 24px "HelveticaNeue-light", Helvetica, Arial, sans-serif;
+      padding-top: 5px; }
+    .navigation-main .home-link .labs-logo-text {
+      color: #41d5c2;
+      display: block;
+      font: bold 20px "HelveticaNeue-medium", Helvetica, Arial, sans-serif;
+      line-height: 16px;
+      text-align: right; }
+    .navigation-main .home-link:hover .cds-logo-text {
+      color: #323232; }
+    .navigation-main .home-link:hover .labs-logo-text {
+      color: #5aa9f9; }
     .navigation-main .nav-trigger {
       display: none; }
     .navigation-main .home {
@@ -4027,7 +4035,11 @@ view.
   .navigation-main a:link,
   .navigation-main a:visited,
   .navigation-main a:active {
-    padding-left: 15px; } }
+    padding-left: 15px; }
+  .navigation-main .home-link .cds-logo-text {
+    font-size: 16px; }
+  .navigation-main .home-link .labs-logo-text {
+    font-size: 15px; } }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .header {
     width: 7%; }
@@ -4604,7 +4616,7 @@ view.
   border-left: 15px solid transparent;
   opacity: 0.95; }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1650px) {
   .modal.advocates {
     right: 0;
     width: 100%; }
