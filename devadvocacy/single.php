@@ -47,7 +47,7 @@ Template Name: Blog Single Post
 										$args = array(
 												'author'        =>  $id,
 												'orderby'       =>  'post_date',
-												'order'         =>  'ASC',
+												'order'         =>  'DESC',
 												'posts_per_page' => 3
 												);
 												$recent_posts = get_posts( $args );

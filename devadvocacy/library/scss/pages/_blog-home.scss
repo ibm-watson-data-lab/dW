@@ -214,6 +214,17 @@
   a:hover {
     color: $turquoise;
   }
+
+  .wp-caption.alignright {
+    img {
+      margin: 15px 0 0 25px !important;
+    }
+    .wp-caption-text {
+      line-height: 16px;
+      margin: 0 0 0 25px;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .pn-post-comments {

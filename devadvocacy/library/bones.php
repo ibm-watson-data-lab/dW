@@ -311,19 +311,32 @@ AUTHORS ORDERED BY MOST RECENT POST PUBLISH DATE
 *********************/
 
 // Authors ordered by most recent published post date
-function authors_by_recent_post($authorids) {
+function authors_by_recent_post($query) {
     global $wpdb;
-		//SELECT DISTINCT post_author from cds_posts where post_status = 'publish' and post_type = 'post' and post_author IN (17, 11, 4) order BY post_date DESC
-		$querystr = 'SELECT DISTINCT post_author FROM '.$wpdb->posts;
-		$querystr .= ' WHERE post_status=\'publish\' AND post_type=\'post\'';
+		// modify the WP_User_Query to sort by most recent post date
+    if ( isset( $query->query_vars['query_id'] ) && 'authors_by_recent_post' == $query->query_vars['query_id'] ) {
 
-		if ($authorids) {
-			$querystr .= ' AND post_author IN (' . implode (",", $authorids) . ')';
-		}
+			// SELECT cds_users.*, p.max_date
+			// FROM cds_users 
+			// INNER JOIN cds_usermeta ON ( cds_users.ID = cds_usermeta.user_id )
+			// LEFT OUTER JOIN (
+			//    SELECT post_author, MAX(post_date) as max_date, COUNT(*) as post_count
+			//    FROM cds_posts
+			//    WHERE post_type = "post" AND post_status = "publish" AND post_type = "post"
+			//    GROUP BY post_author ) p ON ( cds_users.ID = p.post_author)
+			// WHERE 1=1 AND ( ( ( cds_usermeta.meta_key = 'cds_capabilities' AND cds_usermeta.meta_value LIKE '%\"Administrator\"%' ) ) )
+			// ORDER BY max_date DESC
 
-		$querystr .= ' ORDER BY post_date DESC';
-		return $wpdb->get_results($querystr);
+				$query->query_from = ', p.max_date ' . $query->query_from;
+        $query->query_from .= ' LEFT OUTER JOIN ( SELECT post_author, MAX(post_date) as max_date';
+        $query->query_from .= ' FROM ' . $wpdb->posts;
+        $query->query_from .= ' WHERE post_type = "post" AND post_status = "publish" AND post_type = "post"';
+        $query->query_from .= ' GROUP BY post_author';
+        $query->query_from .= ' ) p ON ( ' . $wpdb->users . '.ID = p.post_author)';
+				$query->query_orderby = str_replace('user_login', 'max_date DESC, user_login', $query->query_orderby);
+    } 
 }
+add_action('pre_user_query','authors_by_recent_post');
 // end Authors ordered by most recent published post date
 
 /*********************

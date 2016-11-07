@@ -269,6 +269,37 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 
+ 
+function show_cds_profile_fields($user) {
+  $is_checked = !empty(get_the_author_meta('is_dev_advo', $user->ID));
+?>
+  <h3>Cloud Data Services Profile Information</h3>
+  <table class="form-table">
+    <tr>
+      <th><label for="is_dev_advo">Developer Advocate</label></th>
+      <td>
+        <input type="checkbox" name="is_dev_advo" id="is_dev_advo" <?php if ($is_checked) echo 'checked value="true"' ;?> /> 
+        <span class="description">Select if a member of the Developer Advocacy team.</span>
+      </td>
+    </tr>
+  </table>
+<?php
+}
+
+add_action('show_user_profile', 'show_cds_profile_fields');
+add_action('edit_user_profile', 'show_cds_profile_fields');
+
+
+function save_cds_profile_fields($user_id) {
+  if (!current_user_can('edit_user', $user_id))
+    return false;
+
+  update_usermeta(absint($user_id), 'is_dev_advo', wp_kses_post($_POST['is_dev_advo']));
+}
+
+add_action('personal_options_update', 'save_cds_profile_fields');
+add_action('edit_user_profile_update', 'save_cds_profile_fields');
+
 
 /*
 This is a modification of a function found in the

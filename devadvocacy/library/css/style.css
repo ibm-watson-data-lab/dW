@@ -5308,6 +5308,12 @@ hr {
     margin: 0; }
 .blog-article a:hover {
   color: #41d5c2; }
+.blog-article .wp-caption.alignright img {
+  margin: 15px 0 0 25px !important; }
+.blog-article .wp-caption.alignright .wp-caption-text {
+  line-height: 16px;
+  margin: 0 0 0 25px;
+  padding-bottom: 5px; }
 
 .pn-post-comments {
   max-width: 1360px; }
@@ -5550,7 +5556,8 @@ aside .social a:not(.site) {
     .event-content .dev-attend a:hover {
       color: #41d5c2; }
   .event-content .dev-attend .name {
-    padding-top: 15px; }
+    padding-top: 15px;
+    width: 85px; }
   .event-content .dev-attend div {
     display: inline-block;
     font: 20px "HelveticaNeue-medium", Helvetica, Arial, sans-serif;

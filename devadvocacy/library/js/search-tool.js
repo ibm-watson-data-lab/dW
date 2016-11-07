@@ -1,6 +1,7 @@
 (function($) {
   var SITE_URL = dev_advo.siteurl;
-  var BASE_URL = "https://d14f43e9-5102-45bc-b394-c92520c2c0bd-bluemix.cloudant.com/devcenter/_design/search/_search/search?q=";
+  var namespacepart = 'namespace:\'Cloud+Data+Services\'';
+  var BASE_URL = 'https://d14f43e9-5102-45bc-b394-c92520c2c0bd-bluemix.cloudant.com/devcenter/_design/search/_search/search?q=' + namespacepart + '+AND+';
   var generatedSearchString = "";
   var filterUrl = "";
   var facetString = "";
@@ -331,13 +332,12 @@
   // Build the search request string for AJAX request.
   function createSearchString() {
     var stdpart = '&limit=' + paging.limit + '&counts=["topic","technologies","languages"]&include_docs=true';
-    var namespacepart = '+AND+namespace:\'Cloud+Data+Services\'';
     if(freeTextString.length <= 0 && facetString.length > 0) {
-      generatedSearchString = BASE_URL + '*:*' + namespacepart + '+AND+' + facetString + stdpart + '&sort=["-date"]';
+      generatedSearchString = BASE_URL + '*:*+AND+' + facetString + stdpart + '&sort=["-date"]';
     } else if(freeTextString.length > 0 && facetString.length <= 0) {
-      generatedSearchString = BASE_URL + freeTextString + namespacepart + stdpart;
+      generatedSearchString = BASE_URL + freeTextString + stdpart;
     } else if(freeTextString.length > 0 && facetString.length > 0) {
-      generatedSearchString = BASE_URL + freeTextString + namespacepart + '+AND+' + facetString + stdpart;
+      generatedSearchString = BASE_URL + freeTextString + '+AND+' + facetString + stdpart;
     }
     searchRequest();
   }

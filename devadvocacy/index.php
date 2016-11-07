@@ -18,23 +18,29 @@
 					<div class="dev-images">
 						<?php
 							$avatar = array (
-								'role' => 'Administrator'
+								'order' => 'ASC',
+								'orderby' => 'max_date',
+								'query_id' => 'authors_by_recent_post',
+								'meta_query' => array(
+									array(
+										'key' => 'is_dev_advo',
+										'value' => 'on'
+									)
+								)
 							);
 							$user_query = new WP_User_Query($avatar);
-							$devadvos = $user_query->get_results();
-							$devadvoids = array();
-							foreach($devadvos as $devadvo):
-								array_push($devadvoids,$devadvo->ID);
+							$authors = $user_query->get_results();
+							foreach($authors as $author):
+								$id=$author->ID;
+								$dname=$author->display_name;
+								if ($dname != 'oeschger'):
+							?>
+							<div class="adv-lineup"><span class="more-info" title="<?php echo $dname;?>"><?php echo get_avatar($id);?></span></div>
+						<?php
+								endif;
 							endforeach;
-							$recentauthors = authors_by_recent_post($devadvoids);
-							for ($i = 0; $i < count($recentauthors) && $i < 15; ++$i) {
-									$id = $recentauthors[$i]->post_author;
-									$author = get_userdata($id);
-									$dname = $author->display_name;
-									$pcount = count_user_posts($id);
+							wp_reset_postdata();
 						?>
-							<div class="adv-lineup"><span class="more-info" data-user-info="<?php echo $dname.' ('.$pcount.')';?>"><?php echo get_avatar($id);?></span></div>
-						<?php } wp_reset_postdata(); ?>
 
 							<div class="modal advocates">
 								<div class="arrow-up"></div>
@@ -44,20 +50,31 @@
 
 							<?php
 							$args = array(
-								'role'=> 'Administrator',
-								'orderby'=>'display_name'
+								'orderby'=>'display_name',
+								'meta_query' => array(
+									array(
+										'key' => 'is_dev_advo',
+										'value' => 'on'
+									)
+								)
 							);
 							$user_query = new WP_User_Query($args);
 							$authors = $user_query->get_results();
 								foreach($authors as $author):
 									$id=$author->ID;
+									$dname=$author->display_name;
+									if ($dname != 'oeschger'):
 								?>
 								<div class="adv-snippet">
 									<div><a href="<?php echo get_author_posts_url($id);?>"><?php echo get_avatar($id);?></a></div>
 									<div class="adv-name"><?php echo $author->display_name; ?></php></div>
 									<div class="adv-expertise"><?php echo wp_trim_words($author->description, 20);?></div>
 								</div>
-							<?php endforeach; wp_reset_postdata();?>
+							<?php
+									endif;
+								endforeach;
+								wp_reset_postdata();
+							?>
 
 							</div>
 						</div>
@@ -120,7 +137,7 @@
 								$args = array(
 										'author'        =>  $id,
 										'orderby'       =>  'post_date',
-										'order'         =>  'ASC',
+										'order'         =>  'DESC',
 										'posts_per_page' => 3
 										);
 										$recent_posts = get_posts( $args );
